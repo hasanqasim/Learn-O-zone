@@ -1,0 +1,44 @@
+{
+  "Green": {
+    "AQI Range": "0-50",
+    "Air Condition": "Good",
+    "Colour": "Green",
+    "Effects": "Air quality is satisfactory and poses little or no\nhealth risk",
+    "Actions to Protect Your Health\nFrom Ozone": "None"
+  },
+  "Yellow": {
+    "AQI Range": "51-100",
+    "Air Condition": "Moderate",
+    "Colour": "Yellow",
+    "Effects": "People with lung disease, children, older adults,\nand people who are active outdoors are considered\nsensitive and therefore at greater risk",
+    "Actions to Protect Your Health\nFrom Ozone": "The following groups should reduce\nprolonged or heavy outdoor exertion:\n•\tPeople with lung disease, such as asthma\n•\tChildren and older adults\n•\tPeople who are active outdoors"
+  },
+  "Orange": {
+    "AQI Range": "101-150",
+    "Air Condition": "Unhealty for sensitive group",
+    "Colour": "Orange",
+    "Effects": "People with lung disease, children, older adults,\nand people who are active outdoors are considered\nsensitive and therefore at greater risk",
+    "Actions to Protect Your Health\nFrom Ozone": ""
+  },
+  "Red": {
+    "AQI Range": "151-200",
+    "Air Condition": "Unhealty",
+    "Colour": "Red",
+    "Effects": "Members of\nsensitive groups may experience more serious health effects",
+    "Actions to Protect Your Health\nFrom Ozone": "The following groups should avoid\nprolonged or heavy outdoor exertion:\n•\tPeople with lung disease, such as asthma\n•\tChildren and older adults\n•\tPeople who are active outdoors\nEveryone else should limit prolonged\noutdoor exertion."
+  },
+  "Purple": {
+    "AQI Range": "201-300",
+    "Air Condition": "Very Unhealty",
+    "Colour": "Purple",
+    "Effects": "trigger a health alert, meaning everyone may experience\nmore serious health effects.",
+    "Actions to Protect Your Health\nFrom Ozone": ""
+  },
+  "Maroon": {
+    "AQI Range": "301-500",
+    "Air Condition": "Hazardous",
+    "Colour": "Maroon",
+    "Effects": "The entire population is even\nmore likely to be affected by serious health effects",
+    "Actions to Protect Your Health\nFrom Ozone": "The following groups should avoid all\noutdoor exertion:\n•\tPeople with lung disease, such as asthma\n•\tChildren and older adults\n•\tPeople who are active outdoors\nEveryone else should limit outdoor\nexertion."
+  }
+}
