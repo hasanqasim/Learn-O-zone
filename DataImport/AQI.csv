@@ -1,0 +1,8 @@
+﻿Key,Lower Limit,Upper Limit,Air Condition ,Colour,Effects,Actions
+Good,0,50,Good,Green,"Air quality is satisfactory and carries little to no risk 
+health risk",None
+Moderate,51,100,Moderate,Yellow,"People with lung disease, infants, older adults and those active outside are considered susceptible and therefore at greater risk","The following groups will limit excessive or extreme physical activity: • People with lung disease, such as asthma • Children and older adults • Active citizens"
+Unhealty for sensitive group,101,150,Unhealty for sensitive group,Orange,"People with lung disease, infants, older adults and those active outside are considered susceptible and therefore at greater risk",None
+Unhealty,151,200,Unhealty,Red,Weak community members can experience even more severe health effects,"The following people should avoid excessive or intense physical activity: • Individuals with lung disease, such as asthma • Kids and seniors • Individuals who are involved outdoors."
+Very Unhealty,201,300,Very Unhealty,Purple,"Cause a health warning, meaning that more severe health consequences will happen to anyone.",None
+Hazardous,301,500,Hazardous,Maroon,Far more likely the whole population will be affected by severe health effects,"All outdoor physical activity should be avoided by the following groups: • Individuals with lung disease, such as asthma • kids and elderly people • Individuals who are engaged outdoors  Anyone else should restrict the physical activity outside."

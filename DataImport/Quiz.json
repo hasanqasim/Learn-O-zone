@@ -1,0 +1,218 @@
+{
+  "1": {
+    "Quiz Type": "AQI",
+    "Question": "What does AQI represent?",
+    "Correct Answer": "Air Quality Index",
+    "Option1": "Air Quality Information",
+    "Option2": "Air Quiz Information",
+    "Option3": "Accurate Air Information",
+    "Reason": "AQI is the abbreviate for Air Quality Index"
+  },
+  "2": {
+    "Quiz Type": "Ozone Effects",
+    "Question": "The climate is very warm today and Sam wants to go out for a football match. Do you think he should go out?",
+    "Correct Answer": "No, he should stay home",
+    "Option1": "Yes, he should go out",
+    "Option2": "Maybe",
+    "Option3": "Yes, he should go out and also take his friends along to cheer him",
+    "Reason": "Ozone level is higher in warmer climate so it is adviced that children should stay indoor"
+  },
+  "3": {
+    "Quiz Type": "Ozone Sources",
+    "Question": "What is the correct abbreviate for Ozone",
+    "Correct Answer": "O3",
+    "Option1": "O2",
+    "Option2": "O4",
+    "Option3": "O",
+    "Reason": "The correct abbreviate for Ozone is O3"
+  },
+  "4": {
+    "Quiz Type": "AQI",
+    "Question": "The Air Quality Index is between 0-50. Do you think you should go out?",
+    "Correct Answer": "Yes",
+    "Option1": "No",
+    "Option2": "Maybe",
+    "Option3": "I don't know",
+    "Reason": "Air quality between 0-50 is satisfactory and poses little or no health risk"
+  },
+  "5": {
+    "Quiz Type": "AQI",
+    "Question": "The Air Quality Index is between 51-100. Do you think you should go out?",
+    "Correct Answer": "Maybe",
+    "Option1": "Yes",
+    "Option2": "No",
+    "Option3": "I don't know",
+    "Reason": "Air quality between AQI 51-100 is acceptable but the pollution range is high."
+  },
+  "6": {
+    "Quiz Type": "AQI",
+    "Question": "The Air Quality Index is between 101-150. Do you think you should go out?",
+    "Correct Answer": "Maybe",
+    "Option1": "Yes",
+    "Option2": "No",
+    "Option3": "I don't know",
+    "Reason": "Air quality between AQI 101-150 is harmful for children, people with lung cancer and older adults"
+  },
+  "7": {
+    "Quiz Type": "AQI",
+    "Question": "The Air Quality Index is between 151-200. Do you think we should go out?",
+    "Correct Answer": "No",
+    "Option1": "Yes",
+    "Option2": "Maybe",
+    "Option3": "I don't know",
+    "Reason": "Air quality between AQI 151-200 affects everyone and it is adviced that only go out if it is necessary"
+  },
+  "8": {
+    "Quiz Type": "AQI",
+    "Question": "The Air Quality Index is between 201-300. Do you think we should go out?",
+    "Correct Answer": "No",
+    "Option1": "Yes",
+    "Option2": "Maybe",
+    "Option3": "I don't know",
+    "Reason": "Air quality between AQI 201-300 causes an serious health effect"
+  },
+  "9": {
+    "Quiz Type": "AQI",
+    "Question": "The Air Quality Index is above 300. Do you think you should go out?",
+    "Correct Answer": "No",
+    "Option1": "Yes",
+    "Option2": "Maybe",
+    "Option3": "I don't know",
+    "Reason": "Air quality over AQI 300 is most dangeours and no one should go out"
+  },
+  "10": {
+    "Quiz Type": "Ozone Sources",
+    "Question": "Ozone formation increase due to",
+    "Correct Answer": "Heat and Sunlight",
+    "Option1": "Water droplets",
+    "Option2": "Wind",
+    "Option3": "Autumn",
+    "Reason": "Ozone formation is higher in warmer months"
+  },
+  "11": {
+    "Quiz Type": "Ozone Sources",
+    "Question": "Which time of the day would ozone level be at peak",
+    "Correct Answer": "Afternoon",
+    "Option1": "Morning",
+    "Option2": "Night",
+    "Option3": "Evening",
+    "Reason": "Ozone level is highest in the afternoon"
+  },
+  "12": {
+    "Quiz Type": "AQI",
+    "Question": "Why is it impotant for you to known the AQI level",
+    "Correct Answer": "",
+    "Option1": "",
+    "Option2": "",
+    "Option3": "",
+    "Reason": ""
+  },
+  "13": {
+    "Quiz Type": "Ozone Sources",
+    "Question": "Where is Ozone found?",
+    "Correct Answer": "Air",
+    "Option1": "Water",
+    "Option2": "Soil",
+    "Option3": "Fire",
+    "Reason": "Ozone is a gas present in the Air we breathe"
+  },
+  "14": {
+    "Quiz Type": "Ozone Effects",
+    "Question": "When the air is unhealty what should we do?",
+    "Correct Answer": "",
+    "Option1": "",
+    "Option2": "",
+    "Option3": "",
+    "Reason": ""
+  },
+  "15": {
+    "Quiz Type": "AQI",
+    "Question": "AQI is betweeen 0-50. Canyou guess the Color for this range?",
+    "Correct Answer": "Green",
+    "Option1": "Blue",
+    "Option2": "Yellow",
+    "Option3": "Pink",
+    "Reason": "AQI between 0-50 is represented by Green colour"
+  },
+  "16": {
+    "Quiz Type": "AQI",
+    "Question": "AQI is betweeen 51-100. Canyou guess the Color for this range?",
+    "Correct Answer": "Yellow",
+    "Option1": "Green",
+    "Option2": "Orange",
+    "Option3": "Red",
+    "Reason": "AQI between 51-100 is represented by Yellow colour"
+  },
+  "17": {
+    "Quiz Type": "AQI",
+    "Question": "AQI is betweeen 101-150. Canyou guess the Color for this range?",
+    "Correct Answer": "Orange",
+    "Option1": "Green",
+    "Option2": "Yellow",
+    "Option3": "Blue",
+    "Reason": "AQI between 101-150 is represented by Orange colour"
+  },
+  "18": {
+    "Quiz Type": "AQI",
+    "Question": "AQI is betweeen 151-200. Canyou guess the Color for this range?",
+    "Correct Answer": "Red",
+    "Option1": "Yellow",
+    "Option2": "Orange",
+    "Option3": "Purple",
+    "Reason": "AQI between 151-200 is represented by Red colour"
+  },
+  "19": {
+    "Quiz Type": "AQI",
+    "Question": "AQI is betweeen 201-300. Canyou guess the Color for this range?",
+    "Correct Answer": "Purple",
+    "Option1": "Yellow",
+    "Option2": "Maroon",
+    "Option3": "Red",
+    "Reason": "AQI between 201-300 is represented by Purple colour"
+  },
+  "20": {
+    "Quiz Type": "AQI",
+    "Question": "AQI is betweeen 301-500-. Canyou guess the Color for this range?",
+    "Correct Answer": "Maroon",
+    "Option1": "Green",
+    "Option2": "Red",
+    "Option3": "Purple",
+    "Reason": "AQI between 301-500 is represented by Maroon colour"
+  },
+  "21": {
+    "Quiz Type": "Ozone Effects",
+    "Question": "Which vitamin should you consume more to protect yourself from Ozone",
+    "Correct Answer": "Vitamin C and E",
+    "Option1": "Vitamin A and B",
+    "Option2": "Vitamin C and D",
+    "Option3": "Vitamin B and D",
+    "Reason": "People who consume low amount of vitamin C and E are at higher risk to expose to ozone"
+  },
+  "22": {
+    "Quiz Type": "Ozone Effects",
+    "Question": "Do you think Ozone effects the ecosystem?",
+    "Correct Answer": "Yes",
+    "Option1": "No",
+    "Option2": "Maybe",
+    "Option3": "I don't know",
+    "Reason": "Ozone affects sensitive vegetation and ecosystems, including forests, parks, wildlife refuges and wilderness areas"
+  },
+  "23": {
+    "Quiz Type": "Ozone Effects",
+    "Question": "When Ozone enters a sensitive plant it can?",
+    "Correct Answer": "Slow the growth of the plant",
+    "Option1": "The plants grows raipdly",
+    "Option2": "The plants starts to bloom",
+    "Option3": "I don't know",
+    "Reason": "When a sufficient amount of Ozone gas enters a plant it slows the growth of the plant"
+  },
+  "24": {
+    "Quiz Type": "Ozone Effects",
+    "Question": "Can Ozone irritate the lining of the nose, airways and lungs?",
+    "Correct Answer": "Yes",
+    "Option1": "No",
+    "Option2": "Maybe",
+    "Option3": "I don't know",
+    "Reason": "Yes Ozone can irritate the lining of the nose, airways and lungs"
+  }
+}

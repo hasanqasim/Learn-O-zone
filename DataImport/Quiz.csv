@@ -1,0 +1,25 @@
+﻿Key,Quiz Type,Question,Correct Answer,Option1,Option2,Option3,Reason
+1,AQI,What does AQI represent?,Air Quality Index,Air Quality Information,Air Quiz Information,Accurate Air Information,AQI is the abbreviate for Air Quality Index
+2,Ozone Effects,The climate is very warm today and Sam wants to go out for a football match. Do you think he should go out?,"No, he should stay home","Yes, he should go out",Maybe,"Yes, he should go out and also take his friends along to cheer him ",Ozone level is higher in warmer climate so it is adviced that children should stay indoor
+3,Ozone Sources,What is the correct abbreviate for Ozone,O3,O2,O4,O,The correct abbreviate for Ozone is O3
+4,AQI,The Air Quality Index is between 0-50. Do you think you should go out?,Yes,No,Maybe,I don't know,Air quality between 0-50 is satisfactory and poses little or no health risk
+5,AQI,The Air Quality Index is between 51-100. Do you think you should go out?,Maybe,Yes,No,I don't know,Air quality between AQI 51-100 is acceptable but the pollution range is high. 
+6,AQI,The Air Quality Index is between 101-150. Do you think you should go out?,Maybe,Yes,No ,I don't know,"Air quality between AQI 101-150 is harmful for children, people with lung cancer and older adults"
+7,AQI,The Air Quality Index is between 151-200. Do you think we should go out?,No,Yes,Maybe,I don't know,Air quality between AQI 151-200 affects everyone and it is adviced that only go out if it is necessary
+8,AQI,The Air Quality Index is between 201-300. Do you think we should go out?,No,Yes ,Maybe,I don't know,Air quality between AQI 201-300 causes an serious health effect 
+9,AQI,The Air Quality Index is above 300. Do you think you should go out?,No,Yes,Maybe,I don't know,Air quality over AQI 300 is most dangeours and no one should go out
+10,Ozone Sources,Ozone formation increase due to ,Heat and Sunlight,Water droplets ,Wind,Autumn,Ozone formation is higher in warmer months
+11,Ozone Sources,Which time of the day would ozone level be at peak,Afternoon,Morning,Night,Evening,Ozone level is highest in the afternoon
+12,AQI,Why is it impotant for you to known the AQI level,,,,,
+13,Ozone Sources,Where is Ozone found?,Air,Water,Soil,Fire,Ozone is a gas present in the Air we breathe
+14,Ozone Effects,When the air is unhealty what should we do?,,,,,
+15,AQI,AQI is betweeen 0-50. Canyou guess the Color for this range? ,Green,Blue ,Yellow,Pink,AQI between 0-50 is represented by Green colour
+16,AQI,AQI is betweeen 51-100. Canyou guess the Color for this range? ,Yellow,Green,Orange,Red,AQI between 51-100 is represented by Yellow colour
+17,AQI,AQI is betweeen 101-150. Canyou guess the Color for this range? ,Orange,Green,Yellow,Blue,AQI between 101-150 is represented by Orange colour
+18,AQI,AQI is betweeen 151-200. Canyou guess the Color for this range? ,Red,Yellow ,Orange,Purple,AQI between 151-200 is represented by Red colour
+19,AQI,AQI is betweeen 201-300. Canyou guess the Color for this range? ,Purple,Yellow ,Maroon,Red,AQI between 201-300 is represented by Purple colour
+20,AQI,AQI is betweeen 301-500-. Canyou guess the Color for this range? ,Maroon,Green,Red,Purple,AQI between 301-500 is represented by Maroon colour
+21,Ozone Effects,Which vitamin should you consume more to protect yourself from Ozone,Vitamin C and E,Vitamin A and B ,Vitamin C and D,Vitamin B and D,People who consume low amount of vitamin C and E are at higher risk to expose to ozone
+22,Ozone Effects,Do you think Ozone effects the ecosystem?,Yes,No ,Maybe,I don't know,"Ozone affects sensitive vegetation and ecosystems, including forests, parks, wildlife refuges and wilderness areas"
+23,Ozone Effects,When Ozone enters a sensitive plant it can?,Slow the growth of the plant,The plants grows raipdly,The plants starts to bloom,I don't know,When a sufficient amount of Ozone gas enters a plant it slows the growth of the plant
+24,Ozone Effects,"Can Ozone irritate the lining of the nose, airways and lungs?",Yes,No ,Maybe,I don't know,"Yes Ozone can irritate the lining of the nose, airways and lungs"
