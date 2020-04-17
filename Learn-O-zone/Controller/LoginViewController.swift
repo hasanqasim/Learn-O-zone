@@ -15,6 +15,13 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func signIn(_ sender: Any) {
+        //TODO: perform signin with tab controller
+        let mainTabController = storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+        mainTabController.modalPresentationStyle = .fullScreen
+        present(mainTabController, animated: false, completion: nil)
+        //show(mainTabController, sender: self)
+    }
+    
 }
 
