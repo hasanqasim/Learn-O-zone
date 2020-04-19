@@ -8,6 +8,7 @@
 
 import UIKit
 
+//comment
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var signUpButton: UIButton!
