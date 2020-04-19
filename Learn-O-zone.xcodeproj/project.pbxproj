@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04955570244C6413008526B7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495556F244C6413008526B7 /* RegisterViewController.swift */; };
 		A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FA2449793600C4E574 /* MainTabController.swift */; };
 		A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FC24499EA800C4E574 /* AQIViewController.swift */; };
 		A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B49020243CACDF00BB3093 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0495556F244C6413008526B7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A69E90FA2449793600C4E574 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		A69E90FC24499EA800C4E574 /* AQIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIViewController.swift; sourceTree = "<group>"; };
 		A6B4901D243CACDF00BB3093 /* Learn-O-zone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn-O-zone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 				A6E4F50324468EB400F48DD7 /* InformationViewController.swift */,
 				A69E90FA2449793600C4E574 /* MainTabController.swift */,
 				A69E90FC24499EA800C4E574 /* AQIViewController.swift */,
+				0495556F244C6413008526B7 /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				A6B49025243CACDF00BB3093 /* LoginViewController.swift in Sources */,
 				A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */,
 				A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */,
+				04955570244C6413008526B7 /* RegisterViewController.swift in Sources */,
 				A6B49023243CACDF00BB3093 /* SceneDelegate.swift in Sources */,
 				A6E4F50224468E7D00F48DD7 /* HomeViewController.swift in Sources */,
 				A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */,
