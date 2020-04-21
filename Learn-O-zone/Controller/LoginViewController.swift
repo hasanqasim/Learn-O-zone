@@ -21,6 +21,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
         self.usernameTextfield.delegate = self
         
+        //changing the placeholders' colour
+        usernameTextfield.attributedPlaceholder = NSAttributedString(string: "Type username here", attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "d4f8e8")])
+        
+        passwordTextfield.attributedPlaceholder = NSAttributedString(string: "Type password here", attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "d4f8e8")])
+        
         //rounding the button edges
         signInButton.layer.cornerRadius = 25.0
         signUpButton.layer.cornerRadius = 25.0
