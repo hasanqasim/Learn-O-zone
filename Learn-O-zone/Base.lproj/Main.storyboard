@@ -44,7 +44,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="1fD-pN-Env">
-                                <rect key="frame" x="39" y="487.5" width="332" height="98"/>
+                                <rect key="frame" x="39" y="487.5" width="332" height="97"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIy-Nr-lVy">
                                         <rect key="frame" x="0.0" y="0.0" width="84.5" height="32"/>
@@ -53,11 +53,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="h8l-PI-197">
-                                        <rect key="frame" x="0.0" y="56" width="332" height="42"/>
+                                        <rect key="frame" x="0.0" y="56" width="332" height="41"/>
                                         <color key="backgroundColor" red="1" green="0.63921568627450975" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="28"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <constraints>
@@ -65,7 +65,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="nby-Qs-Gnv">
-                                <rect key="frame" x="40" y="640.5" width="334" height="137"/>
+                                <rect key="frame" x="40" y="639.5" width="334" height="137"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byh-Nk-uNS">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="52"/>
@@ -964,7 +964,10 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yBG-Gi-mCl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.96470588239999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.96470588239999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="7nn-kF-aBN" kind="relationship" relationship="viewControllers" id="XZe-ND-N4B"/>
@@ -998,7 +1001,9 @@
         <scene sceneID="dUA-g2-MRZ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7nn-kF-aBN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="HOME" image="house.fill" catalog="system" id="Viz-hc-bf0"/>
+                    <tabBarItem key="tabBarItem" title="HOME" image="house.fill" catalog="system" id="Viz-hc-bf0">
+                        <color key="badgeColor" red="0.96470588239999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s0T-Hc-o34">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1017,7 +1022,9 @@
         <scene sceneID="rU0-ii-tCl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4a7-pr-wQV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="AQI" image="wind.snow" catalog="system" id="7Z9-4D-yzs"/>
+                    <tabBarItem key="tabBarItem" title="AQI" image="wind.snow" catalog="system" id="7Z9-4D-yzs">
+                        <color key="badgeColor" red="0.96470588239999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QFM-an-Nz4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1036,7 +1043,9 @@
         <scene sceneID="nvs-Sg-dpN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L9G-LF-6yy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="QUIZ" image="questionmark" catalog="system" id="I7T-Wc-ln0"/>
+                    <tabBarItem key="tabBarItem" title="QUIZ" image="questionmark" catalog="system" id="I7T-Wc-ln0">
+                        <color key="badgeColor" red="0.96470588239999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oRJ-cH-N3V">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

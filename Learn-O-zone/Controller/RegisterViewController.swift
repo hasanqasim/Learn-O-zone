@@ -40,7 +40,14 @@ class RegisterViewController: UIViewController {
 
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+          let nav = self.navigationController?.navigationBar
+          
+          let lightMint = UIColor(hexString: "d4f8e8")
+          let softPeach = UIColor(hexString: "f67575")
+          nav?.barTintColor = lightMint
+          nav?.titleTextAttributes = [.foregroundColor: softPeach]
+      }
 
     @IBAction func kangarooButtonAction(_ sender: UIButton) {
         

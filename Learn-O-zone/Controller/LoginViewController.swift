@@ -31,14 +31,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         signUpButton.layer.cornerRadius = 25.0
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        let nav = self.navigationController?.navigationBar
-//        
-//        let lightMint = UIColor(hexFromString: "d4f8e8")
-//        let softPeach = UIColor(hexFromString: "f67575")
-//        nav?.barTintColor = lightMint
-//        nav?.titleTextAttributes = [.foregroundColor: softPeach]
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        let nav = self.navigationController?.navigationBar
+        
+        let lightMint = UIColor(hexString: "d4f8e8")
+        let softPeach = UIColor(hexString: "f67575")
+        nav?.barTintColor = lightMint
+        nav?.titleTextAttributes = [.foregroundColor: softPeach]
+    }
     
     //dismiss the keyboard when clicking on the textfield
     func textFieldShouldReturn (_textField: UITextField) -> Bool {
