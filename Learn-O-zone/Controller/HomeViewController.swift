@@ -11,11 +11,18 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var informationIV: UIImageView!
+    @IBOutlet weak var scoreView: UIView!
+    @IBOutlet weak var informationView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //rounding the corners of the subviews
+        scoreView.layer.cornerRadius = 20
+        informationView.layer.cornerRadius = 20
+        
         
         let tapGestureRecognizerInfo = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         informationIV.isUserInteractionEnabled = true
