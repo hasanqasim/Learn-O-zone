@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        UINavigationBar.appearance().barTintColor = UIColor(hexString: "d4f8e8")
 //        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(hexString: "f67575")]
         
-        
+        FirebaseApp.configure()
         return true
     }
 

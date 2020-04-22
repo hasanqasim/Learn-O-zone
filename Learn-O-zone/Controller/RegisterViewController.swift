@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 //comment
 class RegisterViewController: UIViewController {
@@ -84,5 +86,25 @@ class RegisterViewController: UIViewController {
     }
     */
 
+    @IBAction func signUpTapped(_ sender: Any) {
+        let userName = usernameTextfield.text!
+        let email = emailTextfield.text!
+        let password = passwordTextfield.text!
+        let confirmPassword = confirmPasswordTextfield.text!
+        
+        if (password.elementsEqual(confirmPassword) == true) {
+            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                if let err = error {
+                    print(err.localizedDescription)
+                } else {
+                    let db = Firestore.firestore()
+                    db.collection("users").addDocument(data: ["username" : userName, "uid":result!.user.uid])
+                    self.navigationController?.popViewController(animated: true)
+                }
+                
+            }
+        }
+        
+    }
 }
 

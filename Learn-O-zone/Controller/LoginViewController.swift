@@ -7,11 +7,12 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 //comment
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var usernameTextfield: UITextField!
+    
+    @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
@@ -19,10 +20,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.usernameTextfield.delegate = self
+        self.emailTextfield.delegate = self
         
         //changing the placeholders' colour
-        usernameTextfield.attributedPlaceholder = NSAttributedString(string: "Type username here", attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "d4f8e8")])
+        emailTextfield.attributedPlaceholder = NSAttributedString(string: "Type email here", attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "d4f8e8")])
         
         passwordTextfield.attributedPlaceholder = NSAttributedString(string: "Type password here", attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "d4f8e8")])
         
@@ -42,18 +43,33 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     //dismiss the keyboard when clicking on the textfield
     func textFieldShouldReturn (_textField: UITextField) -> Bool {
-        usernameTextfield.resignFirstResponder()
+        emailTextfield.resignFirstResponder()
         passwordTextfield.resignFirstResponder()
         return true
     }
 
     @IBAction func signIn(_ sender: Any) {
         //TODO: perform signin with tab controller
-        let mainTabController = storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
-        mainTabController.modalPresentationStyle = .fullScreen
-        present(mainTabController, animated: false, completion: nil)
+        let email = emailTextfield.text!
+        let password = passwordTextfield.text!
+        emailTextfield.text
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if error != nil {
+                self.errorAlert(title: "ERROR", message: error!.localizedDescription)
+            } else {
+                let mainTabController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+                mainTabController.modalPresentationStyle = .fullScreen
+                self.present(mainTabController, animated: false, completion: nil)
+            }
+        }
         //show(mainTabController, sender: self)
     }
+    
+    func errorAlert(title: String, message: String) {
+           let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+           alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler:nil))
+           self.present(alertController, animated:true, completion:nil)
+       }
     
 }
 
@@ -77,4 +93,6 @@ extension UIColor {
         }
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
     }
+    
+   
 }

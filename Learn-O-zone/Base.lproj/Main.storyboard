@@ -24,13 +24,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Y1b-p4-Bqx">
                                 <rect key="frame" x="37" y="357" width="332" height="89.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TB-C3-E5d">
-                                        <rect key="frame" x="0.0" y="0.0" width="81" height="30.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TB-C3-E5d">
+                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="30.5"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
                                         <color key="textColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wB0-wn-BRy">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wB0-wn-BRy">
                                         <rect key="frame" x="0.0" y="48.5" width="332" height="41"/>
                                         <color key="backgroundColor" red="1" green="0.63921568627450975" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -120,10 +120,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="LOGIN" id="aRs-dT-lN9"/>
                     <connections>
+                        <outlet property="emailTextfield" destination="wB0-wn-BRy" id="D47-eN-Maw"/>
                         <outlet property="passwordTextfield" destination="h8l-PI-197" id="Vnv-QE-Ri6"/>
                         <outlet property="signInButton" destination="Byh-Nk-uNS" id="TkU-fb-xJa"/>
                         <outlet property="signUpButton" destination="l6L-Vd-QZB" id="TEO-j6-C9i"/>
-                        <outlet property="usernameTextfield" destination="wB0-wn-BRy" id="AKS-hl-ufW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QaJ-uW-hRy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -236,7 +236,7 @@
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kangaroo" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gf2-0t-ipw">
-                                                        <rect key="frame" x="49" y="20" width="100" height="100"/>
+                                                        <rect key="frame" x="49" y="-30" width="200" height="200"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -357,6 +357,9 @@
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpTapped:" destination="udG-P0-m1U" eventType="touchUpInside" id="ef4-pJ-q2K"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -408,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IR3-xe-zhy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1630.4347826086957" y="1123.6607142857142"/>
+            <point key="canvasLocation" x="-1500" y="1124"/>
         </scene>
         <!--QUIZ CATEGORY-->
         <scene sceneID="9RZ-y2-wdV">
