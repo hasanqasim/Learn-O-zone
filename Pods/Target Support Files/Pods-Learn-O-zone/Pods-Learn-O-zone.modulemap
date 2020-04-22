@@ -1,0 +1,6 @@
+framework module Pods_Learn_O_zone {
+  umbrella header "Pods-Learn-O-zone-umbrella.h"
+
+  export *
+  module * { export * }
+}
