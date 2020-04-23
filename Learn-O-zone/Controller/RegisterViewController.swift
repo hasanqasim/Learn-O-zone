@@ -23,6 +23,10 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var koalaButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
+    var kangarooBoolean = false
+    var KoalaBoolean = false
+    var avatar: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -60,6 +64,7 @@ class RegisterViewController: UIViewController {
         else {
             sender.isSelected = true
             koalaButton.isSelected = false
+            print("kangaroo \(kangarooButton.isSelected)")
         }
         
     }
@@ -89,6 +94,11 @@ class RegisterViewController: UIViewController {
     @IBAction func signUpTapped(_ sender: Any) {
         let userName = usernameTextfield.text!
         let email = emailTextfield.text!
+        if (kangarooButton.isSelected) {
+            avatar = "kangaroo"
+        } else if (koalaButton.isSelected) {
+            avatar = "koala"
+        }
         let password = passwordTextfield.text!
         let confirmPassword = confirmPasswordTextfield.text!
         
@@ -98,7 +108,7 @@ class RegisterViewController: UIViewController {
                     print(err.localizedDescription)
                 } else {
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["username" : userName, "uid":result!.user.uid])
+                    db.collection("Users").addDocument(data: ["username" : userName, "uid":result!.user.uid, "avatar":self.avatar!])
                     self.navigationController?.popViewController(animated: true)
                 }
                 
