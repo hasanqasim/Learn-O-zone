@@ -52,7 +52,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         //TODO: perform signin with tab controller
         let email = emailTextfield.text!
         let password = passwordTextfield.text!
-        emailTextfield.text
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if error != nil {
                 self.errorAlert(title: "ERROR", message: error!.localizedDescription)
