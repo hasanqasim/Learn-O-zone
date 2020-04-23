@@ -52,6 +52,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         //TODO: perform signin with tab controller
         let email = emailTextfield.text!
         let password = passwordTextfield.text!
+        
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if error != nil {
                 self.errorAlert(title: "ERROR", message: error!.localizedDescription)
@@ -59,9 +60,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 let mainTabController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
                 mainTabController.modalPresentationStyle = .fullScreen
                 self.present(mainTabController, animated: false, completion: nil)
+                self.emailTextfield.text = ""
+                self.passwordTextfield.text = ""
             }
         }
         //show(mainTabController, sender: self)
+       
     }
     
     func errorAlert(title: String, message: String) {
