@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		04955570244C6413008526B7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495556F244C6413008526B7 /* RegisterViewController.swift */; };
+		0495557624513988008526B7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557524513988008526B7 /* Helper.swift */; };
+		0495557C245191F1008526B7 /* AuthNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557B245191F1008526B7 /* AuthNavController.swift */; };
+		0495557E24519510008526B7 /* HomeNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557D24519510008526B7 /* HomeNavController.swift */; };
+		0495558024519588008526B7 /* AQINavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557F24519588008526B7 /* AQINavController.swift */; };
+		04955582245195B6008526B7 /* QuizNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04955581245195B6008526B7 /* QuizNavController.swift */; };
 		4653D8C40160DDE0FF0AB301 /* Pods_Learn_O_zone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6337F5DCAD99CBAA0EC6F269 /* Pods_Learn_O_zone.framework */; };
 		A63587F02450932A004E3F49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A63587EF2450932A004E3F49 /* GoogleService-Info.plist */; };
 		A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FA2449793600C4E574 /* MainTabController.swift */; };
@@ -25,6 +30,11 @@
 
 /* Begin PBXFileReference section */
 		0495556F244C6413008526B7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0495557524513988008526B7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		0495557B245191F1008526B7 /* AuthNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavController.swift; sourceTree = "<group>"; };
+		0495557D24519510008526B7 /* HomeNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavController.swift; sourceTree = "<group>"; };
+		0495557F24519588008526B7 /* AQINavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQINavController.swift; sourceTree = "<group>"; };
+		04955581245195B6008526B7 /* QuizNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizNavController.swift; sourceTree = "<group>"; };
 		272376E744A29D602D840E83 /* Pods-Learn-O-zone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn-O-zone.debug.xcconfig"; path = "Target Support Files/Pods-Learn-O-zone/Pods-Learn-O-zone.debug.xcconfig"; sourceTree = "<group>"; };
 		6337F5DCAD99CBAA0EC6F269 /* Pods_Learn_O_zone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learn_O_zone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6B1B891BE1DF2F27CF3CF3 /* Pods-Learn-O-zone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn-O-zone.release.xcconfig"; path = "Target Support Files/Pods-Learn-O-zone/Pods-Learn-O-zone.release.xcconfig"; sourceTree = "<group>"; };
@@ -56,6 +66,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		049555742451392C008526B7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0495557524513988008526B7 /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0495557A245191C3008526B7 /* NavController */ = {
+			isa = PBXGroup;
+			children = (
+				0495557B245191F1008526B7 /* AuthNavController.swift */,
+				0495557D24519510008526B7 /* HomeNavController.swift */,
+				0495557F24519588008526B7 /* AQINavController.swift */,
+				04955581245195B6008526B7 /* QuizNavController.swift */,
+			);
+			path = NavController;
+			sourceTree = "<group>";
+		};
 		8E812A84614CCB4573D13264 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +114,8 @@
 		A6B4901F243CACDF00BB3093 /* Learn-O-zone */ = {
 			isa = PBXGroup;
 			children = (
+				0495557A245191C3008526B7 /* NavController */,
+				049555742451392C008526B7 /* Helper */,
 				A6E4F50024468D6900F48DD7 /* Controller */,
 				A6B49020243CACDF00BB3093 /* AppDelegate.swift */,
 				A6B49022243CACDF00BB3093 /* SceneDelegate.swift */,
@@ -236,13 +267,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04955582245195B6008526B7 /* QuizNavController.swift in Sources */,
+				0495557E24519510008526B7 /* HomeNavController.swift in Sources */,
 				A6B49025243CACDF00BB3093 /* LoginViewController.swift in Sources */,
 				A6CF13BE244D321900665899 /* QuizCategoryViewController.swift in Sources */,
 				A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */,
 				A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */,
+				0495557C245191F1008526B7 /* AuthNavController.swift in Sources */,
+				0495558024519588008526B7 /* AQINavController.swift in Sources */,
 				04955570244C6413008526B7 /* RegisterViewController.swift in Sources */,
 				A6B49023243CACDF00BB3093 /* SceneDelegate.swift in Sources */,
 				A6E4F50224468E7D00F48DD7 /* HomeViewController.swift in Sources */,
+				0495557624513988008526B7 /* Helper.swift in Sources */,
 				A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */,
 				A6E4F50424468EB400F48DD7 /* InformationViewController.swift in Sources */,
 			);

@@ -35,14 +35,14 @@ class HomeViewController: UIViewController {
     }
     
 
-    override func viewDidAppear(_ animated: Bool) {
-          let nav = self.navigationController?.navigationBar
-          
-          let orange = UIColor(hexString: "ffa34d")
-          let lightMint = UIColor(hexString: "d4f8e8")
-          nav?.barTintColor = orange
-          nav?.titleTextAttributes = [.foregroundColor: lightMint]
-      }
+//    override func viewDidAppear(_ animated: Bool) {
+//          let nav = self.navigationController?.navigationBar
+//
+//          let orange = UIColor(hexString: "ffa34d")
+//          let lightMint = UIColor(hexString: "d4f8e8")
+//          nav?.barTintColor = orange
+//          nav?.titleTextAttributes = [.foregroundColor: lightMint]
+//      }
     
     /*
     // MARK: - Navigation
