@@ -13,6 +13,7 @@
 		0495557E24519510008526B7 /* HomeNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557D24519510008526B7 /* HomeNavController.swift */; };
 		0495558024519588008526B7 /* AQINavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557F24519588008526B7 /* AQINavController.swift */; };
 		04955582245195B6008526B7 /* QuizNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04955581245195B6008526B7 /* QuizNavController.swift */; };
+		04955584245265BF008526B7 /* SubInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04955583245265BF008526B7 /* SubInformationViewController.swift */; };
 		4653D8C40160DDE0FF0AB301 /* Pods_Learn_O_zone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6337F5DCAD99CBAA0EC6F269 /* Pods_Learn_O_zone.framework */; };
 		A63587F02450932A004E3F49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A63587EF2450932A004E3F49 /* GoogleService-Info.plist */; };
 		A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FA2449793600C4E574 /* MainTabController.swift */; };
@@ -35,6 +36,7 @@
 		0495557D24519510008526B7 /* HomeNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavController.swift; sourceTree = "<group>"; };
 		0495557F24519588008526B7 /* AQINavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQINavController.swift; sourceTree = "<group>"; };
 		04955581245195B6008526B7 /* QuizNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizNavController.swift; sourceTree = "<group>"; };
+		04955583245265BF008526B7 /* SubInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubInformationViewController.swift; sourceTree = "<group>"; };
 		272376E744A29D602D840E83 /* Pods-Learn-O-zone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn-O-zone.debug.xcconfig"; path = "Target Support Files/Pods-Learn-O-zone/Pods-Learn-O-zone.debug.xcconfig"; sourceTree = "<group>"; };
 		6337F5DCAD99CBAA0EC6F269 /* Pods_Learn_O_zone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learn_O_zone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6B1B891BE1DF2F27CF3CF3 /* Pods-Learn-O-zone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn-O-zone.release.xcconfig"; path = "Target Support Files/Pods-Learn-O-zone/Pods-Learn-O-zone.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				A69E90FC24499EA800C4E574 /* AQIViewController.swift */,
 				0495556F244C6413008526B7 /* RegisterViewController.swift */,
 				A6CF13BD244D321800665899 /* QuizCategoryViewController.swift */,
+				04955583245265BF008526B7 /* SubInformationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				0495557624513988008526B7 /* Helper.swift in Sources */,
 				A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */,
 				A6E4F50424468EB400F48DD7 /* InformationViewController.swift in Sources */,
+				04955584245265BF008526B7 /* SubInformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

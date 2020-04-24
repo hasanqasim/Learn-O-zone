@@ -14,9 +14,11 @@ class InformationViewController: UIViewController {
     @IBOutlet weak var oThree: UIImageView!
     @IBOutlet weak var causes: UIImageView!
     @IBOutlet weak var sources: UIImageView!
+    
+    var imageDetail: String = "Ground-Level-Ozone"
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         
         let tapGestureRecognizerO = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
@@ -30,38 +32,49 @@ class InformationViewController: UIViewController {
         sources.addGestureRecognizer(tapGestureRecognizerS)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-           let nav = self.navigationController?.navigationBar
-           
-           let orange = UIColor(hexString: "ffa34d")
-           let lightMint = UIColor(hexString: "d4f8e8")
-           nav?.barTintColor = orange
-           nav?.titleTextAttributes = [.foregroundColor: lightMint]
-       }
 
-    
     // MARK: - Navigation
+    
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+         let tappedImage = tapGestureRecognizer.view as! UIImageView
+         
+         if tappedImage.accessibilityLabel!.contains("oThree") {
+             imageDetail = "Ground-Level-Ozone"
+             performSegue(withIdentifier: "detailedInformationSegue", sender: self)
+         } else if tappedImage.accessibilityLabel!.contains("causes") {
+             imageDetail = "Ozone-Effects"
+            print("image detail is \(imageDetail)")
+            
+             performSegue(withIdentifier: "detailedInformationSegue", sender: self)
+            
+         } else if tappedImage.accessibilityLabel!.contains("sources") {
+             imageDetail = "Ozone-Sources"
+             performSegue(withIdentifier: "detailedInformationSegue", sender: self)
+         }
+        
+        UserDefaults.standard.set(imageDetail, forKey: "imgDetail")
+     }
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
-    }
-    
-    
-    
-    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-        let tappedImage = tapGestureRecognizer.view as! UIImageView
+//        if segue.identifier == "detailInformationSegue" {
+//            let nextViewController = segue.destination as! SubInformationViewController
+//
+//            print("image detail is \(imageDetail)")
+//            imageDetail = sender as! String
+//            nextViewController.selectedImageDetail = imageDetail
+//
+//        }
         
-        if tappedImage.accessibilityLabel!.contains("oThree") {
-            performSegue(withIdentifier: "detailedInformationSegue", sender: self)
-        } else if tappedImage.accessibilityLabel!.contains("causes") {
-            performSegue(withIdentifier: "detailedInformationSegue", sender: self)
-        } else if tappedImage.accessibilityLabel!.contains("sources") {
-            performSegue(withIdentifier: "detailedInformationSegue", sender: self)
-        }
+        
     }
+    
+    
+    
+ 
     
 
 }
