@@ -10,6 +10,12 @@ import UIKit
 
 class AQIViewController: UIViewController {
 
+    @IBOutlet weak var locationName: UILabel!
+    @IBOutlet weak var aqiValue: UILabel!
+    @IBOutlet weak var airCondition: UILabel!
+    @IBOutlet weak var datetime: UILabel!
+    
+    
     @IBOutlet weak var oneIV: UIImageView!
     @IBOutlet weak var twoIV: UIImageView!
     @IBOutlet weak var threeIV: UIImageView!
@@ -28,14 +34,7 @@ class AQIViewController: UIViewController {
         threeIV.addGestureRecognizer(tapGestureRecognizerThree)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-           let nav = self.navigationController?.navigationBar
-           
-           let orange = UIColor(hexString: "ffa34d")
-           let lightMint = UIColor(hexString: "d4f8e8")
-           nav?.barTintColor = orange
-           nav?.titleTextAttributes = [.foregroundColor: lightMint]
-       }
+    
 
     /*
     // MARK: - Navigation
