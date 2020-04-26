@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import MapKit
 
-class AQIViewController: UIViewController {
+class AQIViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var locationName: UILabel!
     @IBOutlet weak var aqiValue: UILabel!
@@ -19,10 +20,16 @@ class AQIViewController: UIViewController {
     @IBOutlet weak var oneIV: UIImageView!
     @IBOutlet weak var twoIV: UIImageView!
     @IBOutlet weak var threeIV: UIImageView!
+    
+    var locationManager: CLLocationManager = CLLocationManager()
+    var currentLocationCoordinates: CLLocationCoordinate2D?
+    var currentLocationName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // enable image navigation
         let tapGestureRecognizerOne = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         oneIV.isUserInteractionEnabled = true
         oneIV.addGestureRecognizer(tapGestureRecognizerOne)
@@ -32,6 +39,39 @@ class AQIViewController: UIViewController {
         let tapGestureRecognizerThree = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         threeIV.isUserInteractionEnabled = true
         threeIV.addGestureRecognizer(tapGestureRecognizerThree)
+        
+        //location updates
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        locationManager.startUpdatingLocation()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        locationManager.stopUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last!
+        currentLocationCoordinates = location.coordinate
+        reverseGeocode()
+    }
+    
+    func reverseGeocode() {
+        let geocoder = CLGeocoder()
+        let currentLocation = CLLocation(latitude: currentLocationCoordinates!.latitude, longitude: currentLocationCoordinates!.longitude)
+        geocoder.reverseGeocodeLocation(currentLocation) { (placemark, error) in
+            if error == nil {
+                let firstLocation = placemark?[0]
+                self.locationName.text = firstLocation?.locality
+            }
+        }
     }
     
     
