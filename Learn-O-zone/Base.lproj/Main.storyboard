@@ -696,6 +696,7 @@
                     <connections>
                         <outlet property="aqiValue" destination="ppC-BZ-KyE" id="W38-VR-3TT"/>
                         <outlet property="co2Value" destination="FjC-ZS-pwC" id="cSn-7T-0h8"/>
+                        <outlet property="healthRecommendation" destination="Ast-U7-7Bi" id="A43-eY-FBv"/>
                         <outlet property="no2Value" destination="h8T-Ee-l2L" id="HIl-CZ-kxV"/>
                         <outlet property="o3Value" destination="OOl-jh-sa4" id="Xcj-gx-f82"/>
                         <outlet property="pm10Value" destination="wXu-ax-ZJA" id="jXV-RT-RXf"/>

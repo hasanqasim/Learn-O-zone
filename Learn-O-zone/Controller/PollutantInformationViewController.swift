@@ -10,6 +10,7 @@ import UIKit
 
 class PollutantInformationViewController: UIViewController {
     //let pollutants = [pm25Obj, pm10Obj, so2Obj, o3Obj, no2Obj, coObj]
+    @IBOutlet weak var healthRecommendation: UILabel!
     @IBOutlet weak var aqiValue: UILabel!
     @IBOutlet weak var o3Value: UILabel!
     @IBOutlet weak var co2Value: UILabel!
@@ -29,6 +30,8 @@ class PollutantInformationViewController: UIViewController {
         pm10Value.text = "\(aqiObject!.pollutants[1].value)"
         so2Value.text = "\(aqiObject!.pollutants[2].value)"
         no2Value.text = "\(aqiObject!.pollutants[4].value)"
+        
+        healthRecommendation.text = "\(aqiObject!.healthRecommendation)"
         
     }
     
