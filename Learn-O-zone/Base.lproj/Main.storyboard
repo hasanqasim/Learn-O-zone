@@ -1994,7 +1994,7 @@
         <image name="0ZZY-neutral" width="76" height="81"/>
         <image name="0ZZY-oh" width="66.5" height="80.5"/>
         <image name="0ZZY-standing" width="86" height="112.5"/>
-        <image name="Ground-Level-Ozone" width="138" height="241.5"/>
+        <image name="Ground-Level-Ozone" width="138" height="241"/>
         <image name="OzoneLogo" width="341" height="341"/>
         <image name="balloon" width="166.5" height="166.5"/>
         <image name="balloon2" width="166.5" height="166.5"/>
