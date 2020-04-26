@@ -33,27 +33,27 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //rounding the edges of the sign up button
-        signUpButton.layer.cornerRadius = 25.0
+        signUpButton.layer.cornerRadius = CGFloat(Helper.app.buttonCornerRadius)
         
         //changing the placeholders' colour
-        usernameTextfield.attributedPlaceholder = NSAttributedString(string: "Type username here", attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "d4f8e8")])
+        usernameTextfield.attributedPlaceholder = NSAttributedString(string: "Type username here", attributes: Helper.app.titleTextAttribute)
         
-        passwordTextfield.attributedPlaceholder = NSAttributedString(string: "Type password here", attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "d4f8e8")])
+        passwordTextfield.attributedPlaceholder = NSAttributedString(string: "Type password here", attributes: Helper.app.titleTextAttribute)
         
-        confirmPasswordTextfield.attributedPlaceholder = NSAttributedString(string: "Type password again here", attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "d4f8e8")])
+        confirmPasswordTextfield.attributedPlaceholder = NSAttributedString(string: "Type password again here", attributes: Helper.app.titleTextAttribute)
         
-        emailTextfield.attributedPlaceholder = NSAttributedString(string: "Type email here", attributes: [NSAttributedString.Key.foregroundColor: UIColor(hexString: "d4f8e8")])
+        emailTextfield.attributedPlaceholder = NSAttributedString(string: "Type email here", attributes: Helper.app.titleTextAttribute)
 
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-          let nav = self.navigationController?.navigationBar
-          
-          let lightMint = UIColor(hexString: "d4f8e8")
-          let softPeach = UIColor(hexString: "f67575")
-          nav?.barTintColor = lightMint
-          nav?.titleTextAttributes = [.foregroundColor: softPeach]
-      }
+    //dismiss the keyboard when clicking on the textfield
+    func textFieldShouldReturn (_textField: UITextField) -> Bool {
+        usernameTextfield.resignFirstResponder()
+        emailTextfield.resignFirstResponder()
+        passwordTextfield.resignFirstResponder()
+        confirmPasswordTextfield.resignFirstResponder()
+        return true
+    }
 
     @IBAction func kangarooButtonAction(_ sender: UIButton) {
         
