@@ -1332,7 +1332,7 @@
         <!--GUESS AQI-->
         <scene sceneID="DJ6-mr-zHu">
             <objects>
-                <viewController id="4hf-ao-nFD" customClass="PollutantInformationViewController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4hf-ao-nFD" customClass="GuessAQIViewController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Wh-rU-TX6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

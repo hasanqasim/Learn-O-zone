@@ -28,6 +28,8 @@
 		A6B4902A243CACE100BB3093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B49029243CACE100BB3093 /* Assets.xcassets */; };
 		A6B4902D243CACE100BB3093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B4902B243CACE100BB3093 /* LaunchScreen.storyboard */; };
 		A6CF13BE244D321900665899 /* QuizCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CF13BD244D321800665899 /* QuizCategoryViewController.swift */; };
+		A6E44F5F2455803D0043FA7E /* GuessAQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E44F5E2455803D0043FA7E /* GuessAQIViewController.swift */; };
+		A6E44F61245580B60043FA7E /* GuessAQIOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E44F60245580B60043FA7E /* GuessAQIOutcomeViewController.swift */; };
 		A6E4F50224468E7D00F48DD7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E4F50124468E7D00F48DD7 /* HomeViewController.swift */; };
 		A6E4F50424468EB400F48DD7 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E4F50324468EB400F48DD7 /* InformationViewController.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		A6B4902C243CACE100BB3093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6B4902E243CACE100BB3093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6CF13BD244D321800665899 /* QuizCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCategoryViewController.swift; sourceTree = "<group>"; };
+		A6E44F5E2455803D0043FA7E /* GuessAQIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessAQIViewController.swift; sourceTree = "<group>"; };
+		A6E44F60245580B60043FA7E /* GuessAQIOutcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessAQIOutcomeViewController.swift; sourceTree = "<group>"; };
 		A6E4F50124468E7D00F48DD7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A6E4F50324468EB400F48DD7 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +162,8 @@
 				A6CF13BD244D321800665899 /* QuizCategoryViewController.swift */,
 				04955583245265BF008526B7 /* SubInformationViewController.swift */,
 				A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */,
+				A6E44F5E2455803D0043FA7E /* GuessAQIViewController.swift */,
+				A6E44F60245580B60043FA7E /* GuessAQIOutcomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,9 +308,11 @@
 				A6358819245516B4004E3F49 /* PollutantInformationViewController.swift in Sources */,
 				0495557624513988008526B7 /* Helper.swift in Sources */,
 				A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */,
+				A6E44F61245580B60043FA7E /* GuessAQIOutcomeViewController.swift in Sources */,
 				A6E4F50424468EB400F48DD7 /* InformationViewController.swift in Sources */,
 				04955584245265BF008526B7 /* SubInformationViewController.swift in Sources */,
 				A635881E245546F4004E3F49 /* AirQualityResponse.swift in Sources */,
+				A6E44F5F2455803D0043FA7E /* GuessAQIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
