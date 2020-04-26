@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var scoreView: UIView!
     @IBOutlet weak var informationView: UIView!
     
+    @IBOutlet weak var usernameTextView: UILabel!
+    @IBOutlet weak var avatarImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +34,18 @@ class HomeViewController: UIViewController {
         //aqiIV.addGestureRecognizer(tapGestureRecognizerAQI)
         //quizIV.isUserInteractionEnabled = true
         //quizIV.addGestureRecognizer(tapGestureRecognizerInfo)
+        
+        //username and avatar from the stored preference
+        let preferences = UserDefaults.standard
+        if preferences.object(forKey: "username") == nil {
+            //  Doesn't exist
+        } else {
+            let username = preferences.string(forKey: "username")
+            let avatar = preferences.string(forKey: "avatar")
+            usernameTextView.text = username
+            avatarImageView.image = UIImage(named: avatar!)
+            
+        }
     }
     
 

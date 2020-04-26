@@ -99,6 +99,7 @@ class RegisterViewController: UIViewController {
         } else if (koalaButton.isSelected) {
             avatar = "koala"
         }
+        saveToPreferences(userName, avatar!)
         let password = passwordTextfield.text!
         let confirmPassword = confirmPasswordTextfield.text!
         
@@ -116,5 +117,18 @@ class RegisterViewController: UIViewController {
         }
         
     }
+    
+    func saveToPreferences(_ username: String, _ avatar: String) {
+        let preferences = UserDefaults.standard
+        let uKey = "username"
+        let aKey = "avatar"
+        let uName = username
+        let aName = avatar
+        preferences.set(uName, forKey: uKey)
+        preferences.set(aName, forKey: aKey)
+        //  Save to disk
+        //let didSave = preferences.synchronize()
+    }
+    
 }
 
