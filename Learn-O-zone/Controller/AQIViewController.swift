@@ -25,6 +25,8 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
     var currentLocationCoordinates: CLLocationCoordinate2D?
     var currentLocationName: String?
     
+    var airQualityResponseObj: AirQualityResponse?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -61,6 +63,11 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
         let location = locations.last!
         currentLocationCoordinates = location.coordinate
         reverseGeocode()
+        fetchResponse(currentLocationCoordinates!.latitude, currentLocationCoordinates!.longitude)
+        aqiValue.text = "\(airQualityResponseObj!.aqiValue)"
+        airCondition.text = "\(airQualityResponseObj!.aqiCategory)"
+        dateFormatting(timestampString: airQualityResponseObj!.datetime)
+        
     }
     
     func reverseGeocode() {
@@ -97,6 +104,97 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
                performSegue(withIdentifier: "segueThree", sender: self)
            }
        }
+    
+    // following code snippet parses the json response into an airqualityresponse object that includes a pollutant object array
+    func fetchResponse(_ latitude: Double, _ longitude: Double) {
+        let urlString = "https://api.breezometer.com/air-quality/v2/current-conditions?lat=\(latitude)&lon=\(longitude)&key=428cad28697443b2814a0983cd9e8b1a&features=local_aqi,health_recommendations,pollutants_concentrations"
+        if let url = URL(string: urlString) {
+            if let data = try? Data(contentsOf: url) {
+                // we're OK to parse!
+                let nestedDict = parseIncomingJSONResponse(json: data)
+                let pm25Obj = parsePollutantJSONANDCreatePollutantObject(nestedDict, pollutantName: "pm25")
+                let pm10Obj = parsePollutantJSONANDCreatePollutantObject(nestedDict, pollutantName: "pm10")
+                let so2Obj = parsePollutantJSONANDCreatePollutantObject(nestedDict, pollutantName: "so2")
+                let o3Obj = parsePollutantJSONANDCreatePollutantObject(nestedDict, pollutantName: "so2")
+                let no2Obj = parsePollutantJSONANDCreatePollutantObject(nestedDict, pollutantName: "no2")
+                let coObj = parsePollutantJSONANDCreatePollutantObject(nestedDict, pollutantName: "co")
+                let pollutants = [pm25Obj, pm10Obj, so2Obj, o3Obj, no2Obj, coObj]
+                airQualityResponseObj = parseAQIJSONANDCreateAQIObject(nestedDict, pollutants)
+                
+            }
+        }
+    }
+    
+    func parseIncomingJSONResponse(json: Data) -> [String:Any]{
+        let dict = try? JSONSerialization.jsonObject(with: json, options:  []) as? [String:Any]
+        let jsonObj = try? JSONSerialization.data(withJSONObject: dict!["data"]!, options: [])
+        let nestedDict = try? JSONSerialization.jsonObject(with: jsonObj!, options: []) as? [String:Any]
+        return nestedDict!
+    }
+    
+    func parsePollutantJSONANDCreatePollutantObject(_ nestedDict: [String:Any]?, pollutantName: String) -> Pollutant {
+        var name: String
+        var description: String
+        var value: Double
+        var units: String
+        
+        let jsonObjPollutants = try? JSONSerialization.data(withJSONObject: nestedDict!["pollutants"]!, options: [])
+        let pollutantsDict = try? JSONSerialization.jsonObject(with: jsonObjPollutants!, options: []) as? [String:Any]
+        
+        let jsonObjPollutantName = try? JSONSerialization.data(withJSONObject: pollutantsDict![pollutantName]!, options: [])
+        let pollutantNameDict = try? JSONSerialization.jsonObject(with: jsonObjPollutantName!, options: []) as? [String:Any]
+        let jsonObjPM25Concentraion = try? JSONSerialization.data(withJSONObject: pollutantNameDict!["concentration"]!, options: [])
+        let pollutantNameConcentrationDict = try? JSONSerialization.jsonObject(with: jsonObjPM25Concentraion!, options: []) as? [String:Any]
+        
+        name = pollutantNameDict!["display_name"] as! String
+        description = pollutantNameDict!["full_name"] as! String
+        value = pollutantNameConcentrationDict!["value"] as! Double
+        units = pollutantNameConcentrationDict!["units"] as! String
+        
+        let pollutantObj = Pollutant(name: name, description: description, value: value, units: units)
+        return pollutantObj
+    }
+    
+    func parseAQIJSONANDCreateAQIObject(_ nestedDict: [String:Any]?, _ pollutants: [Pollutant]) -> AirQualityResponse {
+        
+        let datetime: String
+        let aqiValue: Double
+        let aqiColor: String
+        let aqiCategory: String
+        let healthRecommendation: String
+        
+        let jsonObjAQI = try? JSONSerialization.data(withJSONObject: nestedDict!["indexes"]!, options: [])
+        let aqiDict = try? JSONSerialization.jsonObject(with: jsonObjAQI!, options: []) as? [String:Any]
+        let jsonObjAQIDetails = try? JSONSerialization.data(withJSONObject: aqiDict!["aus_combined"]!, options: [])
+        let aqiDetailsDict = try? JSONSerialization.jsonObject(with: jsonObjAQIDetails!, options: []) as? [String:Any]
+        
+        let jsonObjHealthRec = try? JSONSerialization.data(withJSONObject: nestedDict!["health_recommendations"]!, options: [])
+        let healthRecDict = try? JSONSerialization.jsonObject(with: jsonObjHealthRec!, options: []) as? [String:Any]
+        
+        datetime = nestedDict!["datetime"] as! String
+        aqiValue = aqiDetailsDict!["aqi"] as! Double
+        aqiColor = aqiDetailsDict!["color"] as! String
+        aqiCategory = aqiDetailsDict!["category"] as! String
+        healthRecommendation = healthRecDict!["children"] as! String
+        
+        let airQualityResponseObj = AirQualityResponse(datetime: datetime, aqiValue: aqiValue, aqiColor: aqiColor, aqiCategory: aqiCategory, pollutants: pollutants, healthRecommendation: healthRecommendation)
+        
+        return airQualityResponseObj
+    }
+    
+    func dateFormatting(timestampString: String) {
+        //let dateFormatter = DateFormatter()
+        //dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        //dateFormatter.timeZone = TimeZone(abbreviation: TimeZone.current.abbreviation() ?? "")
+        //let timestamp = dateFormatter.date(from: timestampString)
+        let start = timestampString.index(timestampString.startIndex, offsetBy: 11)
+        let end = timestampString.index(timestampString.endIndex, offsetBy: -4)
+        let range = start..<end
+        let substr = timestampString[range]
+        datetime.text = "last updated \(substr)"
+
+    }
+
        
  
 }
