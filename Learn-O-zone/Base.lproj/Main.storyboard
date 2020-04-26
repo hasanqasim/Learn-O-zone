@@ -1362,49 +1362,89 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56p-f6-W5j">
-                                <rect key="frame" x="82" y="539" width="129" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Red"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvK-BE-hEc">
-                                <rect key="frame" x="228" y="595" width="129" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Green"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kH-qu-D1T">
-                                <rect key="frame" x="76" y="653" width="129" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Yellow"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5A3-Qa-a2G">
-                                <rect key="frame" x="228" y="653" width="129" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Orange"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h91-eg-cZR">
-                                <rect key="frame" x="238" y="707" width="129" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.57679432630000005" green="0.17787632349999999" blue="0.16176640989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Maroon"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8v-lc-WaW">
-                                <rect key="frame" x="64" y="716" width="129" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.63939064739999996" green="0.51403689379999995" blue="0.7376565933" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Purple"/>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Srz-Q3-tga">
+                                <rect key="frame" x="16" y="482" width="382" height="315"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56p-f6-W5j">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="n1p-Hp-jqJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Red"/>
+                                        <connections>
+                                            <segue destination="0CQ-Ju-Nn6" kind="show" identifier="redSegue" id="mDV-N9-iOF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvK-BE-hEc">
+                                        <rect key="frame" x="0.0" y="55" width="382" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="kWj-mg-Faf"/>
+                                        </constraints>
+                                        <state key="normal" title="Green"/>
+                                        <connections>
+                                            <segue destination="0CQ-Ju-Nn6" kind="show" identifier="greenSegue" id="juH-ic-fvr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8v-lc-WaW">
+                                        <rect key="frame" x="0.0" y="110" width="382" height="40"/>
+                                        <color key="backgroundColor" red="0.63939064739999996" green="0.51403689379999995" blue="0.7376565933" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fDf-zd-fwX"/>
+                                        </constraints>
+                                        <state key="normal" title="Purple"/>
+                                        <connections>
+                                            <segue destination="0CQ-Ju-Nn6" kind="show" identifier="purpleSegue" id="Dyd-D3-1Mb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h91-eg-cZR">
+                                        <rect key="frame" x="0.0" y="165" width="382" height="40"/>
+                                        <color key="backgroundColor" red="0.57679432630000005" green="0.17787632349999999" blue="0.16176640989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="2Ur-M0-dlK"/>
+                                        </constraints>
+                                        <state key="normal" title="Maroon"/>
+                                        <connections>
+                                            <segue destination="0CQ-Ju-Nn6" kind="show" identifier="maroonSegue" id="fqT-Ct-6QQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5A3-Qa-a2G">
+                                        <rect key="frame" x="0.0" y="220" width="382" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="clL-tx-Ygk"/>
+                                        </constraints>
+                                        <state key="normal" title="Orange"/>
+                                        <connections>
+                                            <segue destination="0CQ-Ju-Nn6" kind="show" identifier="orangeSegue" id="qY3-kR-16A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kH-qu-D1T">
+                                        <rect key="frame" x="0.0" y="275" width="382" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="sEG-xE-swK"/>
+                                        </constraints>
+                                        <state key="normal" title="Yellow"/>
+                                        <connections>
+                                            <segue destination="0CQ-Ju-Nn6" kind="show" identifier="yellowSegue" id="IPL-Op-Aec"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Srz-Q3-tga" firstAttribute="leading" secondItem="ARf-X3-fjH" secondAttribute="leading" constant="16" id="87B-CM-fcV"/>
+                            <constraint firstItem="ARf-X3-fjH" firstAttribute="trailing" secondItem="Srz-Q3-tga" secondAttribute="trailing" constant="16" id="Fjk-Kd-eRG"/>
+                            <constraint firstItem="ARf-X3-fjH" firstAttribute="bottom" secondItem="Srz-Q3-tga" secondAttribute="bottom" constant="16" id="lQQ-WL-BXL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ARf-X3-fjH"/>
                     </view>
                     <navigationItem key="navigationItem" title="GUESS AQI" id="abf-bY-zw2"/>
                     <connections>
-                        <segue destination="0CQ-Ju-Nn6" kind="show" identifier="showOutcome" id="guE-y1-lU9"/>
+                        <outlet property="aqiValue" destination="iGB-fh-2nX" id="jbx-Th-od5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vJ-cT-hai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1414,7 +1454,7 @@
         <!--GUESS OUTCOME-->
         <scene sceneID="eQ1-2v-UTn">
             <objects>
-                <viewController id="0CQ-Ju-Nn6" sceneMemberID="viewController">
+                <viewController id="0CQ-Ju-Nn6" customClass="GuessAQIOutcomeViewController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZRw-fe-U5R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1970,4 +2010,7 @@
         <image name="user" width="170.5" height="170.5"/>
         <image name="wind.snow" catalog="system" width="64" height="54"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fqT-Ct-6QQ"/>
+    </inferredMetricsTieBreakers>
 </document>

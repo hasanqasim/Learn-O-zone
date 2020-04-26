@@ -93,6 +93,9 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
         if segue.identifier == "segueTwo" {
             let destination = segue.destination as! PollutantInformationViewController
             destination.aqiObject = airQualityResponseObj
+        } else if segue.identifier == "segueThree" {
+            let destination = segue.destination as! GuessAQIViewController
+            destination.aqiObject = airQualityResponseObj
         }
     }
     
