@@ -21,7 +21,7 @@ class SubInformationViewController: UIViewController {
 
        
         // Do any additional setup after loading the view.
-        var returnValue = UserDefaults.standard.string(forKey: "imgDetail")
+        let returnValue = UserDefaults.standard.string(forKey: "imgDetail")
         selectedImageDetail = returnValue!
         print("selectedImageDetail is \(selectedImageDetail)")
         infoImageView.image = UIImage(named: selectedImageDetail)
