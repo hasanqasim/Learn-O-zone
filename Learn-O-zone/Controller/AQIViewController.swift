@@ -83,15 +83,19 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
     
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "segueTwo" {
+            let destination = segue.destination as! PollutantInformationViewController
+            destination.aqiObject = airQualityResponseObj
+        }
     }
-    */
+    
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
            let tappedImage = tapGestureRecognizer.view as! UIImageView

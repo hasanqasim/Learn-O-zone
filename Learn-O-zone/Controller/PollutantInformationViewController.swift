@@ -9,11 +9,27 @@
 import UIKit
 
 class PollutantInformationViewController: UIViewController {
-
+    //let pollutants = [pm25Obj, pm10Obj, so2Obj, o3Obj, no2Obj, coObj]
+    @IBOutlet weak var aqiValue: UILabel!
+    @IBOutlet weak var o3Value: UILabel!
+    @IBOutlet weak var co2Value: UILabel!
+    @IBOutlet weak var pm25Value: UILabel!
+    @IBOutlet weak var pm10Value: UILabel!
+    @IBOutlet weak var so2Value: UILabel!
+    @IBOutlet weak var no2Value: UILabel!
+    var aqiObject: AirQualityResponse?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        aqiValue.text = "\(aqiObject!.aqiValue)"
+        o3Value.text = "\(aqiObject!.pollutants[3].value)"
+        co2Value.text = "\(aqiObject!.pollutants[5].value)"
+        pm25Value.text = "\(aqiObject!.pollutants[0].value)"
+        pm10Value.text = "\(aqiObject!.pollutants[1].value)"
+        so2Value.text = "\(aqiObject!.pollutants[2].value)"
+        no2Value.text = "\(aqiObject!.pollutants[4].value)"
+        
     }
     
 

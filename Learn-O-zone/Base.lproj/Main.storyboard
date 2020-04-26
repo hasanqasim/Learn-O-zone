@@ -482,15 +482,15 @@
         <!--POLLUTANT-->
         <scene sceneID="kOH-L7-LCw">
             <objects>
-                <viewController id="OGa-Mx-ScU" sceneMemberID="viewController">
+                <viewController id="OGa-Mx-ScU" customClass="PollutantInformationViewController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9qt-FX-DNV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="390" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppC-BZ-KyE">
-                                <rect key="frame" x="250" y="218" width="73" height="48"/>
+                                <rect key="frame" x="250" y="218" width="45" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -568,8 +568,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxi-Bt-x8A">
-                                <rect key="frame" x="45" y="742" width="39" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NO2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxi-Bt-x8A">
+                                <rect key="frame" x="45" y="742" width="42" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
@@ -664,6 +664,15 @@
                         <viewLayoutGuide key="safeArea" id="iA4-g7-bYT"/>
                     </view>
                     <navigationItem key="navigationItem" title="POLLUTANT" id="1z5-xZ-Yim"/>
+                    <connections>
+                        <outlet property="aqiValue" destination="ppC-BZ-KyE" id="W38-VR-3TT"/>
+                        <outlet property="co2Value" destination="FjC-ZS-pwC" id="cSn-7T-0h8"/>
+                        <outlet property="no2Value" destination="h8T-Ee-l2L" id="HIl-CZ-kxV"/>
+                        <outlet property="o3Value" destination="OOl-jh-sa4" id="Xcj-gx-f82"/>
+                        <outlet property="pm10Value" destination="wXu-ax-ZJA" id="jXV-RT-RXf"/>
+                        <outlet property="pm25Value" destination="ivx-aj-Snt" id="TaY-6x-ppa"/>
+                        <outlet property="so2Value" destination="Joa-6d-3XN" id="7zf-qk-FBK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gjm-as-RUA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1323,7 +1332,7 @@
         <!--GUESS AQI-->
         <scene sceneID="DJ6-mr-zHu">
             <objects>
-                <viewController id="4hf-ao-nFD" sceneMemberID="viewController">
+                <viewController id="4hf-ao-nFD" customClass="PollutantInformationViewController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Wh-rU-TX6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
