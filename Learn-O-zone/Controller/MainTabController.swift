@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// this class is the controller for the tab bar navigation that's available through the application
 class MainTabController: UITabBarController {
     
     override func viewDidLoad() {

@@ -7,8 +7,8 @@
 //
 
 import Foundation
-
-struct Pollutant: Codable {
+// data model for pollutants
+struct Pollutant {
     var name: String
     var description: String
     var value: Double

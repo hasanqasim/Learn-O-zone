@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// controls pollutant information screen and displays all the relevant pollutnat information on the screen
 class PollutantInformationViewController: UIViewController {
     //let pollutants = [pm25Obj, pm10Obj, so2Obj, o3Obj, no2Obj, coObj]
     @IBOutlet weak var healthRecommendation: UILabel!

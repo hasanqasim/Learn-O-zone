@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 
+//This controller manages the AQI screen. It also has code for location services, fetching json api response and parsisng the json to display relevant information
 class AQIViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var locationName: UILabel!
@@ -49,16 +50,19 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
         
     }
     
+    // start updating location
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         locationManager.startUpdatingLocation()
     }
     
+    //stop updating location
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         locationManager.stopUpdatingLocation()
     }
     
+    // get the new location update, reverse geocode to get the location name from coordinates, detch api response using those cordinates
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last!
         currentLocationCoordinates = location.coordinate
@@ -132,6 +136,7 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    // parse the incoming json data object into sub json dictionaries
     func parseIncomingJSONResponse(json: Data) -> [String:Any]{
         let dict = try? JSONSerialization.jsonObject(with: json, options:  []) as? [String:Any]
         let jsonObj = try? JSONSerialization.data(withJSONObject: dict!["data"]!, options: [])
@@ -139,11 +144,8 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
         return nestedDict!
     }
     
+    // parse pollutant information from the nested json object
     func parsePollutantJSONANDCreatePollutantObject(_ nestedDict: [String:Any]?, pollutantName: String) -> Pollutant {
-        var name: String
-        var description: String
-        var value: Double
-        var units: String
         
         let jsonObjPollutants = try? JSONSerialization.data(withJSONObject: nestedDict!["pollutants"]!, options: [])
         let pollutantsDict = try? JSONSerialization.jsonObject(with: jsonObjPollutants!, options: []) as? [String:Any]
@@ -153,22 +155,17 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
         let jsonObjPM25Concentraion = try? JSONSerialization.data(withJSONObject: pollutantNameDict!["concentration"]!, options: [])
         let pollutantNameConcentrationDict = try? JSONSerialization.jsonObject(with: jsonObjPM25Concentraion!, options: []) as? [String:Any]
         
-        name = pollutantNameDict!["display_name"] as! String
-        description = pollutantNameDict!["full_name"] as! String
-        value = pollutantNameConcentrationDict!["value"] as! Double
-        units = pollutantNameConcentrationDict!["units"] as! String
+        let name = pollutantNameDict!["display_name"] as! String
+        let description = pollutantNameDict!["full_name"] as! String
+        let value = pollutantNameConcentrationDict!["value"] as! Double
+        let units = pollutantNameConcentrationDict!["units"] as! String
         
         let pollutantObj = Pollutant(name: name, description: description, value: value, units: units)
         return pollutantObj
     }
     
+    // parse datetime, health recommendation and local aqi data from the json object
     func parseAQIJSONANDCreateAQIObject(_ nestedDict: [String:Any]?, _ pollutants: [Pollutant]) -> AirQualityResponse {
-        
-        let datetime: String
-        let aqiValue: Double
-        let aqiColor: String
-        let aqiCategory: String
-        let healthRecommendation: String
         
         let jsonObjAQI = try? JSONSerialization.data(withJSONObject: nestedDict!["indexes"]!, options: [])
         let aqiDict = try? JSONSerialization.jsonObject(with: jsonObjAQI!, options: []) as? [String:Any]
@@ -178,17 +175,18 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
         let jsonObjHealthRec = try? JSONSerialization.data(withJSONObject: nestedDict!["health_recommendations"]!, options: [])
         let healthRecDict = try? JSONSerialization.jsonObject(with: jsonObjHealthRec!, options: []) as? [String:Any]
         
-        datetime = nestedDict!["datetime"] as! String
-        aqiValue = aqiDetailsDict!["aqi"] as! Double
-        aqiColor = aqiDetailsDict!["color"] as! String
-        aqiCategory = aqiDetailsDict!["category"] as! String
-        healthRecommendation = healthRecDict!["children"] as! String
+        let datetime = nestedDict!["datetime"] as! String
+        let aqiValue = aqiDetailsDict!["aqi"] as! Double
+        let aqiColor = aqiDetailsDict!["color"] as! String
+        let aqiCategory = aqiDetailsDict!["category"] as! String
+        let healthRecommendation = healthRecDict!["children"] as! String
         
         let airQualityResponseObj = AirQualityResponse(datetime: datetime, aqiValue: aqiValue, aqiColor: aqiColor, aqiCategory: aqiCategory, pollutants: pollutants, healthRecommendation: healthRecommendation)
         
         return airQualityResponseObj
     }
     
+    // format datetime to display on the aqi screen for last updated aqi 
     func dateFormatting(timestampString: String) {
         //let dateFormatter = DateFormatter()
         //dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

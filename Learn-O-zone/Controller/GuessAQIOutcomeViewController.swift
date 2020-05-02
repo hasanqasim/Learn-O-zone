@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// this screen pops up when user guessess the current aqi
 class GuessAQIOutcomeViewController: UIViewController {
     
     @IBOutlet weak var guessOutcome: UILabel!
@@ -21,6 +21,7 @@ class GuessAQIOutcomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // this switch statement checks if the guess is correct or not then display relevant information accordingly
         let aqiValue = Int(currentAQIValue!)
         switch aqiValue {
         case 0...50:

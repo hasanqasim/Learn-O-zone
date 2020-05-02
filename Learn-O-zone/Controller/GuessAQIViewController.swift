@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+// controls the guess aqi screen where users guess the correct aqi value to be taken to the outcome screen
 class GuessAQIViewController: UIViewController {
 
     @IBOutlet weak var aqiValue: UILabel!
@@ -29,7 +29,7 @@ class GuessAQIViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-       
+       // checks what button has been pressed then sends relevant information to the outcome screen
         if (segue.identifier == "redSegue") {
             let destination = segue.destination as! GuessAQIOutcomeViewController
             destination.currentAQIValue = currentAQIValue

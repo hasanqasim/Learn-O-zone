@@ -8,6 +8,7 @@
 
 import UIKit
 
+// This view controller manages the home screen. It has the tab bar to navigate to the aqi screen and on tap navigation to go to ozone information screen
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var informationIV: UIImageView!
@@ -25,7 +26,7 @@ class HomeViewController: UIViewController {
         scoreView.layer.cornerRadius = 20
         informationView.layer.cornerRadius = 20
         
-        
+        //enable tap navigation on imagview to go to ozone info screen
         let tapGestureRecognizerInfo = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         informationIV.isUserInteractionEnabled = true
         informationIV.addGestureRecognizer(tapGestureRecognizerInfo)
@@ -35,7 +36,7 @@ class HomeViewController: UIViewController {
         //quizIV.isUserInteractionEnabled = true
         //quizIV.addGestureRecognizer(tapGestureRecognizerInfo)
         
-        //username and avatar from the stored preference
+        //get username and avatar from the stored preference
         let preferences = UserDefaults.standard
         if preferences.object(forKey: "username") == nil {
             //  Doesn't exist
@@ -71,7 +72,7 @@ class HomeViewController: UIViewController {
     }
     */
     
-    
+    // on tap image this method sends user to the zone info screen
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         let tappedImage = tapGestureRecognizer.view as! UIImageView
         if tappedImage.accessibilityLabel!.contains("info") {
@@ -80,7 +81,7 @@ class HomeViewController: UIViewController {
         //self.navigationController?.pushViewController(InformationViewController(), animated: false)
     }
     
-    
+    // logs the user out and sends them to the login screen
     @IBAction func logOut(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

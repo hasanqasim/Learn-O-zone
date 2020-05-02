@@ -8,6 +8,7 @@
 
 import UIKit
 
+// this view controller manages the ozone info screen with 3 navigatin optins
 class InformationViewController: UIViewController {
 
     
@@ -21,6 +22,7 @@ class InformationViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        // enable image navigation for ozone screen
         let tapGestureRecognizerO = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         oThree.isUserInteractionEnabled = true
         oThree.addGestureRecognizer(tapGestureRecognizerO)
@@ -34,7 +36,7 @@ class InformationViewController: UIViewController {
     
 
     // MARK: - Navigation
-    
+    // function controls what image was tapped and where the user should be navigated to
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
          let tappedImage = tapGestureRecognizer.view as! UIImageView
          

@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-//comment
+//controls the registration process. Conected to firebase for registering and storing the user
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var usernameTextfield: UITextField!
@@ -54,7 +54,8 @@ class RegisterViewController: UIViewController {
         confirmPasswordTextfield.resignFirstResponder()
         return true
     }
-
+    
+    // get avatar response
     @IBAction func kangarooButtonAction(_ sender: UIButton) {
         
         if sender.isSelected {
@@ -69,7 +70,7 @@ class RegisterViewController: UIViewController {
         
     }
     
-    
+    // get avatr response
     @IBAction func koalaButtonAction(_ sender: UIButton) {
         
         if sender.isSelected {
@@ -90,7 +91,7 @@ class RegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    // controls the registarton process. Checks if all good then goes ahead and registers the user on firebase
     @IBAction func signUpTapped(_ sender: Any) {
         let userName = usernameTextfield.text!
         let email = emailTextfield.text!
@@ -118,6 +119,7 @@ class RegisterViewController: UIViewController {
         
     }
     
+    // locally persist avatar choice and username
     func saveToPreferences(_ username: String, _ avatar: String) {
         let preferences = UserDefaults.standard
         let uKey = "username"

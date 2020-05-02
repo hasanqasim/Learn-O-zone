@@ -19,6 +19,7 @@
 		A6358819245516B4004E3F49 /* PollutantInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */; };
 		A635881C245546EA004E3F49 /* Pollutant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A635881B245546EA004E3F49 /* Pollutant.swift */; };
 		A635881E245546F4004E3F49 /* AirQualityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A635881D245546F4004E3F49 /* AirQualityResponse.swift */; };
+		A65EDC18245CFBCB0009EE0C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EDC17245CFBCA0009EE0C /* Quiz.swift */; };
 		A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FA2449793600C4E574 /* MainTabController.swift */; };
 		A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FC24499EA800C4E574 /* AQIViewController.swift */; };
 		A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B49020243CACDF00BB3093 /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutantInformationViewController.swift; sourceTree = "<group>"; };
 		A635881B245546EA004E3F49 /* Pollutant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pollutant.swift; sourceTree = "<group>"; };
 		A635881D245546F4004E3F49 /* AirQualityResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirQualityResponse.swift; sourceTree = "<group>"; };
+		A65EDC17245CFBCA0009EE0C /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		A69E90FA2449793600C4E574 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		A69E90FC24499EA800C4E574 /* AQIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIViewController.swift; sourceTree = "<group>"; };
 		A6B4901D243CACDF00BB3093 /* Learn-O-zone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn-O-zone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 			children = (
 				A635881B245546EA004E3F49 /* Pollutant.swift */,
 				A635881D245546F4004E3F49 /* AirQualityResponse.swift */,
+				A65EDC17245CFBCA0009EE0C /* Quiz.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			files = (
 				04955582245195B6008526B7 /* QuizNavController.swift in Sources */,
 				0495557E24519510008526B7 /* HomeNavController.swift in Sources */,
+				A65EDC18245CFBCB0009EE0C /* Quiz.swift in Sources */,
 				A6B49025243CACDF00BB3093 /* LoginViewController.swift in Sources */,
 				A6CF13BE244D321900665899 /* QuizCategoryViewController.swift in Sources */,
 				A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */,

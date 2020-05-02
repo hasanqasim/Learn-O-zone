@@ -8,8 +8,8 @@
 
 import Foundation
 import MapKit
-
-struct AirQualityResponse:Codable {
+// data model for air quality resposne
+struct AirQualityResponse {
     var datetime: String
     var aqiValue: Double
     var aqiColor: String

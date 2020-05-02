@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 //comment
+// This view controller manages the login page. Also has navigation to thre registration page where user can sign up
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
     
@@ -40,6 +41,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
+    //Let the user signin with correct credentials otherwise display error and attempt sign in again
     @IBAction func signIn(_ sender: Any) {
         //TODO: perform signin with tab controller
         let email = emailTextfield.text!
@@ -60,6 +62,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
        
     }
     
+    // displays error incase of invalid login credentials
     func errorAlert(title: String, message: String) {
            let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler:nil))
