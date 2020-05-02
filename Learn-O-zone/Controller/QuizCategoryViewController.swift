@@ -7,16 +7,37 @@
 //
 
 import UIKit
+import Firebase
 
 class QuizCategoryViewController: UIViewController {
 
     @IBOutlet weak var categoryOneIV: UIImageView!
     @IBOutlet weak var categoryTwoIV: UIImageView!
     @IBOutlet weak var categoryThreeIV: UIImageView!
+    
+    var aqiQuestionsArray = [Quiz]()
+    var ozoneSourcesQuestionsArray = [Quiz]()
+    var ozoneEffectsQuestionsArray = [Quiz]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        addTapGestureRecognizers()
+        getQuizDataFromFirebase()
+       
+       
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let nav = self.navigationController?.navigationBar
+        let orange = UIColor(hexString: "ffa34d")
+        let lightMint = UIColor(hexString: "d4f8e8")
+        nav?.barTintColor = orange
+        nav?.titleTextAttributes = [.foregroundColor: lightMint]
+    }
+    
+    func addTapGestureRecognizers() {
         let tapGestureRecognizerOne = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         categoryOneIV.isUserInteractionEnabled = true
         categoryOneIV.addGestureRecognizer(tapGestureRecognizerOne)
@@ -28,14 +49,31 @@ class QuizCategoryViewController: UIViewController {
         categoryThreeIV.addGestureRecognizer(tapGestureRecognizerThree)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-           let nav = self.navigationController?.navigationBar
-           
-           let orange = UIColor(hexString: "ffa34d")
-           let lightMint = UIColor(hexString: "d4f8e8")
-           nav?.barTintColor = orange
-           nav?.titleTextAttributes = [.foregroundColor: lightMint]
-       }
+    func getQuizDataFromFirebase() {
+        let db = Firestore.firestore()
+        db.collection("Quizzes").getDocuments { (snapshot, error) in
+            if error == nil && snapshot != nil {
+                for document in snapshot!.documents {
+                    let documentData = document.data()
+                    let question = documentData["Question"] as! String
+                    let answers = documentData["Answers"] as! [String]
+                    let reason = documentData["Reason"] as! String
+                    let quizCategory = documentData["QuizType"] as! String
+                    let quizObj = Quiz(question: question, answers: answers, reason: reason, category: quizCategory)
+                    if (quizCategory == "AQI") {
+                        self.aqiQuestionsArray.append(quizObj)
+                    } else if (quizCategory == "Ozone Sources") {
+                        self.ozoneSourcesQuestionsArray.append(quizObj)
+                    } else if (quizCategory == "Ozone Effects") {
+                        self.ozoneEffectsQuestionsArray.append(quizObj)
+                    }
+                }
+            }
+                   
+        }
+    }
+    
+   
     /*
     // MARK: - Navigation
 

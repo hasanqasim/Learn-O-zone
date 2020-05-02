@@ -11,6 +11,6 @@ import Foundation
 struct Quiz {
     var question: String
     var answers: [String]
-    var explanation: String
+    var reason: String
     var category: String
 }

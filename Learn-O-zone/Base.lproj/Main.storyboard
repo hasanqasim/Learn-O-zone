@@ -453,7 +453,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT CATEGORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y5-hP-zz6">
-                                <rect key="frame" x="16" y="92" width="382" height="32"/>
+                                <rect key="frame" x="16" y="136" width="382" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -467,18 +467,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dvj-qc-M8a"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Quiz" image="pencil" catalog="system" id="lLq-HX-7ya"/>
                     <navigationItem key="navigationItem" title="QUIZ CATEGORY" id="JCh-q8-F1V"/>
                     <connections>
                         <outlet property="categoryOneIV" destination="u6o-xi-rUa" id="vca-8U-98Y"/>
                         <outlet property="categoryThreeIV" destination="orQ-tV-ddO" id="tKK-fH-uig"/>
                         <outlet property="categoryTwoIV" destination="134-Fc-3wf" id="wX2-hf-Ety"/>
-                        <segue destination="jYx-RT-mLh" kind="show" identifier="quizSegue" id="Sty-Ww-YnJ"/>
+                        <segue destination="jYx-RT-mLh" kind="show" identifier="quizSegue" id="iyM-Ie-Bci"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPH-bF-OO6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-384" y="4333"/>
+            <point key="canvasLocation" x="-1372" y="2979"/>
         </scene>
         <!--POLLUTANT-->
         <scene sceneID="kOH-L7-LCw">
@@ -707,14 +706,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gjm-as-RUA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134.7826086956522" y="3130.5803571428569"/>
+            <point key="canvasLocation" x="2044.9275362318842" y="3130.5803571428569"/>
         </scene>
         <!--QUIZ-->
         <scene sceneID="T3g-3I-HWt">
             <objects>
                 <viewController id="jYx-RT-mLh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sXD-rT-c45">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balloon3" translatesAutoresizingMaskIntoConstraints="NO" id="yY5-gF-eKM">
@@ -761,7 +760,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="QUIZ OUTCOME"/>
                                 <connections>
-                                    <segue destination="8tp-M8-wmK" kind="show" id="Th8-FE-cxv"/>
+                                    <segue destination="8tp-M8-wmK" kind="show" id="bm9-9P-jM7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mac-oi-Nuq">
@@ -779,14 +778,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELU-zy-PPY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="4347"/>
+            <point key="canvasLocation" x="-547.82608695652175" y="2978.5714285714284"/>
         </scene>
         <!--QUIZ OUTCOME-->
         <scene sceneID="iUb-ry-6Rw">
             <objects>
                 <viewController id="8tp-M8-wmK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R25-cL-wbU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="koala" translatesAutoresizingMaskIntoConstraints="NO" id="jw4-p6-j8w">
@@ -829,7 +828,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0Y-AK-Uso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1177" y="4347"/>
+            <point key="canvasLocation" x="250.72463768115944" y="2978.5714285714284"/>
         </scene>
         <!--AQI-->
         <scene sceneID="cXp-t2-skE">
@@ -1544,7 +1543,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vJ-cT-hai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2981.1594202898555" y="2852.6785714285711"/>
+            <point key="canvasLocation" x="3891.3043478260875" y="2852.6785714285711"/>
         </scene>
         <!--GUESS OUTCOME-->
         <scene sceneID="eQ1-2v-UTn">
@@ -1610,7 +1609,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKg-6U-nbp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3960.8695652173915" y="2799.7767857142858"/>
+            <point key="canvasLocation" x="4871.0144927536239" y="2799.7767857142858"/>
         </scene>
         <!--HOME-->
         <scene sceneID="dDL-aW-mak">
@@ -2008,7 +2007,7 @@
                     <connections>
                         <segue destination="7nn-kF-aBN" kind="relationship" relationship="viewControllers" id="XZe-ND-N4B"/>
                         <segue destination="4a7-pr-wQV" kind="relationship" relationship="viewControllers" id="sUd-1d-MDA"/>
-                        <segue destination="47P-mU-Kge" kind="relationship" relationship="viewControllers" id="L8r-g6-rn4"/>
+                        <segue destination="g9p-5f-a4I" kind="relationship" relationship="viewControllers" id="Ryn-yW-xeb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLZ-3O-gPT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2075,26 +2074,24 @@
             </objects>
             <point key="canvasLocation" x="224.63768115942031" y="2317.6339285714284"/>
         </scene>
-        <!--QUIZ-->
-        <scene sceneID="nvs-Sg-dpN">
+        <!--Quiz-->
+        <scene sceneID="RRG-mz-oNp">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L9G-LF-6yy" customClass="QuizNavController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="QUIZ" image="questionmark" catalog="system" id="I7T-Wc-ln0">
-                        <color key="badgeColor" red="0.96470588239999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBarItem>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g9p-5f-a4I" customClass="QuizNavController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Quiz" image="pencil" catalog="system" id="lLq-HX-7ya"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oRJ-cH-N3V">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cxb-8t-w21">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="47P-mU-Kge" kind="relationship" relationship="rootViewController" id="c3W-0D-Awe"/>
+                        <segue destination="47P-mU-Kge" kind="relationship" relationship="rootViewController" id="ove-Nw-k1I"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8dK-fe-wKe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sdo-f1-dvP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1241" y="4333"/>
+            <point key="canvasLocation" x="-2233.3333333333335" y="2978.5714285714284"/>
         </scene>
     </scenes>
     <resources>
@@ -2121,12 +2118,10 @@
         <image name="pencil" catalog="system" width="64" height="56"/>
         <image name="pointed_arrow" width="200" height="46.5"/>
         <image name="pointed_arrow (1)" width="200" height="46.5"/>
-        <image name="questionmark" catalog="system" width="48" height="64"/>
         <image name="user" width="170.5" height="170.5"/>
         <image name="wind.snow" catalog="system" width="64" height="54"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fqT-Ct-6QQ"/>
-        <segue reference="L8r-g6-rn4"/>
     </inferredMetricsTieBreakers>
 </document>
