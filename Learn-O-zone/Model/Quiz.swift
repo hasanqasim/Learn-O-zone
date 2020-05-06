@@ -13,4 +13,5 @@ struct Quiz {
     var answers: [String]
     var reason: String
     var category: String
+    var correctAnswer: String
 }

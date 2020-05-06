@@ -59,7 +59,8 @@ class QuizCategoryViewController: UIViewController {
                     let answers = documentData["Answers"] as! [String]
                     let reason = documentData["Reason"] as! String
                     let quizCategory = documentData["QuizType"] as! String
-                    let quizObj = Quiz(question: question, answers: answers, reason: reason, category: quizCategory)
+                    let cAnswer = documentData["correctAnswer"] as! String
+                    let quizObj = Quiz(question: question, answers: answers, reason: reason, category: quizCategory, correctAnswer: cAnswer)
                     if (quizCategory == "AQI") {
                         self.aqiQuestionsArray.append(quizObj)
                     } else if (quizCategory == "Ozone Sources") {
@@ -74,18 +75,34 @@ class QuizCategoryViewController: UIViewController {
     }
     
    
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "quizAQISegue" {
+            let destination = segue.destination as! QuizScreenViewController
+            destination.quizQuestionsArray = aqiQuestionsArray
+        } else if (segue.identifier ==  "quizOSourcesSegue") {
+            let destination = segue.destination as! QuizScreenViewController
+            destination.quizQuestionsArray = ozoneSourcesQuestionsArray
+        } else if (segue.identifier == "quizOEffectsSegue") {
+            let destination = segue.destination as! QuizScreenViewController
+            destination.quizQuestionsArray = ozoneEffectsQuestionsArray
+        }
     }
-    */
+    
     
     @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-        //et tappedImage = tapGestureRecognizer.view as! UIImageView
-        performSegue(withIdentifier: "quizSegue", sender: self)
+        let tappedImage = tapGestureRecognizer.view as! UIImageView
+        if (tappedImage.accessibilityLabel=="aqi") {
+            performSegue(withIdentifier: "quizAQISegue", sender: self)
+        } else if (tappedImage.accessibilityLabel=="oSources") {
+            performSegue(withIdentifier: "quizOSourcesSegue", sender: self)
+        } else if (tappedImage.accessibilityLabel=="oEffects") {
+            performSegue(withIdentifier: "quizOEffectsSegue", sender: self)
+        }
     }
 }

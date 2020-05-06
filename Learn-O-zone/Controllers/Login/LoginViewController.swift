@@ -30,7 +30,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         //rounding the button edges
         signInButton.layer.cornerRadius = CGFloat(Helper.app.buttonCornerRadius)
-        signUpButton.layer.cornerRadius = CGFloat(Helper.app.buttonCornerRadius)
+        //signUpButton.layer.cornerRadius = CGFloat(Helper.app.buttonCornerRadius)
     }
     
     

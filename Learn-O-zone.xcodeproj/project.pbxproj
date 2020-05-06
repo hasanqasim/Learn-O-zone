@@ -20,6 +20,7 @@
 		A635881C245546EA004E3F49 /* Pollutant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A635881B245546EA004E3F49 /* Pollutant.swift */; };
 		A635881E245546F4004E3F49 /* AirQualityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A635881D245546F4004E3F49 /* AirQualityResponse.swift */; };
 		A65EDC18245CFBCB0009EE0C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EDC17245CFBCA0009EE0C /* Quiz.swift */; };
+		A65EDC1A245D4B170009EE0C /* QuizScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EDC19245D4B170009EE0C /* QuizScreenViewController.swift */; };
 		A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FA2449793600C4E574 /* MainTabController.swift */; };
 		A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FC24499EA800C4E574 /* AQIViewController.swift */; };
 		A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B49020243CACDF00BB3093 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		A635881B245546EA004E3F49 /* Pollutant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pollutant.swift; sourceTree = "<group>"; };
 		A635881D245546F4004E3F49 /* AirQualityResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirQualityResponse.swift; sourceTree = "<group>"; };
 		A65EDC17245CFBCA0009EE0C /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		A65EDC19245D4B170009EE0C /* QuizScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreenViewController.swift; sourceTree = "<group>"; };
 		A69E90FA2449793600C4E574 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		A69E90FC24499EA800C4E574 /* AQIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIViewController.swift; sourceTree = "<group>"; };
 		A6B4901D243CACDF00BB3093 /* Learn-O-zone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn-O-zone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,44 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		A65EDC1B245D90D60009EE0C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0495556F244C6413008526B7 /* RegisterViewController.swift */,
+				A6B49024243CACDF00BB3093 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A65EDC1C245D90FA0009EE0C /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				A6E4F50324468EB400F48DD7 /* InformationViewController.swift */,
+				A6E4F50124468E7D00F48DD7 /* HomeViewController.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		A65EDC1D245D91190009EE0C /* AQI */ = {
+			isa = PBXGroup;
+			children = (
+				A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */,
+				A6E44F5E2455803D0043FA7E /* GuessAQIViewController.swift */,
+				A6E44F60245580B60043FA7E /* GuessAQIOutcomeViewController.swift */,
+				A69E90FC24499EA800C4E574 /* AQIViewController.swift */,
+			);
+			path = AQI;
+			sourceTree = "<group>";
+		};
+		A65EDC1E245D913D0009EE0C /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				A65EDC19245D4B170009EE0C /* QuizScreenViewController.swift */,
+				A6CF13BD244D321800665899 /* QuizCategoryViewController.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
 		A6B49014243CACDF00BB3093 = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +181,7 @@
 				A635881A245546C6004E3F49 /* Model */,
 				0495557A245191C3008526B7 /* NavController */,
 				049555742451392C008526B7 /* Helper */,
-				A6E4F50024468D6900F48DD7 /* Controller */,
+				A6E4F50024468D6900F48DD7 /* Controllers */,
 				A6B49020243CACDF00BB3093 /* AppDelegate.swift */,
 				A6B49022243CACDF00BB3093 /* SceneDelegate.swift */,
 				A6B49026243CACDF00BB3093 /* Main.storyboard */,
@@ -153,22 +193,17 @@
 			path = "Learn-O-zone";
 			sourceTree = "<group>";
 		};
-		A6E4F50024468D6900F48DD7 /* Controller */ = {
+		A6E4F50024468D6900F48DD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A6B49024243CACDF00BB3093 /* LoginViewController.swift */,
-				A6E4F50124468E7D00F48DD7 /* HomeViewController.swift */,
-				A6E4F50324468EB400F48DD7 /* InformationViewController.swift */,
+				A65EDC1E245D913D0009EE0C /* Quiz */,
+				A65EDC1D245D91190009EE0C /* AQI */,
+				A65EDC1C245D90FA0009EE0C /* Information */,
+				A65EDC1B245D90D60009EE0C /* Login */,
 				A69E90FA2449793600C4E574 /* MainTabController.swift */,
-				A69E90FC24499EA800C4E574 /* AQIViewController.swift */,
-				0495556F244C6413008526B7 /* RegisterViewController.swift */,
-				A6CF13BD244D321800665899 /* QuizCategoryViewController.swift */,
 				04955583245265BF008526B7 /* SubInformationViewController.swift */,
-				A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */,
-				A6E44F5E2455803D0043FA7E /* GuessAQIViewController.swift */,
-				A6E44F60245580B60043FA7E /* GuessAQIOutcomeViewController.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		F9A7E5EDECBE0CC42E46941E /* Pods */ = {
@@ -305,6 +340,7 @@
 				A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */,
 				0495557C245191F1008526B7 /* AuthNavController.swift in Sources */,
 				0495558024519588008526B7 /* AQINavController.swift in Sources */,
+				A65EDC1A245D4B170009EE0C /* QuizScreenViewController.swift in Sources */,
 				04955570244C6413008526B7 /* RegisterViewController.swift in Sources */,
 				A6B49023243CACDF00BB3093 /* SceneDelegate.swift in Sources */,
 				A6E4F50224468E7D00F48DD7 /* HomeViewController.swift in Sources */,
