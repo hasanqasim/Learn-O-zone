@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04222C022462F33500F61FDA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C012462F33500F61FDA /* WelcomeViewController.swift */; };
+		04222C042462F37800F61FDA /* WelcomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C032462F37800F61FDA /* WelcomeCollectionViewCell.swift */; };
+		04222C062462F53500F61FDA /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C052462F53500F61FDA /* CarouselItem.swift */; };
 		04955570244C6413008526B7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495556F244C6413008526B7 /* RegisterViewController.swift */; };
 		0495557624513988008526B7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557524513988008526B7 /* Helper.swift */; };
 		0495557C245191F1008526B7 /* AuthNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557B245191F1008526B7 /* AuthNavController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04222C012462F33500F61FDA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		04222C032462F37800F61FDA /* WelcomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		04222C052462F53500F61FDA /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
 		0495556F244C6413008526B7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0495557524513988008526B7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		0495557B245191F1008526B7 /* AuthNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavController.swift; sourceTree = "<group>"; };
@@ -82,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04222C002462F2A300F61FDA /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				04222C012462F33500F61FDA /* WelcomeViewController.swift */,
+				04222C032462F37800F61FDA /* WelcomeCollectionViewCell.swift */,
+				04222C052462F53500F61FDA /* CarouselItem.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
 		049555742451392C008526B7 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +212,7 @@
 		A6E4F50024468D6900F48DD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04222C002462F2A300F61FDA /* Welcome */,
 				A65EDC1E245D913D0009EE0C /* Quiz */,
 				A65EDC1D245D91190009EE0C /* AQI */,
 				A65EDC1C245D90FA0009EE0C /* Information */,
@@ -336,6 +353,7 @@
 				A65EDC18245CFBCB0009EE0C /* Quiz.swift in Sources */,
 				A6B49025243CACDF00BB3093 /* LoginViewController.swift in Sources */,
 				A6CF13BE244D321900665899 /* QuizCategoryViewController.swift in Sources */,
+				04222C022462F33500F61FDA /* WelcomeViewController.swift in Sources */,
 				A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */,
 				A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */,
 				0495557C245191F1008526B7 /* AuthNavController.swift in Sources */,
@@ -343,6 +361,7 @@
 				A65EDC1A245D4B170009EE0C /* QuizScreenViewController.swift in Sources */,
 				04955570244C6413008526B7 /* RegisterViewController.swift in Sources */,
 				A6B49023243CACDF00BB3093 /* SceneDelegate.swift in Sources */,
+				04222C042462F37800F61FDA /* WelcomeCollectionViewCell.swift in Sources */,
 				A6E4F50224468E7D00F48DD7 /* HomeViewController.swift in Sources */,
 				A635881C245546EA004E3F49 /* Pollutant.swift in Sources */,
 				A6358819245516B4004E3F49 /* PollutantInformationViewController.swift in Sources */,
@@ -352,6 +371,7 @@
 				A6E4F50424468EB400F48DD7 /* InformationViewController.swift in Sources */,
 				04955584245265BF008526B7 /* SubInformationViewController.swift in Sources */,
 				A635881E245546F4004E3F49 /* AirQualityResponse.swift in Sources */,
+				04222C062462F53500F61FDA /* CarouselItem.swift in Sources */,
 				A6E44F5F2455803D0043FA7E /* GuessAQIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

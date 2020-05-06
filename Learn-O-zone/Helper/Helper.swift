@@ -22,6 +22,7 @@ class Helper {
     
     //button corner radius
     let buttonCornerRadius = 25.0
+    let welcomeButtonCornerRadius = 10.0
     
 }
 
