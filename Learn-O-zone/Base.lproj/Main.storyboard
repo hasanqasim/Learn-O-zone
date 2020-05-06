@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bel-fJ-6rU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bel-fJ-6rU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,20 +22,20 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Y1b-p4-Bqx">
-                                <rect key="frame" x="37" y="357" width="332" height="88.5"/>
+                                <rect key="frame" x="37" y="357" width="332" height="75.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TB-C3-E5d">
-                                        <rect key="frame" x="0.0" y="0.0" width="44.5" height="30.5"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="57" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wB0-wn-BRy">
-                                        <rect key="frame" x="0.0" y="48.5" width="332" height="40"/>
+                                        <rect key="frame" x="0.0" y="41.5" width="332" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.63921568627450975" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                 </subviews>
@@ -44,19 +44,19 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="1fD-pN-Env">
-                                <rect key="frame" x="39" y="485.5" width="332" height="96"/>
+                                <rect key="frame" x="39" y="472.5" width="332" height="81.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIy-Nr-lVy">
-                                        <rect key="frame" x="0.0" y="0.0" width="84.5" height="32"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="90.5" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
                                         <color key="textColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="h8l-PI-197">
-                                        <rect key="frame" x="0.0" y="56" width="332" height="40"/>
+                                        <rect key="frame" x="0.0" y="47.5" width="332" height="34"/>
                                         <color key="backgroundColor" red="1" green="0.63921568627450975" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
@@ -65,12 +65,12 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="nby-Qs-Gnv">
-                                <rect key="frame" x="40" y="636.5" width="334" height="52"/>
+                                <rect key="frame" x="40" y="609" width="334" height="41"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byh-Nk-uNS">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="52"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="41"/>
                                         <color key="backgroundColor" red="0.11764705882352941" green="0.69803921568627447" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="25"/>
                                         <state key="normal" title="SIGN IN">
                                             <color key="titleColor" red="0.83137254901960778" green="0.97254901960784312" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -129,28 +129,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pZV-SN-yQU">
                                 <rect key="frame" x="0.0" y="532" width="414" height="93"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcp-i9-l4t">
-                                        <rect key="frame" x="53" y="-7" width="119.5" height="30.5"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
-                                        <color key="textColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXG-ow-gpr">
-                                        <rect key="frame" x="53" y="31" width="325" height="48"/>
+                                        <rect key="frame" x="53" y="42" width="325" height="37"/>
                                         <color key="backgroundColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="325" id="XZl-in-0sU"/>
                                         </constraints>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key" translatesAutoresizingMaskIntoConstraints="NO" id="w4X-1R-gom">
                                         <rect key="frame" x="20" y="46" width="25" height="25"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcp-i9-l4t">
+                                        <rect key="frame" x="53" y="12" width="130.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="19"/>
+                                        <color key="textColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Fcp-i9-l4t" secondAttribute="trailing" constant="241.5" id="CnY-Id-PrF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fcp-i9-l4t" secondAttribute="trailing" constant="230.5" id="CnY-Id-PrF"/>
                                     <constraint firstAttribute="bottom" secondItem="w4X-1R-gom" secondAttribute="bottom" constant="22" id="Cw6-qe-zwn"/>
                                     <constraint firstAttribute="trailing" secondItem="fXG-ow-gpr" secondAttribute="trailing" constant="36" id="IKY-Wq-6aL"/>
                                     <constraint firstItem="fXG-ow-gpr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fcp-i9-l4t" secondAttribute="leading" id="Lmu-2r-aEp"/>
@@ -165,8 +165,8 @@
                                 <rect key="frame" x="0.0" y="645" width="414" height="91"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvB-O7-gMp">
-                                        <rect key="frame" x="55" y="0.5" width="149.5" height="30.5"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
+                                        <rect key="frame" x="55" y="9" width="167.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="19"/>
                                         <color key="textColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -178,7 +178,7 @@
                                             <constraint firstAttribute="width" constant="322" id="icj-5b-Q0E"/>
                                         </constraints>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key" translatesAutoresizingMaskIntoConstraints="NO" id="iIB-bS-ZOq">
@@ -289,19 +289,19 @@
                                 <rect key="frame" x="0.0" y="308" width="414" height="93"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpP-HE-i1j">
-                                        <rect key="frame" x="53" y="0.0" width="81" height="30.5"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
+                                        <rect key="frame" x="53" y="0.0" width="94" height="22"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="19"/>
                                         <color key="textColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hk9-af-aaZ">
-                                        <rect key="frame" x="53" y="38" width="325" height="42"/>
+                                        <rect key="frame" x="53" y="29.5" width="325" height="42"/>
                                         <color key="backgroundColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="h5m-YP-pix"/>
                                         </constraints>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="86s-Ta-axS">
@@ -324,12 +324,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bas-Wq-D8n">
                                 <rect key="frame" x="0.0" y="421" width="414" height="91"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3y-pQ-Upu">
-                                        <rect key="frame" x="53" y="1" width="44.5" height="30.5"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="19"/>
-                                        <color key="textColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IUR-JV-fQj">
                                         <rect key="frame" x="53" y="39" width="325" height="41"/>
                                         <color key="backgroundColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -337,12 +331,18 @@
                                             <constraint firstAttribute="width" constant="325" id="bg3-na-U5I"/>
                                         </constraints>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail" translatesAutoresizingMaskIntoConstraints="NO" id="9GK-sH-CXC">
                                         <rect key="frame" x="20" y="47" width="25" height="25"/>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3y-pQ-Upu">
+                                        <rect key="frame" x="53" y="9.5" width="54" height="22"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="19"/>
+                                        <color key="textColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="9GK-sH-CXC" firstAttribute="centerY" secondItem="IUR-JV-fQj" secondAttribute="centerY" id="0VP-Cn-6oD"/>
@@ -354,13 +354,13 @@
                                     <constraint firstItem="IUR-JV-fQj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i3y-pQ-Upu" secondAttribute="leading" id="NVZ-Bf-18F"/>
                                     <constraint firstItem="9GK-sH-CXC" firstAttribute="top" secondItem="bas-Wq-D8n" secondAttribute="top" constant="47" id="fdw-ya-U3x"/>
                                     <constraint firstAttribute="trailing" secondItem="IUR-JV-fQj" secondAttribute="trailing" constant="36" id="jPV-ec-RPK"/>
-                                    <constraint firstAttribute="trailing" secondItem="i3y-pQ-Upu" secondAttribute="trailing" constant="316.5" id="ocA-YT-pLa"/>
+                                    <constraint firstAttribute="trailing" secondItem="i3y-pQ-Upu" secondAttribute="trailing" constant="307" id="ocA-YT-pLa"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogd-C3-1py">
                                 <rect key="frame" x="37" y="766" width="340" height="51"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="25"/>
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -480,171 +480,117 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GK-Tw-lIE">
-                                <rect key="frame" x="0.0" y="290" width="414" height="123"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health recommendation for kids text to display here. Writing more for the sake of it. Here are more words." textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ast-U7-7Bi">
-                                        <rect key="frame" x="8" y="8" width="398" height="107"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
-                                        <color key="textColor" red="0.96470588239999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="123" id="1Qx-yp-pFZ"/>
-                                    <constraint firstItem="Ast-U7-7Bi" firstAttribute="leading" secondItem="3GK-Tw-lIE" secondAttribute="leading" constant="8" id="D7J-kq-AYc"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ast-U7-7Bi" secondAttribute="trailing" constant="8" id="mkW-ds-yQg"/>
-                                    <constraint firstItem="Ast-U7-7Bi" firstAttribute="top" secondItem="3GK-Tw-lIE" secondAttribute="top" constant="8" id="oBY-iZ-Y14"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ast-U7-7Bi" secondAttribute="bottom" constant="8" id="oUw-9H-Vwk"/>
-                                    <constraint firstItem="Ast-U7-7Bi" firstAttribute="centerY" secondItem="3GK-Tw-lIE" secondAttribute="centerY" id="qPs-gS-HoU"/>
-                                    <constraint firstItem="Ast-U7-7Bi" firstAttribute="centerX" secondItem="3GK-Tw-lIE" secondAttribute="centerX" id="sWf-y6-IHE"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AQI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQI-be-Vi9">
-                                <rect key="frame" x="261" y="122" width="61" height="45.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                <color key="textColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="262.5" y="122" width="59.5" height="37"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="32"/>
+                                <color key="textColor" red="0.95239323379999996" green="0.4637666345" blue="0.45681697129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0ZZY-standing" translatesAutoresizingMaskIntoConstraints="NO" id="FkQ-Xo-OBk">
+                                <rect key="frame" x="0.0" y="88" width="158" height="164"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" id="aBf-eU-m0Z"/>
+                                    <constraint firstAttribute="width" constant="158" id="q9E-fG-mwb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="390" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppC-BZ-KyE">
+                                <rect key="frame" x="261.5" y="183.5" width="73.5" height="52"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="45"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="3" height="1"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="Zuh-Yl-utJ">
-                                <rect key="frame" x="28" y="421" width="358" height="352"/>
+                                <rect key="frame" x="39.5" y="274" width="335.5" height="378.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="3dB-xG-5w5">
-                                        <rect key="frame" x="0.0" y="0.0" width="79.5" height="352"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="3dB-xG-5w5">
+                                        <rect key="frame" x="0.0" y="0.0" width="196" height="378.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pollutant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kC9-jh-91W">
-                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="34"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="21"/>
                                                 <color key="textColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j24-ee-3Yv">
-                                                <rect key="frame" x="0.0" y="53" width="34" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ozone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j24-ee-3Yv">
+                                                <rect key="frame" x="0.0" y="49.5" width="58.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CO2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okZ-Qx-dl8">
-                                                <rect key="frame" x="0.0" y="106" width="47" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbon Dioxide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okZ-Qx-dl8">
+                                                <rect key="frame" x="0.0" y="108.5" width="137.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM2.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZw-cP-pd8">
-                                                <rect key="frame" x="0.0" y="159" width="70" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Particular Matter 2.5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZw-cP-pd8">
+                                                <rect key="frame" x="0.0" y="167.5" width="196" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PM10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4L-1m-a6j">
-                                                <rect key="frame" x="0.0" y="212" width="56.5" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Particulate Matter 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4L-1m-a6j">
+                                                <rect key="frame" x="0.0" y="226.5" width="190" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SO2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOk-Oa-clm">
-                                                <rect key="frame" x="0.0" y="265" width="45.5" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sulfur Dioxide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOk-Oa-clm">
+                                                <rect key="frame" x="0.0" y="285.5" width="123.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxi-Bt-x8A">
-                                                <rect key="frame" x="0.0" y="318" width="47" height="34"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nitrogen Dioxide" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxi-Bt-x8A">
+                                                <rect key="frame" x="0.0" y="344.5" width="146" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="y8o-kC-CNL">
-                                        <rect key="frame" x="152.5" y="0.0" width="66.5" height="352"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="y8o-kC-CNL">
+                                        <rect key="frame" x="269" y="0.0" width="66.5" height="378.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqi-9q-7KM">
-                                                <rect key="frame" x="0.0" y="0.0" width="49.5" height="34"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="24.5"/>
+                                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="21"/>
                                                 <color key="textColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="101.11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOl-jh-sa4">
-                                                <rect key="frame" x="0.0" y="53" width="48" height="34"/>
+                                                <rect key="frame" x="0.0" y="49.5" width="48" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="110.11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjC-ZS-pwC">
-                                                <rect key="frame" x="0.0" y="106" width="48" height="34"/>
+                                                <rect key="frame" x="0.0" y="108.5" width="48" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120.11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivx-aj-Snt">
-                                                <rect key="frame" x="0.0" y="159" width="57" height="34"/>
+                                                <rect key="frame" x="0.0" y="167.5" width="57" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="101.11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXu-ax-ZJA">
-                                                <rect key="frame" x="0.0" y="212" width="48" height="34"/>
+                                                <rect key="frame" x="0.0" y="226.5" width="48" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="101.11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Joa-6d-3XN">
-                                                <rect key="frame" x="0.0" y="265" width="48" height="34"/>
+                                                <rect key="frame" x="0.0" y="285.5" width="48" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="101.22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8T-Ee-l2L">
-                                                <rect key="frame" x="0.0" y="318" width="66.5" height="34"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
-                                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="jiv-v9-P9O">
-                                        <rect key="frame" x="292" y="0.0" width="66" height="352"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU6-NN-Q46">
-                                                <rect key="frame" x="0.0" y="0.0" width="36" height="34"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
-                                                <color key="textColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ug/m3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E71-f5-gwb">
-                                                <rect key="frame" x="0.0" y="53" width="66" height="34"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
-                                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ug/m3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JR3-gy-ytP">
-                                                <rect key="frame" x="0.0" y="106" width="66" height="34"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
-                                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ppm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqh-ML-6av">
-                                                <rect key="frame" x="0.0" y="159" width="37" height="34"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
-                                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ppm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHr-fq-uI8">
-                                                <rect key="frame" x="0.0" y="212" width="37" height="34"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
-                                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ug/m3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXs-hP-aAG">
-                                                <rect key="frame" x="0.0" y="265" width="66" height="34"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
-                                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ug/m3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpe-aq-c5w">
-                                                <rect key="frame" x="0.0" y="318" width="66" height="34"/>
+                                                <rect key="frame" x="0.0" y="344.5" width="66.5" height="34"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
                                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -653,35 +599,50 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0ZZY-standing" translatesAutoresizingMaskIntoConstraints="NO" id="FkQ-Xo-OBk">
-                                <rect key="frame" x="0.0" y="88" width="170" height="178"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3GK-Tw-lIE">
+                                <rect key="frame" x="8" y="681" width="398" height="119"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health recommendation for kids text to display  here.  Writing more for the sake of it. Here are more  words." textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ast-U7-7Bi">
+                                        <rect key="frame" x="83" y="0.0" width="315" height="119"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="315" id="Gva-I9-AOd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="18"/>
+                                        <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="health" translatesAutoresizingMaskIntoConstraints="NO" id="GEq-MJ-KmN">
+                                        <rect key="frame" x="8" y="8" width="67" height="103"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="178" id="aBf-eU-m0Z"/>
-                                    <constraint firstAttribute="width" constant="170" id="q9E-fG-mwb"/>
+                                    <constraint firstAttribute="width" constant="398" id="4es-TY-ffC"/>
+                                    <constraint firstAttribute="bottom" secondItem="GEq-MJ-KmN" secondAttribute="bottom" constant="8" id="5TO-kx-qF1"/>
+                                    <constraint firstItem="GEq-MJ-KmN" firstAttribute="top" secondItem="3GK-Tw-lIE" secondAttribute="top" constant="8" id="A6W-7k-Dx7"/>
+                                    <constraint firstItem="Ast-U7-7Bi" firstAttribute="leading" secondItem="GEq-MJ-KmN" secondAttribute="trailing" constant="8" id="OJF-ni-JXF"/>
+                                    <constraint firstItem="GEq-MJ-KmN" firstAttribute="centerY" secondItem="Ast-U7-7Bi" secondAttribute="centerY" id="RvJ-Ne-t9f"/>
+                                    <constraint firstItem="Ast-U7-7Bi" firstAttribute="top" secondItem="3GK-Tw-lIE" secondAttribute="top" id="end-pD-W84"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ast-U7-7Bi" secondAttribute="trailing" id="frY-3j-jUu"/>
+                                    <constraint firstItem="GEq-MJ-KmN" firstAttribute="leading" secondItem="3GK-Tw-lIE" secondAttribute="leading" constant="8" id="iAT-3Q-a1h"/>
+                                    <constraint firstItem="Ast-U7-7Bi" firstAttribute="leading" secondItem="GEq-MJ-KmN" secondAttribute="trailing" constant="8" symbolic="YES" id="oES-UF-2Mc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ast-U7-7Bi" secondAttribute="bottom" id="vUH-1P-uie"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="390" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppC-BZ-KyE">
-                                <rect key="frame" x="247.5" y="192" width="87.5" height="57.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="3" height="1"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iA4-g7-bYT" firstAttribute="bottom" secondItem="3GK-Tw-lIE" secondAttribute="bottom" constant="13" id="4MA-X2-Zt6"/>
                             <constraint firstItem="FkQ-Xo-OBk" firstAttribute="leading" secondItem="iA4-g7-bYT" secondAttribute="leading" id="7MF-OI-TiL"/>
                             <constraint firstItem="nQI-be-Vi9" firstAttribute="top" secondItem="iA4-g7-bYT" secondAttribute="top" constant="34" id="B0I-29-UQp"/>
                             <constraint firstItem="Zuh-Yl-utJ" firstAttribute="centerX" secondItem="9qt-FX-DNV" secondAttribute="centerX" id="FOe-Zn-7Kh"/>
                             <constraint firstItem="ppC-BZ-KyE" firstAttribute="top" secondItem="nQI-be-Vi9" secondAttribute="bottom" constant="24.5" id="GhU-ax-yFn"/>
-                            <constraint firstItem="3GK-Tw-lIE" firstAttribute="trailing" secondItem="iA4-g7-bYT" secondAttribute="trailing" id="K1k-5C-edN"/>
                             <constraint firstItem="FkQ-Xo-OBk" firstAttribute="top" secondItem="iA4-g7-bYT" secondAttribute="top" id="V9M-wa-Qa5"/>
-                            <constraint firstItem="Zuh-Yl-utJ" firstAttribute="top" secondItem="3GK-Tw-lIE" secondAttribute="bottom" constant="8" id="ZLi-OC-5iH"/>
+                            <constraint firstItem="3GK-Tw-lIE" firstAttribute="centerX" secondItem="9qt-FX-DNV" secondAttribute="centerX" id="Xl9-l3-fYb"/>
                             <constraint firstItem="iA4-g7-bYT" firstAttribute="trailing" secondItem="nQI-be-Vi9" secondAttribute="trailing" constant="92" id="eKe-J5-D5y"/>
-                            <constraint firstItem="3GK-Tw-lIE" firstAttribute="leading" secondItem="iA4-g7-bYT" secondAttribute="leading" id="k8c-PC-asQ"/>
-                            <constraint firstItem="iA4-g7-bYT" firstAttribute="bottom" secondItem="Zuh-Yl-utJ" secondAttribute="bottom" constant="40" id="m1p-5u-vth"/>
+                            <constraint firstItem="3GK-Tw-lIE" firstAttribute="top" secondItem="Zuh-Yl-utJ" secondAttribute="bottom" constant="28.5" id="iJd-2i-RFs"/>
+                            <constraint firstItem="iA4-g7-bYT" firstAttribute="bottom" secondItem="Zuh-Yl-utJ" secondAttribute="bottom" constant="160.5" id="m1p-5u-vth"/>
                             <constraint firstItem="iA4-g7-bYT" firstAttribute="trailing" secondItem="ppC-BZ-KyE" secondAttribute="trailing" constant="79" id="pPQ-I8-znC"/>
-                            <constraint firstItem="3GK-Tw-lIE" firstAttribute="centerX" secondItem="9qt-FX-DNV" secondAttribute="centerX" id="q7B-G3-fI6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iA4-g7-bYT"/>
                     </view>
@@ -690,6 +651,7 @@
                         <outlet property="aqiValue" destination="ppC-BZ-KyE" id="W38-VR-3TT"/>
                         <outlet property="co2Value" destination="FjC-ZS-pwC" id="cSn-7T-0h8"/>
                         <outlet property="healthRecommendation" destination="Ast-U7-7Bi" id="A43-eY-FBv"/>
+                        <outlet property="healthRecommendationView" destination="3GK-Tw-lIE" id="sCf-xZ-RaM"/>
                         <outlet property="no2Value" destination="h8T-Ee-l2L" id="HIl-CZ-kxV"/>
                         <outlet property="o3Value" destination="OOl-jh-sa4" id="Xcj-gx-f82"/>
                         <outlet property="pm10Value" destination="wXu-ax-ZJA" id="jXV-RT-RXf"/>
@@ -710,10 +672,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="yY5-gF-eKM">
-                                <rect key="frame" x="154" y="106" width="107" height="98"/>
+                                <rect key="frame" x="154" y="106" width="107" height="49"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vd-TH-sII">
-                                <rect key="frame" x="8" y="412" width="398" height="34"/>
+                                <rect key="frame" x="8" y="363" width="398" height="34"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -723,7 +685,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfX-p7-Rav">
-                                <rect key="frame" x="8" y="454" width="398" height="34"/>
+                                <rect key="frame" x="8" y="405" width="398" height="34"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -733,7 +695,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTA-dz-WMf">
-                                <rect key="frame" x="8" y="495.5" width="398" height="34"/>
+                                <rect key="frame" x="8" y="446.5" width="398" height="34"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -743,7 +705,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkA-zf-z7W">
-                                <rect key="frame" x="8" y="537.5" width="398" height="34"/>
+                                <rect key="frame" x="8" y="488.5" width="398" height="34"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -761,7 +723,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Question comes here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xsg-Mk-IXG">
-                                <rect key="frame" x="16" y="276" width="382" height="128"/>
+                                <rect key="frame" x="16" y="227" width="382" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="z1b-n6-ERU"/>
@@ -890,7 +852,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0ZZY-oh" translatesAutoresizingMaskIntoConstraints="NO" id="6ln-Zq-4aw">
-                                <rect key="frame" x="314" y="567" width="100" height="100"/>
+                                <rect key="frame" x="314" y="575" width="100" height="100"/>
                                 <accessibility key="accessibilityConfiguration" label="three"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="CLq-T4-8sL"/>
@@ -898,20 +860,20 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Updated 30 mins ago" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61o-5d-sBi">
-                                <rect key="frame" x="130.5" y="769.5" width="166" height="29"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                <rect key="frame" x="124" y="777.5" width="179" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-Pp-vCp">
-                                <rect key="frame" x="110" y="686" width="304" height="70"/>
+                                <rect key="frame" x="110" y="694" width="304" height="70"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointed_arrow (1)" translatesAutoresizingMaskIntoConstraints="NO" id="3O0-hg-cYg">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="70"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap on the left for live pollutants !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpz-z7-o1P">
-                                        <rect key="frame" x="107" y="0.0" width="152" height="70"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <rect key="frame" x="80.5" y="0.0" width="178.5" height="70"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -929,14 +891,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rc-RI-nUB">
-                                <rect key="frame" x="114" y="477" width="300" height="70"/>
+                                <rect key="frame" x="114" y="485" width="300" height="70"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointed_arrow (1)" translatesAutoresizingMaskIntoConstraints="NO" id="9uf-AB-9me">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Ozzy for more  info on AQI !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCU-0s-fDw">
-                                        <rect key="frame" x="96" y="0.0" width="159" height="70"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <rect key="frame" x="74" y="0.0" width="181" height="70"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -961,8 +923,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Ozzy to guess  AQI Colour !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bi-fK-zpT">
-                                        <rect key="frame" x="45" y="0.0" width="156.5" height="70"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <rect key="frame" x="27.5" y="0.0" width="174" height="70"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -987,8 +949,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unhealthy for  Sensitive Groups" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHx-dy-r6v">
-                                        <rect key="frame" x="61.5" y="100" width="197.5" height="90"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                        <rect key="frame" x="48.5" y="100" width="223" height="64.5"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="28"/>
                                         <color key="textColor" red="0.96470588239999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1024,45 +986,57 @@
                                     <constraint firstAttribute="width" constant="100" id="g0a-ce-7Kg"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="e1N-4f-4gn">
-                                <rect key="frame" x="151" y="98" width="25" height="33"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCp-RE-zVf">
+                                <rect key="frame" x="107" y="88" width="200" height="48"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="e1N-4f-4gn">
+                                        <rect key="frame" x="8" y="8" width="25" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="GbV-Fp-R2K"/>
+                                            <constraint firstAttribute="width" constant="25" id="Zhq-Dx-LRU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caulfield" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qls-iI-QWb">
+                                        <rect key="frame" x="53" y="5" width="95.5" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="XvR-9l-qD1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
+                                        <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="25" id="Wm3-Kp-sTy"/>
-                                    <constraint firstAttribute="height" constant="33" id="o8X-o9-z4F"/>
+                                    <constraint firstItem="e1N-4f-4gn" firstAttribute="leading" secondItem="aCp-RE-zVf" secondAttribute="leading" constant="8" id="0lY-0p-jei"/>
+                                    <constraint firstItem="Qls-iI-QWb" firstAttribute="top" secondItem="aCp-RE-zVf" secondAttribute="top" constant="5" id="10F-WI-97n"/>
+                                    <constraint firstItem="e1N-4f-4gn" firstAttribute="top" secondItem="aCp-RE-zVf" secondAttribute="top" constant="8" id="5CW-K2-hal"/>
+                                    <constraint firstItem="Qls-iI-QWb" firstAttribute="leading" secondItem="e1N-4f-4gn" secondAttribute="trailing" constant="20" id="gPZ-Di-0rx"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caulfield" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qls-iI-QWb">
-                                <rect key="frame" x="184" y="95" width="80.5" height="36"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
-                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="k5Y-3K-qom" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qls-iI-QWb" secondAttribute="trailing" symbolic="YES" id="1Kw-cr-mkF"/>
                             <constraint firstItem="k5Y-3K-qom" firstAttribute="bottom" secondItem="61o-5d-sBi" secondAttribute="bottom" constant="14.5" id="1Tg-Qk-q7z"/>
                             <constraint firstItem="pRP-K5-eCI" firstAttribute="leading" secondItem="iTB-AM-EgY" secondAttribute="leading" id="2zP-GD-qtT"/>
                             <constraint firstItem="FHl-Pp-vCp" firstAttribute="leading" secondItem="aj3-G0-VDe" secondAttribute="trailing" constant="10" id="4SS-g2-S0e"/>
-                            <constraint firstItem="Qls-iI-QWb" firstAttribute="leading" secondItem="e1N-4f-4gn" secondAttribute="trailing" constant="8" id="4lE-dR-Nel"/>
                             <constraint firstItem="FHl-Pp-vCp" firstAttribute="top" secondItem="6ln-Zq-4aw" secondAttribute="bottom" constant="19" id="5fX-na-CRu"/>
-                            <constraint firstItem="e1N-4f-4gn" firstAttribute="leading" secondItem="k5Y-3K-qom" secondAttribute="leading" constant="151" id="6DD-Qy-RLd"/>
                             <constraint firstItem="6rc-RI-nUB" firstAttribute="trailing" secondItem="k5Y-3K-qom" secondAttribute="trailing" id="A84-jl-pFF"/>
                             <constraint firstItem="61o-5d-sBi" firstAttribute="centerX" secondItem="iTB-AM-EgY" secondAttribute="centerX" constant="6.25" id="CPQ-Ux-bS2"/>
                             <constraint firstItem="aj3-G0-VDe" firstAttribute="top" secondItem="pRP-K5-eCI" secondAttribute="bottom" constant="22" id="EAT-nY-Spi"/>
-                            <constraint firstItem="Qls-iI-QWb" firstAttribute="top" secondItem="k5Y-3K-qom" secondAttribute="top" constant="7" id="NmV-Ii-ePv"/>
+                            <constraint firstItem="aCp-RE-zVf" firstAttribute="centerX" secondItem="5JQ-xQ-b5B" secondAttribute="centerX" id="HqG-9K-2Ro"/>
+                            <constraint firstItem="aCp-RE-zVf" firstAttribute="top" secondItem="k5Y-3K-qom" secondAttribute="top" id="KwH-yr-hso"/>
                             <constraint firstItem="5JQ-xQ-b5B" firstAttribute="leading" secondItem="k5Y-3K-qom" secondAttribute="leading" constant="47" id="Odo-vg-c5o"/>
                             <constraint firstItem="6ln-Zq-4aw" firstAttribute="trailing" secondItem="k5Y-3K-qom" secondAttribute="trailing" id="QDr-6L-nSE"/>
                             <constraint firstItem="k5Y-3K-qom" firstAttribute="bottom" secondItem="aj3-G0-VDe" secondAttribute="bottom" constant="50" id="QZe-gF-bbC"/>
                             <constraint firstItem="aj3-G0-VDe" firstAttribute="leading" secondItem="k5Y-3K-qom" secondAttribute="leading" constant="10" id="VoK-wu-Eg0"/>
-                            <constraint firstItem="5JQ-xQ-b5B" firstAttribute="top" secondItem="Qls-iI-QWb" secondAttribute="bottom" constant="8" id="YXC-QA-uJB"/>
+                            <constraint firstItem="aCp-RE-zVf" firstAttribute="leading" secondItem="k5Y-3K-qom" secondAttribute="leading" constant="107" id="Yyx-TA-X7o"/>
                             <constraint firstItem="pRP-K5-eCI" firstAttribute="top" secondItem="nNJ-Ba-70p" secondAttribute="bottom" constant="19" id="bMm-ZX-OP7"/>
                             <constraint firstItem="6ln-Zq-4aw" firstAttribute="top" secondItem="6rc-RI-nUB" secondAttribute="bottom" constant="20" id="c7t-jF-EKJ"/>
                             <constraint firstItem="61o-5d-sBi" firstAttribute="top" secondItem="FHl-Pp-vCp" secondAttribute="bottom" constant="13.5" id="ev0-Ag-1Ow"/>
                             <constraint firstItem="k5Y-3K-qom" firstAttribute="trailing" secondItem="5JQ-xQ-b5B" secondAttribute="trailing" constant="47" id="hSs-Yg-7oP"/>
-                            <constraint firstItem="e1N-4f-4gn" firstAttribute="top" secondItem="k5Y-3K-qom" secondAttribute="top" constant="10" id="hm2-Xd-R5q"/>
                             <constraint firstItem="nNJ-Ba-70p" firstAttribute="leading" secondItem="k5Y-3K-qom" secondAttribute="leading" id="l0U-HG-fox"/>
                             <constraint firstItem="5JQ-xQ-b5B" firstAttribute="top" secondItem="k5Y-3K-qom" secondAttribute="top" constant="51" id="nVR-Ma-maL"/>
+                            <constraint firstItem="5JQ-xQ-b5B" firstAttribute="top" secondItem="aCp-RE-zVf" secondAttribute="bottom" constant="3" id="oaQ-fD-vdY"/>
                             <constraint firstItem="FHl-Pp-vCp" firstAttribute="trailing" secondItem="k5Y-3K-qom" secondAttribute="trailing" id="pHr-Bh-LtK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="k5Y-3K-qom"/>
@@ -1094,25 +1068,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="AQI is a measure of air quality. The lower the number, the better the air." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osl-PJ-11W">
-                                <rect key="frame" x="20" y="167" width="374" height="72"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <rect key="frame" x="20" y="172.5" width="374" height="78.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Air Condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jun-1P-Kcc">
-                                <rect key="frame" x="53" y="258" width="152.5" height="47"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <rect key="frame" x="53" y="270" width="171" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="8by-1i-YFK"/>
+                                    <constraint firstAttribute="height" constant="35" id="lx8-6Q-eJw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="25"/>
                                 <color key="textColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="2" height="-1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Range" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqh-ZN-WTT">
-                                <rect key="frame" x="288.5" y="261" width="73.5" height="41"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <rect key="frame" x="289" y="272" width="80" height="33"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="25"/>
                                 <color key="textColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="2" height="-1"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="alE-vf-m15">
@@ -1125,8 +1101,8 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="215" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIR-wp-nGI">
-                                                        <rect key="frame" x="79" y="18" width="57" height="34"/>
-                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                                        <rect key="frame" x="79" y="22.5" width="57" height="25.5"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1145,7 +1121,7 @@
                                                     <constraint firstAttribute="width" constant="67" id="bav-nj-Gs4"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="67" id="ohI-mp-w7h"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="30"/>
                                                 <color key="textColor" red="0.63529411759999999" green="0.86274509799999999" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1168,8 +1144,8 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="216" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moderate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zt9-Gf-F06">
-                                                        <rect key="frame" x="66" y="18" width="84.5" height="34"/>
-                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                                        <rect key="frame" x="57" y="22.5" width="102" height="25.5"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1181,8 +1157,8 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="51-100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBT-rr-jm8">
-                                                <rect key="frame" x="267" y="16" width="81.5" height="38.5"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                                <rect key="frame" x="267" y="17.5" width="92" height="35"/>
+                                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="30"/>
                                                 <color key="textColor" red="0.98039215690000003" green="0.83921568629999999" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1201,12 +1177,12 @@
                                         <rect key="frame" x="0.0" y="164" width="374" height="70"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PvC-wp-dbx" userLabel="Green">
-                                                <rect key="frame" x="0.0" y="0.0" width="216" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="214" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unhealthy for sensitive groups" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNB-Vz-9Ra">
                                                         <rect key="frame" x="23" y="0.0" width="171" height="70"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1214,21 +1190,20 @@
                                                 <color key="backgroundColor" red="0.98431372549999996" green="0.59999999999999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="101-150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBl-i0-We0">
-                                                <rect key="frame" x="272" y="16" width="89" height="39"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                                <rect key="frame" x="252" y="16" width="109" height="39"/>
+                                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="30"/>
                                                 <color key="textColor" red="0.98431372549999996" green="0.59999999999999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="EBl-i0-We0" firstAttribute="top" secondItem="PMW-bd-Bf1" secondAttribute="top" constant="16" id="6Nu-Oi-tu9"/>
-                                            <constraint firstItem="EBl-i0-We0" firstAttribute="leading" secondItem="PvC-wp-dbx" secondAttribute="trailing" constant="56" id="Hc6-Xs-P9f"/>
                                             <constraint firstItem="PvC-wp-dbx" firstAttribute="top" secondItem="PMW-bd-Bf1" secondAttribute="top" id="ImW-Fk-s5L"/>
-                                            <constraint firstItem="EBl-i0-We0" firstAttribute="centerY" secondItem="PMW-bd-Bf1" secondAttribute="centerY" id="fgI-mP-K96"/>
+                                            <constraint firstItem="PvC-wp-dbx" firstAttribute="centerY" secondItem="EBl-i0-We0" secondAttribute="centerY" id="IrR-xC-e8I"/>
+                                            <constraint firstAttribute="trailing" secondItem="PvC-wp-dbx" secondAttribute="trailing" constant="160" id="J4Z-9Y-Vc6"/>
+                                            <constraint firstItem="PvC-wp-dbx" firstAttribute="centerY" secondItem="PMW-bd-Bf1" secondAttribute="centerY" id="MZk-mH-aFf"/>
+                                            <constraint firstItem="EBl-i0-We0" firstAttribute="leading" secondItem="PvC-wp-dbx" secondAttribute="trailing" constant="38" id="dLm-KG-Y6x"/>
                                             <constraint firstItem="PvC-wp-dbx" firstAttribute="leading" secondItem="PMW-bd-Bf1" secondAttribute="leading" id="gnQ-8U-Qv1"/>
-                                            <constraint firstItem="EBl-i0-We0" firstAttribute="centerY" secondItem="PvC-wp-dbx" secondAttribute="centerY" id="jDm-ic-V05"/>
-                                            <constraint firstAttribute="trailing" secondItem="EBl-i0-We0" secondAttribute="trailing" constant="13" id="zU6-XB-lc4"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3f-ST-7eh">
@@ -1238,8 +1213,8 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="216" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unhealthy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqI-pH-ghf">
-                                                        <rect key="frame" x="64.5" y="18" width="87" height="34"/>
-                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                                        <rect key="frame" x="54.5" y="22.5" width="107.5" height="25.5"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1250,9 +1225,9 @@
                                                     <constraint firstItem="wqI-pH-ghf" firstAttribute="centerY" secondItem="N0l-RD-yl5" secondAttribute="centerY" id="qJa-WW-b8i"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="151-200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SA-PD-FVm">
-                                                <rect key="frame" x="261" y="16" width="99.5" height="38.5"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="151-200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SA-PD-FVm">
+                                                <rect key="frame" x="249" y="18" width="108" height="35"/>
+                                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="30"/>
                                                 <color key="textColor" red="0.99607843139999996" green="0.41176470590000003" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1263,7 +1238,7 @@
                                             <constraint firstItem="N0l-RD-yl5" firstAttribute="centerY" secondItem="K3f-ST-7eh" secondAttribute="centerY" id="ZzH-uP-Wro"/>
                                             <constraint firstItem="N0l-RD-yl5" firstAttribute="centerY" secondItem="6SA-PD-FVm" secondAttribute="centerY" id="eAE-FV-Vst"/>
                                             <constraint firstItem="N0l-RD-yl5" firstAttribute="top" secondItem="K3f-ST-7eh" secondAttribute="top" id="fHu-DZ-UJB"/>
-                                            <constraint firstItem="6SA-PD-FVm" firstAttribute="leading" secondItem="N0l-RD-yl5" secondAttribute="trailing" constant="45" id="kYC-sb-gyd"/>
+                                            <constraint firstItem="6SA-PD-FVm" firstAttribute="leading" secondItem="N0l-RD-yl5" secondAttribute="trailing" constant="33" id="kYC-sb-gyd"/>
                                             <constraint firstItem="N0l-RD-yl5" firstAttribute="leading" secondItem="K3f-ST-7eh" secondAttribute="leading" id="mR2-5C-7rL"/>
                                         </constraints>
                                     </view>
@@ -1274,8 +1249,8 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="216" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Very Unhealthy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fJ-Cz-uph">
-                                                        <rect key="frame" x="41" y="18" width="134" height="34"/>
-                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                                        <rect key="frame" x="28" y="22.5" width="160" height="25.5"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1286,9 +1261,9 @@
                                                     <constraint firstItem="0fJ-Cz-uph" firstAttribute="centerX" secondItem="aqC-Bh-pAH" secondAttribute="centerX" id="TWw-EI-dKY"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="201-300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95y-Et-Shu">
-                                                <rect key="frame" x="254" y="16" width="112.5" height="38.5"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="201-300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95y-Et-Shu">
+                                                <rect key="frame" x="248" y="18" width="108" height="35"/>
+                                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="30"/>
                                                 <color key="textColor" red="0.66274509800000003" green="0.4823529412" blue="0.73725490199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1296,7 +1271,7 @@
                                         <color key="backgroundColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="aqC-Bh-pAH" secondAttribute="trailing" constant="158" id="1gV-29-hta"/>
-                                            <constraint firstItem="95y-Et-Shu" firstAttribute="leading" secondItem="aqC-Bh-pAH" secondAttribute="trailing" constant="38" id="3ur-LI-CRs"/>
+                                            <constraint firstItem="95y-Et-Shu" firstAttribute="leading" secondItem="aqC-Bh-pAH" secondAttribute="trailing" constant="32" id="3ur-LI-CRs"/>
                                             <constraint firstItem="aqC-Bh-pAH" firstAttribute="centerY" secondItem="rFH-1I-VuR" secondAttribute="centerY" id="7QW-rt-ogN"/>
                                             <constraint firstItem="aqC-Bh-pAH" firstAttribute="leading" secondItem="rFH-1I-VuR" secondAttribute="leading" id="A22-KA-6dy"/>
                                             <constraint firstItem="aqC-Bh-pAH" firstAttribute="centerY" secondItem="95y-Et-Shu" secondAttribute="centerY" id="AAT-kO-Bxn"/>
@@ -1310,8 +1285,8 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="216" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hazardous" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQM-xh-8fZ">
-                                                        <rect key="frame" x="59" y="18" width="98.5" height="34"/>
-                                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                                        <rect key="frame" x="51" y="22.5" width="114" height="25.5"/>
+                                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1322,17 +1297,17 @@
                                                     <constraint firstItem="JQM-xh-8fZ" firstAttribute="centerX" secondItem="WPA-0g-Wdk" secondAttribute="centerX" id="dow-M6-UDh"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="301-500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWe-gh-L9u">
-                                                <rect key="frame" x="255" y="12" width="113" height="38.5"/>
-                                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="301-500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWe-gh-L9u">
+                                                <rect key="frame" x="247" y="18" width="108" height="35"/>
+                                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="30"/>
                                                 <color key="textColor" red="0.60392156860000001" green="0.3411764706" blue="0.44705882349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="FWe-gh-L9u" firstAttribute="top" secondItem="M7X-Zv-wPo" secondAttribute="top" constant="12" id="3Zy-2h-1cw"/>
-                                            <constraint firstItem="FWe-gh-L9u" firstAttribute="leading" secondItem="WPA-0g-Wdk" secondAttribute="trailing" constant="39" id="Fzo-GL-P7n"/>
+                                            <constraint firstItem="FWe-gh-L9u" firstAttribute="top" secondItem="M7X-Zv-wPo" secondAttribute="top" constant="18" id="3Zy-2h-1cw"/>
+                                            <constraint firstItem="FWe-gh-L9u" firstAttribute="leading" secondItem="WPA-0g-Wdk" secondAttribute="trailing" constant="31" id="Fzo-GL-P7n"/>
                                             <constraint firstItem="WPA-0g-Wdk" firstAttribute="leading" secondItem="M7X-Zv-wPo" secondAttribute="leading" id="OoL-SL-U3s"/>
                                             <constraint firstAttribute="trailing" secondItem="WPA-0g-Wdk" secondAttribute="trailing" constant="158" id="TJl-fl-TE1"/>
                                             <constraint firstItem="WPA-0g-Wdk" firstAttribute="top" secondItem="M7X-Zv-wPo" secondAttribute="top" id="Tef-EZ-PBo"/>
@@ -1367,8 +1342,8 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AQI is the abbreviate for Air Quality Index. It ranges from 0 to 500. " textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HoW-sm-csJ">
-                                <rect key="frame" x="20" y="88" width="374" height="70.5"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <rect key="frame" x="20" y="88" width="374" height="76"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1376,12 +1351,12 @@
                         <color key="backgroundColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="alE-vf-m15" firstAttribute="centerX" secondItem="rPP-oL-VZ5" secondAttribute="centerX" id="13I-5Q-Arp"/>
-                            <constraint firstItem="sqh-ZN-WTT" firstAttribute="top" secondItem="osl-PJ-11W" secondAttribute="bottom" constant="22" id="1fo-Nq-s1t"/>
+                            <constraint firstItem="sqh-ZN-WTT" firstAttribute="top" secondItem="osl-PJ-11W" secondAttribute="bottom" constant="21" id="1fo-Nq-s1t"/>
                             <constraint firstItem="HoW-sm-csJ" firstAttribute="top" secondItem="P64-cX-2px" secondAttribute="top" id="6GB-yQ-GNW"/>
                             <constraint firstItem="HoW-sm-csJ" firstAttribute="leading" secondItem="P64-cX-2px" secondAttribute="leading" constant="20" id="Gsm-Gw-rNw"/>
-                            <constraint firstItem="Jun-1P-Kcc" firstAttribute="centerY" secondItem="sqh-ZN-WTT" secondAttribute="centerY" id="Inw-v3-3Cu"/>
+                            <constraint firstItem="Jun-1P-Kcc" firstAttribute="centerY" secondItem="sqh-ZN-WTT" secondAttribute="centerY" constant="-1" id="Inw-v3-3Cu"/>
                             <constraint firstItem="alE-vf-m15" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="osl-PJ-11W" secondAttribute="leading" id="Kc7-DU-JTW"/>
-                            <constraint firstItem="sqh-ZN-WTT" firstAttribute="leading" secondItem="Jun-1P-Kcc" secondAttribute="trailing" constant="83" id="MM7-sM-bRH"/>
+                            <constraint firstItem="sqh-ZN-WTT" firstAttribute="leading" secondItem="Jun-1P-Kcc" secondAttribute="trailing" constant="65" id="MM7-sM-bRH"/>
                             <constraint firstItem="osl-PJ-11W" firstAttribute="leading" secondItem="P64-cX-2px" secondAttribute="leading" constant="20" id="OGT-ja-tFh"/>
                             <constraint firstItem="osl-PJ-11W" firstAttribute="top" secondItem="HoW-sm-csJ" secondAttribute="bottom" constant="8.5" id="TKc-a4-rzz"/>
                             <constraint firstItem="alE-vf-m15" firstAttribute="top" secondItem="Jun-1P-Kcc" secondAttribute="bottom" constant="8" id="aKY-8O-k43"/>
@@ -1389,10 +1364,10 @@
                             <constraint firstItem="P64-cX-2px" firstAttribute="bottom" secondItem="alE-vf-m15" secondAttribute="bottom" constant="20" id="dmS-oo-H2t"/>
                             <constraint firstItem="Jun-1P-Kcc" firstAttribute="top" secondItem="osl-PJ-11W" secondAttribute="bottom" constant="19" id="hsq-P1-UmR"/>
                             <constraint firstItem="osl-PJ-11W" firstAttribute="leading" secondItem="P64-cX-2px" secondAttribute="leading" constant="20" id="mhj-nI-PNb"/>
-                            <constraint firstItem="sqh-ZN-WTT" firstAttribute="leading" secondItem="Jun-1P-Kcc" secondAttribute="trailing" constant="83" id="s4J-Vu-aF4"/>
+                            <constraint firstItem="sqh-ZN-WTT" firstAttribute="leading" secondItem="Jun-1P-Kcc" secondAttribute="trailing" constant="65" id="s4J-Vu-aF4"/>
                             <constraint firstItem="P64-cX-2px" firstAttribute="trailing" secondItem="osl-PJ-11W" secondAttribute="trailing" constant="20" id="xLm-01-7Ky"/>
                             <constraint firstItem="Jun-1P-Kcc" firstAttribute="leading" secondItem="P64-cX-2px" secondAttribute="leading" constant="53" id="yit-nZ-EqR"/>
-                            <constraint firstItem="P64-cX-2px" firstAttribute="trailing" secondItem="sqh-ZN-WTT" secondAttribute="trailing" constant="52" id="zcT-VV-6Ho"/>
+                            <constraint firstItem="P64-cX-2px" firstAttribute="trailing" secondItem="sqh-ZN-WTT" secondAttribute="trailing" constant="45" id="zcT-VV-6Ho"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="P64-cX-2px"/>
                     </view>
@@ -1414,8 +1389,8 @@
                                 <rect key="frame" x="0.0" y="109" width="199" height="109"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AQI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kp-Fu-rbt">
-                                        <rect key="frame" x="64" y="22.5" width="71.5" height="64"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                                        <rect key="frame" x="62.5" y="31.5" width="74.5" height="46.5"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="40"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1441,7 +1416,7 @@
                                     <constraint firstAttribute="width" constant="211" id="jdF-aa-Jyo"/>
                                     <constraint firstAttribute="height" constant="162" id="nqx-fF-WqI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1450,11 +1425,11 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56p-f6-W5j">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.95294117647058818" green="0.46274509803921571" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="n1p-Hp-jqJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
                                         <state key="normal" title="Red">
                                             <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -1464,11 +1439,11 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RvK-BE-hEc">
                                         <rect key="frame" x="0.0" y="55" width="382" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.67737019060000003" green="0.83246749639999995" blue="0.379563123" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="kWj-mg-Faf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
                                         <state key="normal" title="Green">
                                             <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -1482,7 +1457,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="fDf-zd-fwX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
                                         <state key="normal" title="Purple">
                                             <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -1492,11 +1467,11 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h91-eg-cZR">
                                         <rect key="frame" x="0.0" y="165" width="382" height="40"/>
-                                        <color key="backgroundColor" red="0.57679432630000005" green="0.17787632349999999" blue="0.16176640989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.57990175489999995" green="0.36680978539999998" blue="0.45337265729999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="2Ur-M0-dlK"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
                                         <state key="normal" title="Maroon">
                                             <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -1506,11 +1481,12 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5A3-Qa-a2G">
                                         <rect key="frame" x="0.0" y="220" width="382" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.95363789799999998" green="0.61320281030000001" blue="0.36913108830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="clL-tx-Ygk"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
+                                        <color key="tintColor" red="0.85098039215686272" green="0.2196078431372549" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Orange">
                                             <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -1520,11 +1496,11 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kH-qu-D1T">
                                         <rect key="frame" x="0.0" y="275" width="382" height="40"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.972782433" green="0.82515382770000001" blue="0.34457275269999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="sEG-xE-swK"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
                                         <state key="normal" title="Yellow">
                                             <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -1535,8 +1511,8 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose any colour below to guess !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iF-M4-jJr">
-                                <rect key="frame" x="53.5" y="431" width="307" height="34"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="21"/>
+                                <rect key="frame" x="27" y="431" width="360.5" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1544,8 +1520,8 @@
                                 <rect key="frame" x="202" y="109" width="212" height="109"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="390" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGB-fh-2nX">
-                                        <rect key="frame" x="54" y="18.5" width="104" height="72"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="45"/>
+                                        <rect key="frame" x="69.5" y="28.5" width="73.5" height="52"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="45"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1586,7 +1562,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vJ-cT-hai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3891.3043478260875" y="2852.6785714285711"/>
+            <point key="canvasLocation" x="3657" y="2770"/>
         </scene>
         <!--GUESS OUTCOME-->
         <scene sceneID="eQ1-2v-UTn">
@@ -1597,38 +1573,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONGRATULATIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1v-af-g4d">
-                                <rect key="frame" x="33.5" y="138" width="347" height="56"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
+                                <rect key="frame" x="23" y="138" width="368" height="40.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="35"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksc-vA-0r0">
-                                <rect key="frame" x="174" y="214" width="66" height="55"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="34"/>
+                                <rect key="frame" x="171.5" y="198.5" width="71" height="39.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="34"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You earned 5 points !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGn-Dq-qhG">
-                                <rect key="frame" x="95" y="728" width="224" height="40"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <rect key="frame" x="83.5" y="739" width="247.5" height="29"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="25"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Guess !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysj-3i-fDE">
-                                <rect key="frame" x="92" y="304" width="230" height="56"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
+                                <rect key="frame" x="78.5" y="273" width="257" height="40.5"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="35"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0ZZY-happy" translatesAutoresizingMaskIntoConstraints="NO" id="7tb-rh-DyN">
-                                <rect key="frame" x="52" y="395" width="310" height="310"/>
+                                <rect key="frame" x="52" y="348.5" width="310" height="310"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="310" id="f7L-II-rmk"/>
                                     <constraint firstAttribute="width" constant="310" id="zER-gG-Who"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.36043587329999999" green="0.74533671140000002" blue="0.33602821830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.70748716590000005" green="0.80485552549999995" blue="0.38298147919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="r1v-af-g4d" firstAttribute="top" secondItem="3gW-iu-441" secondAttribute="top" constant="50" id="8wr-Qt-hp2"/>
                             <constraint firstItem="WGn-Dq-qhG" firstAttribute="centerX" secondItem="ZRw-fe-U5R" secondAttribute="centerX" id="VKr-yp-kyu"/>
@@ -1673,14 +1649,17 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vho-l8-VMG">
-                                        <rect key="frame" x="195" y="30" width="144" height="45"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                        <rect key="frame" x="195" y="30" width="153.5" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="OKL-R9-P7f"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="28"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXB-de-xSG">
-                                        <rect key="frame" x="195" y="85" width="54.5" height="45"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="28"/>
+                                        <rect key="frame" x="195" y="85" width="58.5" height="45"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="28"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1712,7 +1691,7 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="QUIZ SCORE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njQ-5u-iJI">
                                         <rect key="frame" x="164" y="42" width="92" height="77"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1735,7 +1714,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="97" id="Xfp-nZ-sFZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="22"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1777,7 +1756,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIB-OO-v2J">
                                         <rect key="frame" x="158" y="0.0" width="256" height="220"/>
                                         <string key="text">Hi, I'm your buddy Ozzy !   Did you know that ground-level ozone gas is harmful for you?  Tap on me to learn more about Ozone, its sources and effects!</string>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="18"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1851,7 +1830,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="105" id="Ena-7O-hhS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="27"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="27"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1879,7 +1858,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="125" id="OaB-qs-NY4"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="27"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="27"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1904,7 +1883,7 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ozone Effects" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inS-F6-HKU">
                                         <rect key="frame" x="54" y="53" width="116" height="105"/>
-                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="27"/>
+                                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="27"/>
                                         <color key="textColor" red="1" green="0.63921568630000003" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2173,6 +2152,10 @@
             <point key="canvasLocation" x="-5336.231884057971" y="1162.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fqT-Ct-6QQ"/>
+        <segue reference="iyM-Ie-Bci"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="0ZZY-happy" width="81" height="89.5"/>
         <image name="0ZZY-info" width="87.5" height="96.5"/>
@@ -2188,21 +2171,18 @@
         <image name="circle-outline" width="170.5" height="170.5"/>
         <image name="earth_pollution" width="50" height="50"/>
         <image name="ecosystem" width="133" height="133"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="health" width="33" height="33"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="kangaroo" width="100" height="100"/>
         <image name="key" width="170.5" height="170.5"/>
         <image name="koala" width="100" height="100"/>
         <image name="location" width="170.5" height="170.5"/>
         <image name="mail" width="170.5" height="170.5"/>
-        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="pointed_arrow" width="200" height="46.5"/>
         <image name="pointed_arrow (1)" width="200" height="46.5"/>
         <image name="time" width="149" height="49"/>
         <image name="user" width="170.5" height="170.5"/>
-        <image name="wind.snow" catalog="system" width="64" height="54"/>
+        <image name="wind.snow" catalog="system" width="128" height="109"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="fqT-Ct-6QQ"/>
-        <segue reference="iyM-Ie-Bci"/>
-    </inferredMetricsTieBreakers>
 </document>

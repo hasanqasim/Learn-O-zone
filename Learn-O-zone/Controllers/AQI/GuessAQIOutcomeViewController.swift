@@ -26,7 +26,7 @@ class GuessAQIOutcomeViewController: UIViewController {
         switch aqiValue {
         case 0...50:
             if (tappedButtonColor == "green") {
-            view.backgroundColor = .green
+            view.backgroundColor = UIColor(hexString: "ADD461")
             } else{
                 view.backgroundColor = .gray
                 ozzyReactionIV.image = #imageLiteral(resourceName: "0ZZY-sad")
@@ -35,7 +35,7 @@ class GuessAQIOutcomeViewController: UIViewController {
             }
         case 51...100:
             if (tappedButtonColor == "yellow") {
-                view.backgroundColor = .yellow
+                view.backgroundColor = UIColor(hexString: "F8D258")
             } else {
                 view.backgroundColor = .gray
                 ozzyReactionIV.image = #imageLiteral(resourceName: "0ZZY-sad")
@@ -44,7 +44,7 @@ class GuessAQIOutcomeViewController: UIViewController {
             }
         case 101...150:
             if (tappedButtonColor == "orange") {
-                view.backgroundColor = .orange
+                view.backgroundColor = UIColor(hexString: "F39C5E")
             } else {
                 view.backgroundColor = .gray
                 ozzyReactionIV.image = #imageLiteral(resourceName: "0ZZY-sad")
@@ -53,7 +53,7 @@ class GuessAQIOutcomeViewController: UIViewController {
             }
         case 151...200:
             if (tappedButtonColor == "red") {
-                view.backgroundColor = .red
+                view.backgroundColor = UIColor(hexString: "F37674")
             } else {
                 view.backgroundColor = .gray
                 ozzyReactionIV.image = #imageLiteral(resourceName: "0ZZY-sad")
@@ -62,7 +62,7 @@ class GuessAQIOutcomeViewController: UIViewController {
             }
         case 201...300:
             if (tappedButtonColor == "purple") {
-                view.backgroundColor = .purple
+                view.backgroundColor = UIColor(hexString: "A383BC")
             } else {
                 view.backgroundColor = .gray
                 ozzyReactionIV.image = #imageLiteral(resourceName: "0ZZY-sad")
@@ -71,7 +71,7 @@ class GuessAQIOutcomeViewController: UIViewController {
             }
         case 301...500:
             if (tappedButtonColor == "maroon") {
-                view.backgroundColor = .brown
+                view.backgroundColor = UIColor(hexString: "945E74")
             } else {
                 view.backgroundColor = .gray
                 ozzyReactionIV.image = #imageLiteral(resourceName: "0ZZY-sad")
@@ -79,7 +79,7 @@ class GuessAQIOutcomeViewController: UIViewController {
                 congratMessage.text = "OOPS !"
             }
         default:
-            view.backgroundColor = .white
+            view.backgroundColor = .gray
         }
     }
     

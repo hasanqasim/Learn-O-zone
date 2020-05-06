@@ -10,6 +10,8 @@ import UIKit
 // controls pollutant information screen and displays all the relevant pollutnat information on the screen
 class PollutantInformationViewController: UIViewController {
     //let pollutants = [pm25Obj, pm10Obj, so2Obj, o3Obj, no2Obj, coObj]
+    
+    @IBOutlet weak var healthRecommendationView: UIView!
     @IBOutlet weak var healthRecommendation: UILabel!
     @IBOutlet weak var aqiValue: UILabel!
     @IBOutlet weak var o3Value: UILabel!
@@ -23,6 +25,8 @@ class PollutantInformationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        healthRecommendationView.layer.cornerRadius = 10.0
+        
         aqiValue.text = "\(aqiObject!.aqiValue)"
         o3Value.text = "\(aqiObject!.pollutants[3].value)"
         co2Value.text = "\(aqiObject!.pollutants[5].value)"
@@ -31,7 +35,7 @@ class PollutantInformationViewController: UIViewController {
         so2Value.text = "\(aqiObject!.pollutants[2].value)"
         no2Value.text = "\(aqiObject!.pollutants[4].value)"
         
-        let lines = aqiObject!.healthRecommendation.components(separatedBy: "\n")
+        let lines = aqiObject!.healthRecommendation.components(separatedBy: ".\n")
         healthRecommendation.text = "\(lines.last ?? "Please be safe outside")"
         
     }
