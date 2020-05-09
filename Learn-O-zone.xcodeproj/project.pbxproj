@@ -22,12 +22,12 @@
 		A6358819245516B4004E3F49 /* PollutantInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */; };
 		A635881C245546EA004E3F49 /* Pollutant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A635881B245546EA004E3F49 /* Pollutant.swift */; };
 		A635881E245546F4004E3F49 /* AirQualityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A635881D245546F4004E3F49 /* AirQualityResponse.swift */; };
+		A65ED76D246706B00075DFD2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65ED76C246706B00075DFD2 /* SplashViewController.swift */; };
 		A65EDC18245CFBCB0009EE0C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EDC17245CFBCA0009EE0C /* Quiz.swift */; };
 		A65EDC1A245D4B170009EE0C /* QuizScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EDC19245D4B170009EE0C /* QuizScreenViewController.swift */; };
 		A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FA2449793600C4E574 /* MainTabController.swift */; };
 		A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FC24499EA800C4E574 /* AQIViewController.swift */; };
 		A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B49020243CACDF00BB3093 /* AppDelegate.swift */; };
-		A6B49023243CACDF00BB3093 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B49022243CACDF00BB3093 /* SceneDelegate.swift */; };
 		A6B49025243CACDF00BB3093 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6B49024243CACDF00BB3093 /* LoginViewController.swift */; };
 		A6B49028243CACDF00BB3093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B49026243CACDF00BB3093 /* Main.storyboard */; };
 		A6B4902A243CACE100BB3093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B49029243CACE100BB3093 /* Assets.xcassets */; };
@@ -57,13 +57,13 @@
 		A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutantInformationViewController.swift; sourceTree = "<group>"; };
 		A635881B245546EA004E3F49 /* Pollutant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pollutant.swift; sourceTree = "<group>"; };
 		A635881D245546F4004E3F49 /* AirQualityResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirQualityResponse.swift; sourceTree = "<group>"; };
+		A65ED76C246706B00075DFD2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		A65EDC17245CFBCA0009EE0C /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		A65EDC19245D4B170009EE0C /* QuizScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreenViewController.swift; sourceTree = "<group>"; };
 		A69E90FA2449793600C4E574 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		A69E90FC24499EA800C4E574 /* AQIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AQIViewController.swift; sourceTree = "<group>"; };
 		A6B4901D243CACDF00BB3093 /* Learn-O-zone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learn-O-zone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6B49020243CACDF00BB3093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6B49022243CACDF00BB3093 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A6B49024243CACDF00BB3093 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A6B49027243CACDF00BB3093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6B49029243CACE100BB3093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -199,12 +199,12 @@
 				049555742451392C008526B7 /* Helper */,
 				A6E4F50024468D6900F48DD7 /* Controllers */,
 				A6B49020243CACDF00BB3093 /* AppDelegate.swift */,
-				A6B49022243CACDF00BB3093 /* SceneDelegate.swift */,
 				A6B49026243CACDF00BB3093 /* Main.storyboard */,
 				A6B49029243CACE100BB3093 /* Assets.xcassets */,
 				A6B4902B243CACE100BB3093 /* LaunchScreen.storyboard */,
 				A6B4902E243CACE100BB3093 /* Info.plist */,
 				A63587EF2450932A004E3F49 /* GoogleService-Info.plist */,
+				A65ED76C246706B00075DFD2 /* SplashViewController.swift */,
 			);
 			path = "Learn-O-zone";
 			sourceTree = "<group>";
@@ -357,10 +357,10 @@
 				A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */,
 				A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */,
 				0495557C245191F1008526B7 /* AuthNavController.swift in Sources */,
+				A65ED76D246706B00075DFD2 /* SplashViewController.swift in Sources */,
 				0495558024519588008526B7 /* AQINavController.swift in Sources */,
 				A65EDC1A245D4B170009EE0C /* QuizScreenViewController.swift in Sources */,
 				04955570244C6413008526B7 /* RegisterViewController.swift in Sources */,
-				A6B49023243CACDF00BB3093 /* SceneDelegate.swift in Sources */,
 				04222C042462F37800F61FDA /* WelcomeCollectionViewCell.swift in Sources */,
 				A6E4F50224468E7D00F48DD7 /* HomeViewController.swift in Sources */,
 				A635881C245546EA004E3F49 /* Pollutant.swift in Sources */,

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 // This view controller manages the home screen. It has the tab bar to navigate to the aqi screen and on tap navigation to go to ozone information screen
 class HomeViewController: UIViewController {
@@ -83,6 +84,12 @@ class HomeViewController: UIViewController {
     
     // logs the user out and sends them to the login screen
     @IBAction func logOut(_ sender: Any) {
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            // Show error message
+            print(signOutError)
+        }
         dismiss(animated: true, completion: nil)
     }
     
