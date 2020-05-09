@@ -15,9 +15,12 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var informationIV: UIImageView!
     @IBOutlet weak var scoreView: UIView!
     @IBOutlet weak var informationView: UIView!
+    @IBOutlet weak var funFactView: UIView!
     
+    @IBOutlet weak var funFactButton: UIButton!
     @IBOutlet weak var usernameTextView: UILabel!
     @IBOutlet weak var avatarImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +29,9 @@ class HomeViewController: UIViewController {
         //rounding the corners of the subviews
         scoreView.layer.cornerRadius = 20
         informationView.layer.cornerRadius = 20
+        funFactView.layer.cornerRadius = 20
+        
+        funFactButton.layer.cornerRadius = 10
         
         //enable tap navigation on imagview to go to ozone info screen
         let tapGestureRecognizerInfo = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
