@@ -35,7 +35,7 @@ class PollutantInformationViewController: UIViewController {
         so2Value.text = "\(aqiObject!.pollutants[2].value)"
         no2Value.text = "\(aqiObject!.pollutants[4].value)"
         
-        let lines = aqiObject!.healthRecommendation.components(separatedBy: ".\n")
+        let lines = aqiObject!.healthRecommendation.components(separatedBy: ". ")
         healthRecommendation.text = "\(lines.last ?? "Please be safe outside")"
         
     }
