@@ -29,13 +29,7 @@ class QuizCategoryViewController: UIViewController {
        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        let nav = self.navigationController?.navigationBar
-        let orange = UIColor(hexString: "ffa34d")
-        let lightMint = UIColor(hexString: "d4f8e8")
-        nav?.barTintColor = orange
-        nav?.titleTextAttributes = [.foregroundColor: lightMint]
-    }
+    
     
     func addTapGestureRecognizers() {
         let tapGestureRecognizerOne = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))

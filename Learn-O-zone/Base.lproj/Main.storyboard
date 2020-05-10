@@ -429,33 +429,111 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balloon" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-xi-rUa">
-                                <rect key="frame" x="87" y="234" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="aqi"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balloon2" translatesAutoresizingMaskIntoConstraints="NO" id="134-Fc-3wf">
-                                <rect key="frame" x="87" y="438" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="oSources"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="balloon3" translatesAutoresizingMaskIntoConstraints="NO" id="orQ-tV-ddO">
-                                <rect key="frame" x="87" y="662" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="oEffects"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Eo-Tg-aSW">
+                                <rect key="frame" x="0.0" y="416" width="414" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ozoneSourcesBtn" translatesAutoresizingMaskIntoConstraints="NO" id="134-Fc-3wf">
+                                        <rect key="frame" x="30" y="20" width="240" height="128"/>
+                                        <accessibility key="accessibilityConfiguration" label="oSources"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="96S-I6-Ccr"/>
+                                            <constraint firstAttribute="height" constant="128" id="zBV-gh-srB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunEarth" translatesAutoresizingMaskIntoConstraints="NO" id="W1K-Ut-Ss3">
+                                        <rect key="frame" x="292" y="34" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="9p9-9l-SLm"/>
+                                            <constraint firstAttribute="width" constant="100" id="QH6-9d-Eik"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="W1K-Ut-Ss3" secondAttribute="trailing" constant="22" id="2fM-51-qQ3"/>
+                                    <constraint firstItem="134-Fc-3wf" firstAttribute="top" secondItem="6Eo-Tg-aSW" secondAttribute="top" constant="20" id="FhW-Ip-cmV"/>
+                                    <constraint firstItem="W1K-Ut-Ss3" firstAttribute="top" secondItem="6Eo-Tg-aSW" secondAttribute="top" constant="34" id="bEL-qg-Cbm"/>
+                                    <constraint firstItem="134-Fc-3wf" firstAttribute="leading" secondItem="6Eo-Tg-aSW" secondAttribute="leading" constant="30" id="hFj-ha-55Q"/>
+                                    <constraint firstAttribute="height" constant="160" id="m5H-ds-Uqj"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT CATEGORY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4y5-hP-zz6">
-                                <rect key="frame" x="16" y="136" width="382" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="57.5" y="136" width="316" height="35"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="30"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSl-LH-lTv">
+                                <rect key="frame" x="0.0" y="211" width="414" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airQualityIndexBtn" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-xi-rUa">
+                                        <rect key="frame" x="144" y="20" width="240" height="128"/>
+                                        <accessibility key="accessibilityConfiguration" label="aqi"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="NZ8-c9-Tnj"/>
+                                            <constraint firstAttribute="height" constant="128" id="nhN-vN-wRG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smilingCloud" translatesAutoresizingMaskIntoConstraints="NO" id="KNo-Sz-xZK">
+                                        <rect key="frame" x="22" y="34" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="3LM-V5-tca"/>
+                                            <constraint firstAttribute="height" constant="100" id="ngN-Nc-Dtk"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="u6o-xi-rUa" firstAttribute="top" secondItem="lSl-LH-lTv" secondAttribute="top" constant="20" id="3y2-Ro-W9a"/>
+                                    <constraint firstItem="KNo-Sz-xZK" firstAttribute="top" secondItem="lSl-LH-lTv" secondAttribute="top" constant="34" id="G2G-aN-1qJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="u6o-xi-rUa" secondAttribute="trailing" constant="30" id="idq-mj-yve"/>
+                                    <constraint firstItem="KNo-Sz-xZK" firstAttribute="leading" secondItem="lSl-LH-lTv" secondAttribute="leading" constant="22" id="qRi-AG-PxI"/>
+                                    <constraint firstAttribute="height" constant="160" id="suB-QX-Z7R"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1n-lb-2Uc">
+                                <rect key="frame" x="0.0" y="621" width="414" height="160"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth_pollution" translatesAutoresizingMaskIntoConstraints="NO" id="Pqr-9J-yit">
+                                        <rect key="frame" x="22" y="34" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Eyl-nv-9bO"/>
+                                            <constraint firstAttribute="width" constant="100" id="XD7-2L-7My"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ozoneEffects" translatesAutoresizingMaskIntoConstraints="NO" id="orQ-tV-ddO">
+                                        <rect key="frame" x="144" y="20" width="240" height="128"/>
+                                        <accessibility key="accessibilityConfiguration" label="oEffects"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="7LQ-YO-vl2"/>
+                                            <constraint firstAttribute="width" constant="240" id="zYE-sG-FAl"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Pqr-9J-yit" firstAttribute="top" secondItem="j1n-lb-2Uc" secondAttribute="top" constant="34" id="OUl-c9-qom"/>
+                                    <constraint firstAttribute="trailing" secondItem="orQ-tV-ddO" secondAttribute="trailing" constant="30" id="QbK-TQ-jP6"/>
+                                    <constraint firstItem="orQ-tV-ddO" firstAttribute="top" secondItem="j1n-lb-2Uc" secondAttribute="top" constant="20" id="Yuc-SY-jOx"/>
+                                    <constraint firstAttribute="height" constant="160" id="n7p-2g-ymW"/>
+                                    <constraint firstItem="Pqr-9J-yit" firstAttribute="leading" secondItem="j1n-lb-2Uc" secondAttribute="leading" constant="22" id="vR8-Ql-Ga9"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.94648021459999998" green="0.65341895819999996" blue="0.37378317119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4y5-hP-zz6" firstAttribute="leading" secondItem="Dvj-qc-M8a" secondAttribute="leading" constant="16" id="Gf1-Ds-9ke"/>
-                            <constraint firstItem="4y5-hP-zz6" firstAttribute="top" secondItem="Dvj-qc-M8a" secondAttribute="top" constant="48" id="XwO-nt-VhC"/>
-                            <constraint firstItem="Dvj-qc-M8a" firstAttribute="trailing" secondItem="4y5-hP-zz6" secondAttribute="trailing" constant="16" id="bZX-gV-4BU"/>
+                            <constraint firstItem="j1n-lb-2Uc" firstAttribute="centerX" secondItem="8X4-3E-Ymm" secondAttribute="centerX" id="BAV-ag-tpp"/>
+                            <constraint firstItem="j1n-lb-2Uc" firstAttribute="leading" secondItem="Dvj-qc-M8a" secondAttribute="leading" id="F6k-V2-7pe"/>
+                            <constraint firstItem="j1n-lb-2Uc" firstAttribute="top" secondItem="6Eo-Tg-aSW" secondAttribute="bottom" constant="45" id="FX5-5e-m6m"/>
+                            <constraint firstAttribute="trailing" secondItem="j1n-lb-2Uc" secondAttribute="trailing" id="NcI-Cm-4Md"/>
+                            <constraint firstItem="lSl-LH-lTv" firstAttribute="leading" secondItem="Dvj-qc-M8a" secondAttribute="leading" id="THr-R4-wFV"/>
+                            <constraint firstItem="6Eo-Tg-aSW" firstAttribute="trailing" secondItem="Dvj-qc-M8a" secondAttribute="trailing" id="Vd4-J4-FVa"/>
+                            <constraint firstItem="4y5-hP-zz6" firstAttribute="top" secondItem="Dvj-qc-M8a" secondAttribute="top" constant="48" id="Xz7-Dl-A7j"/>
+                            <constraint firstItem="lSl-LH-lTv" firstAttribute="trailing" secondItem="Dvj-qc-M8a" secondAttribute="trailing" id="Yt6-QY-0pw"/>
+                            <constraint firstItem="6Eo-Tg-aSW" firstAttribute="centerX" secondItem="8X4-3E-Ymm" secondAttribute="centerX" id="gZp-mn-Gtl"/>
+                            <constraint firstItem="6Eo-Tg-aSW" firstAttribute="leading" secondItem="Dvj-qc-M8a" secondAttribute="leading" id="ibQ-iy-n48"/>
+                            <constraint firstItem="4y5-hP-zz6" firstAttribute="leading" secondItem="Dvj-qc-M8a" secondAttribute="leading" constant="57.5" id="l5I-pY-gMT"/>
+                            <constraint firstItem="lSl-LH-lTv" firstAttribute="centerX" secondItem="8X4-3E-Ymm" secondAttribute="centerX" id="sLP-g3-FXG"/>
+                            <constraint firstItem="lSl-LH-lTv" firstAttribute="top" secondItem="4y5-hP-zz6" secondAttribute="bottom" constant="40" id="uBO-qF-6Zn"/>
+                            <constraint firstItem="6Eo-Tg-aSW" firstAttribute="top" secondItem="lSl-LH-lTv" secondAttribute="bottom" constant="45" id="wzH-Jc-x0s"/>
+                            <constraint firstItem="4y5-hP-zz6" firstAttribute="centerX" secondItem="8X4-3E-Ymm" secondAttribute="centerX" constant="8.5" id="zJ3-ch-rpj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dvj-qc-M8a"/>
                     </view>
@@ -471,7 +549,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPH-bF-OO6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1372" y="2979"/>
+            <point key="canvasLocation" x="-1372.4637681159422" y="2978.5714285714284"/>
         </scene>
         <!--POLLUTANT-->
         <scene sceneID="kOH-L7-LCw">
@@ -829,7 +907,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.94648021459999998" green="0.65341895819999996" blue="0.37378317119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="JPY-T5-20e"/>
                     </view>
                     <navigationItem key="navigationItem" title="QUIZ OUTCOME" id="E1g-xZ-5X8"/>
@@ -2391,6 +2469,7 @@
         <image name="FUN (1)" width="100" height="100"/>
         <image name="Ground-Level-Ozone" width="138" height="241.5"/>
         <image name="OzoneLogo" width="341" height="341"/>
+        <image name="airQualityIndexBtn" width="133" height="66.5"/>
         <image name="balloon" width="166.5" height="166.5"/>
         <image name="balloon2" width="166.5" height="166.5"/>
         <image name="balloon3" width="166.5" height="166.5"/>
@@ -2406,9 +2485,13 @@
         <image name="koala" width="100" height="100"/>
         <image name="location" width="170.5" height="170.5"/>
         <image name="mail" width="170.5" height="170.5"/>
+        <image name="ozoneEffects" width="133" height="66.5"/>
+        <image name="ozoneSourcesBtn" width="133" height="66.5"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="pointed_arrow" width="200" height="46.5"/>
         <image name="pointed_arrow (1)" width="200" height="46.5"/>
+        <image name="smilingCloud" width="40" height="40"/>
+        <image name="sunEarth" width="40" height="40"/>
         <image name="time" width="149" height="49"/>
         <image name="user" width="170.5" height="170.5"/>
         <image name="wind.snow" catalog="system" width="128" height="109"/>
