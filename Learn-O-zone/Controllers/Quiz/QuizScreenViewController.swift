@@ -84,7 +84,7 @@ class QuizScreenViewController: UIViewController {
         if answerNumber == 1 {
             resultAlert(title: "Correct Answer", message: answerReason)
         } else {
-            resultAlert(title: "Incorrect Answer", message: correctAnswer)
+            resultAlert(title: "Incorrect Answer", message: "\(correctAnswer)" )
         }
     }
     

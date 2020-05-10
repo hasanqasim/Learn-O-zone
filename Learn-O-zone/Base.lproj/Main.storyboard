@@ -1380,6 +1380,44 @@
             </objects>
             <point key="canvasLocation" x="2205.7971014492755" y="2162.9464285714284"/>
         </scene>
+        <!--FUN FACTS-->
+        <scene sceneID="oyv-Vn-ZJg">
+            <objects>
+                <viewController id="cpy-dU-zjg" customClass="FunFactsViewController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W3M-vK-6Lj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laU-Uf-a7f">
+                                <rect key="frame" x="60" y="657" width="299" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="GENERATE FUN FACT"/>
+                                <connections>
+                                    <action selector="generateFunFact:" destination="cpy-dU-zjg" eventType="touchUpInside" id="odz-6B-j2I"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="FUN FACT COMES HERE" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Lu-AF-aMi">
+                                <rect key="frame" x="87" y="365" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0e4-f5-a63"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FUN FACTS" id="mku-Eq-5J7"/>
+                    <connections>
+                        <outlet property="funFactTextView" destination="4Lu-AF-aMi" id="5M2-wo-GUO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4P-wx-Qjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3364" y="1911"/>
+        </scene>
         <!--GUESS AQI-->
         <scene sceneID="DJ6-mr-zHu">
             <objects>
@@ -1798,6 +1836,9 @@
                                         <state key="normal" title="Go to Fun Facts">
                                             <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="cpy-dU-zjg" kind="show" identifier="funFactsSegue" id="nRF-T2-6WK"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know something new !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6SH-1Q-e6V">
                                         <rect key="frame" x="27" y="8" width="180" height="80"/>
@@ -1996,7 +2037,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6w-lT-gln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3308.6956521739135" y="1447.7678571428571"/>
+            <point key="canvasLocation" x="3375" y="1195"/>
         </scene>
         <!--Sub Information View Controller-->
         <scene sceneID="lPd-zu-9UZ">
@@ -2063,7 +2104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FN7-NA-uaT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4284.057971014493" y="1453.7946428571429"/>
+            <point key="canvasLocation" x="4452" y="1195"/>
         </scene>
         <!--Main Tab Controller-->
         <scene sceneID="eeL-ZH-BV1">
@@ -2284,7 +2325,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X8d-eL-whU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6254" y="1065"/>
+            <point key="canvasLocation" x="-6428" y="1171"/>
         </scene>
         <!--Auth Nav Controller-->
         <scene sceneID="oyG-1M-YPu">

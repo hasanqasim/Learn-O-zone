@@ -35,13 +35,11 @@ extension AppDelegate {
     private func observeAuthorisedState() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let rootVC = storyboard.instantiateViewController(identifier: "SplashViewController") as! SplashViewController
-        //let rootNC = UINavigationController(rootViewController: rootVC)
         self.window!.rootViewController = rootVC
         self.window!.makeKeyAndVisible()
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             if user == nil {
                 let rootVC = storyboard.instantiateViewController(identifier: "AuthNavController") as! AuthNavController
-                //let rootNC = UINavigationController(rootViewController: rootVC)
                 self.window!.rootViewController = rootVC
                 self.window!.makeKeyAndVisible()
             } else {
@@ -52,6 +50,5 @@ extension AppDelegate {
         }
        
     }
-    
 }
 

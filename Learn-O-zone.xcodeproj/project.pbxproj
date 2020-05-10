@@ -23,6 +23,8 @@
 		A635881C245546EA004E3F49 /* Pollutant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A635881B245546EA004E3F49 /* Pollutant.swift */; };
 		A635881E245546F4004E3F49 /* AirQualityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A635881D245546F4004E3F49 /* AirQualityResponse.swift */; };
 		A65ED76D246706B00075DFD2 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65ED76C246706B00075DFD2 /* SplashViewController.swift */; };
+		A65ED76F24679C180075DFD2 /* FunFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65ED76E24679C180075DFD2 /* FunFactsViewController.swift */; };
+		A65ED7712467A7BF0075DFD2 /* FunFact.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65ED7702467A7BF0075DFD2 /* FunFact.swift */; };
 		A65EDC18245CFBCB0009EE0C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EDC17245CFBCA0009EE0C /* Quiz.swift */; };
 		A65EDC1A245D4B170009EE0C /* QuizScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EDC19245D4B170009EE0C /* QuizScreenViewController.swift */; };
 		A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69E90FA2449793600C4E574 /* MainTabController.swift */; };
@@ -58,6 +60,8 @@
 		A635881B245546EA004E3F49 /* Pollutant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pollutant.swift; sourceTree = "<group>"; };
 		A635881D245546F4004E3F49 /* AirQualityResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirQualityResponse.swift; sourceTree = "<group>"; };
 		A65ED76C246706B00075DFD2 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A65ED76E24679C180075DFD2 /* FunFactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFactsViewController.swift; sourceTree = "<group>"; };
+		A65ED7702467A7BF0075DFD2 /* FunFact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunFact.swift; sourceTree = "<group>"; };
 		A65EDC17245CFBCA0009EE0C /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		A65EDC19245D4B170009EE0C /* QuizScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScreenViewController.swift; sourceTree = "<group>"; };
 		A69E90FA2449793600C4E574 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 				04222C012462F33500F61FDA /* WelcomeViewController.swift */,
 				04222C032462F37800F61FDA /* WelcomeCollectionViewCell.swift */,
 				04222C052462F53500F61FDA /* CarouselItem.swift */,
+				A65ED76C246706B00075DFD2 /* SplashViewController.swift */,
 			);
 			path = Welcome;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				A635881B245546EA004E3F49 /* Pollutant.swift */,
 				A635881D245546F4004E3F49 /* AirQualityResponse.swift */,
 				A65EDC17245CFBCA0009EE0C /* Quiz.swift */,
+				A65ED7702467A7BF0075DFD2 /* FunFact.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 			children = (
 				A6E4F50324468EB400F48DD7 /* InformationViewController.swift */,
 				A6E4F50124468E7D00F48DD7 /* HomeViewController.swift */,
+				A65ED76E24679C180075DFD2 /* FunFactsViewController.swift */,
 			);
 			path = Information;
 			sourceTree = "<group>";
@@ -204,7 +211,6 @@
 				A6B4902B243CACE100BB3093 /* LaunchScreen.storyboard */,
 				A6B4902E243CACE100BB3093 /* Info.plist */,
 				A63587EF2450932A004E3F49 /* GoogleService-Info.plist */,
-				A65ED76C246706B00075DFD2 /* SplashViewController.swift */,
 			);
 			path = "Learn-O-zone";
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 				0495557E24519510008526B7 /* HomeNavController.swift in Sources */,
 				A65EDC18245CFBCB0009EE0C /* Quiz.swift in Sources */,
 				A6B49025243CACDF00BB3093 /* LoginViewController.swift in Sources */,
+				A65ED76F24679C180075DFD2 /* FunFactsViewController.swift in Sources */,
 				A6CF13BE244D321900665899 /* QuizCategoryViewController.swift in Sources */,
 				04222C022462F33500F61FDA /* WelcomeViewController.swift in Sources */,
 				A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */,
@@ -368,6 +375,7 @@
 				0495557624513988008526B7 /* Helper.swift in Sources */,
 				A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */,
 				A6E44F61245580B60043FA7E /* GuessAQIOutcomeViewController.swift in Sources */,
+				A65ED7712467A7BF0075DFD2 /* FunFact.swift in Sources */,
 				A6E4F50424468EB400F48DD7 /* InformationViewController.swift in Sources */,
 				04955584245265BF008526B7 /* SubInformationViewController.swift in Sources */,
 				A635881E245546F4004E3F49 /* AirQualityResponse.swift in Sources */,
