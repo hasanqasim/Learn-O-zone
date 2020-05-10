@@ -14,6 +14,7 @@ class Helper {
     
     let signInBarTintColour: UIColor! = UIColor(hexString: "d4f8e8")
     let signInBarTitleColour: UIColor! = UIColor(hexString: "f67575")
+    let splashViewBackgroundColour: UIColor! = UIColor(hexString: "d4f8e8")
     let placeHolderColour: UIColor! = UIColor(hexString: "d4f8e8")
     let primaryBarTintColour: UIColor! = UIColor(hexString: "ffa34d")
     let primaryBarTitleColour: UIColor! = UIColor(hexString: "d4f8e8")

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -675,10 +675,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="yY5-gF-eKM">
-                                <rect key="frame" x="154" y="106" width="107" height="98"/>
+                                <rect key="frame" x="154" y="106" width="107" height="49"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vd-TH-sII">
-                                <rect key="frame" x="8" y="412" width="398" height="34"/>
+                                <rect key="frame" x="8" y="363" width="398" height="34"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -688,7 +688,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfX-p7-Rav">
-                                <rect key="frame" x="8" y="454" width="398" height="34"/>
+                                <rect key="frame" x="8" y="405" width="398" height="34"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -698,7 +698,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTA-dz-WMf">
-                                <rect key="frame" x="8" y="495.5" width="398" height="34"/>
+                                <rect key="frame" x="8" y="446.5" width="398" height="34"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -708,7 +708,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkA-zf-z7W">
-                                <rect key="frame" x="8" y="537.5" width="398" height="34"/>
+                                <rect key="frame" x="8" y="488.5" width="398" height="34"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -726,7 +726,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Question comes here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xsg-Mk-IXG">
-                                <rect key="frame" x="16" y="276" width="382" height="128"/>
+                                <rect key="frame" x="16" y="227" width="382" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="z1b-n6-ERU"/>
@@ -1388,35 +1388,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laU-Uf-a7f">
-                                <rect key="frame" x="60" y="657" width="299" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <state key="normal" title="GENERATE FUN FACT"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="FUN FACT COMES HERE" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Lu-AF-aMi">
+                                <rect key="frame" x="71" y="164" width="272" height="149"/>
+                                <color key="backgroundColor" red="0.97137612100000004" green="0.6477246284" blue="0.34287053350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="28"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giftbox" translatesAutoresizingMaskIntoConstraints="NO" id="sL5-mc-EvZ">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="R15-rm-a7S"/>
+                                    <constraint firstAttribute="height" constant="240" id="t9r-Yn-2Wv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laU-Uf-a7f">
+                                <rect key="frame" x="34.5" y="661" width="345" height="79"/>
+                                <color key="backgroundColor" red="0.91424500939999997" green="0.50039517879999995" blue="0.47829151149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="32"/>
+                                <state key="normal" title="GENERATE FUN FACT">
+                                    <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                </state>
                                 <connections>
                                     <action selector="generateFunFact:" destination="cpy-dU-zjg" eventType="touchUpInside" id="odz-6B-j2I"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="FUN FACT COMES HERE" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Lu-AF-aMi">
-                                <rect key="frame" x="87" y="365" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.97137612100000004" green="0.6477246284" blue="0.34287053350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Lu-AF-aMi" firstAttribute="leading" secondItem="0e4-f5-a63" secondAttribute="leading" constant="71" id="3St-WE-gur"/>
+                            <constraint firstItem="laU-Uf-a7f" firstAttribute="centerX" secondItem="W3M-vK-6Lj" secondAttribute="centerX" id="Bad-Ln-cDs"/>
+                            <constraint firstItem="4Lu-AF-aMi" firstAttribute="centerX" secondItem="W3M-vK-6Lj" secondAttribute="centerX" id="P0o-gh-KS2"/>
+                            <constraint firstItem="sL5-mc-EvZ" firstAttribute="centerY" secondItem="W3M-vK-6Lj" secondAttribute="centerY" id="Pxd-a4-wnm"/>
+                            <constraint firstItem="sL5-mc-EvZ" firstAttribute="centerX" secondItem="W3M-vK-6Lj" secondAttribute="centerX" id="SfH-jN-zEZ"/>
+                            <constraint firstItem="4Lu-AF-aMi" firstAttribute="top" secondItem="0e4-f5-a63" secondAttribute="top" constant="76" id="Wru-lo-Spz"/>
+                            <constraint firstItem="sL5-mc-EvZ" firstAttribute="top" secondItem="4Lu-AF-aMi" secondAttribute="bottom" constant="15" id="dpm-br-9dJ"/>
+                            <constraint firstItem="0e4-f5-a63" firstAttribute="bottom" secondItem="laU-Uf-a7f" secondAttribute="bottom" constant="73" id="gJO-P6-nVO"/>
+                            <constraint firstItem="laU-Uf-a7f" firstAttribute="top" secondItem="sL5-mc-EvZ" secondAttribute="bottom" constant="93" id="iRi-AN-P5X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0e4-f5-a63"/>
                     </view>
                     <navigationItem key="navigationItem" title="FUN FACTS" id="mku-Eq-5J7"/>
                     <connections>
+                        <outlet property="funFactButton" destination="laU-Uf-a7f" id="b32-s5-2zR"/>
                         <outlet property="funFactTextView" destination="4Lu-AF-aMi" id="5M2-wo-GUO"/>
+                        <outlet property="giftBoxIV" destination="sL5-mc-EvZ" id="0Nx-r9-wQu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K4P-wx-Qjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3364" y="1911"/>
+            <point key="canvasLocation" x="3363.7681159420295" y="1910.4910714285713"/>
         </scene>
         <!--GUESS AQI-->
         <scene sceneID="DJ6-mr-zHu">
@@ -1698,8 +1720,8 @@
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXB-de-xSG">
-                                        <rect key="frame" x="195" y="83" width="58.5" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMMANUELLE" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXB-de-xSG">
+                                        <rect key="frame" x="161" y="83" width="245" height="45"/>
                                         <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="28"/>
                                         <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1707,16 +1729,16 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="vho-l8-VMG" firstAttribute="top" secondItem="ioy-GZ-rSh" secondAttribute="top" constant="30" id="JT0-0u-Izf"/>
-                                    <constraint firstAttribute="bottom" secondItem="mXB-de-xSG" secondAttribute="bottom" constant="26" id="Oaf-GX-Fj2"/>
-                                    <constraint firstItem="mXB-de-xSG" firstAttribute="top" secondItem="vho-l8-VMG" secondAttribute="bottom" constant="8" id="WPc-12-7UV"/>
                                     <constraint firstAttribute="bottom" secondItem="T8f-ga-l19" secondAttribute="bottom" constant="13" id="agL-cr-1lp"/>
                                     <constraint firstAttribute="height" constant="154" id="eis-gE-Bph"/>
                                     <constraint firstItem="vho-l8-VMG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="T8f-ga-l19" secondAttribute="trailing" symbolic="YES" id="ibO-SU-a0A"/>
-                                    <constraint firstAttribute="trailing" secondItem="mXB-de-xSG" secondAttribute="trailing" constant="160.5" id="oCo-mn-pbg"/>
+                                    <constraint firstItem="mXB-de-xSG" firstAttribute="trailing" secondItem="ioy-GZ-rSh" secondAttribute="trailingMargin" id="lpD-SO-AKS"/>
+                                    <constraint firstAttribute="bottom" secondItem="mXB-de-xSG" secondAttribute="bottom" constant="26" id="mqZ-p6-8Vg"/>
                                     <constraint firstAttribute="trailing" secondItem="vho-l8-VMG" secondAttribute="trailing" constant="65.5" id="oo0-8g-P6L"/>
                                     <constraint firstItem="T8f-ga-l19" firstAttribute="top" secondItem="ioy-GZ-rSh" secondAttribute="top" constant="13" id="qNz-c6-6bM"/>
+                                    <constraint firstItem="mXB-de-xSG" firstAttribute="leading" secondItem="T8f-ga-l19" secondAttribute="trailing" constant="8" id="qSl-vC-1W5"/>
                                     <constraint firstItem="T8f-ga-l19" firstAttribute="leading" secondItem="ioy-GZ-rSh" secondAttribute="leading" constant="25" id="rDZ-rl-83j"/>
-                                    <constraint firstItem="mXB-de-xSG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="T8f-ga-l19" secondAttribute="trailing" symbolic="YES" id="sdB-hN-pbd"/>
+                                    <constraint firstItem="mXB-de-xSG" firstAttribute="top" secondItem="vho-l8-VMG" secondAttribute="bottom" constant="8" id="s1w-o3-ECU"/>
                                 </constraints>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3E-wd-jmt" userLabel="ScoreView">
@@ -2319,13 +2341,22 @@
                     <view key="view" contentMode="scaleToFill" id="VKW-pW-MnL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OzoneLogo" translatesAutoresizingMaskIntoConstraints="NO" id="AHs-0E-ltN">
+                                <rect key="frame" x="36.5" y="277.5" width="341" height="341"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AHs-0E-ltN" firstAttribute="centerY" secondItem="VKW-pW-MnL" secondAttribute="centerY" id="98N-vJ-Hzb"/>
+                            <constraint firstItem="AHs-0E-ltN" firstAttribute="centerX" secondItem="VKW-pW-MnL" secondAttribute="centerX" id="dyX-4e-UYc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="cZ7-n9-MVN"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X8d-eL-whU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6428" y="1171"/>
+            <point key="canvasLocation" x="-6428.985507246377" y="1170.5357142857142"/>
         </scene>
         <!--Auth Nav Controller-->
         <scene sceneID="oyG-1M-YPu">
@@ -2346,6 +2377,10 @@
             <point key="canvasLocation" x="-5336.231884057971" y="1162.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fqT-Ct-6QQ"/>
+        <segue reference="iyM-Ie-Bci"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="0ZZY-happy" width="81" height="89.5"/>
         <image name="0ZZY-info" width="87.5" height="96.5"/>
@@ -2363,22 +2398,19 @@
         <image name="circle-outline" width="170.5" height="170.5"/>
         <image name="earth_pollution" width="50" height="50"/>
         <image name="ecosystem" width="133" height="133"/>
+        <image name="giftbox" width="83" height="83"/>
         <image name="health" width="33" height="33"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="kangaroo" width="100" height="100"/>
         <image name="key" width="170.5" height="170.5"/>
         <image name="koala" width="100" height="100"/>
         <image name="location" width="170.5" height="170.5"/>
         <image name="mail" width="170.5" height="170.5"/>
-        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="pointed_arrow" width="200" height="46.5"/>
         <image name="pointed_arrow (1)" width="200" height="46.5"/>
         <image name="time" width="149" height="49"/>
         <image name="user" width="170.5" height="170.5"/>
-        <image name="wind.snow" catalog="system" width="64" height="54"/>
+        <image name="wind.snow" catalog="system" width="128" height="109"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="fqT-Ct-6QQ"/>
-        <segue reference="iyM-Ie-Bci"/>
-    </inferredMetricsTieBreakers>
 </document>

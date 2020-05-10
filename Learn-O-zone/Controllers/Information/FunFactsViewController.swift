@@ -11,6 +11,8 @@ import Firebase
 
 class FunFactsViewController: UIViewController {
 
+    @IBOutlet weak var giftBoxIV: UIImageView!
+    @IBOutlet weak var funFactButton: UIButton!
     @IBOutlet weak var funFactTextView: UITextView!
     
     var funFacts = [FunFact]()
@@ -18,7 +20,10 @@ class FunFactsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
+        funFactButton.layer.cornerRadius = CGFloat(Helper.app.buttonCornerRadius)
+        
         getFunFactsFromFirebase()
     }
     
@@ -36,6 +41,10 @@ class FunFactsViewController: UIViewController {
     @IBAction func generateFunFact(_ sender: Any) {
         funFacts = funFacts.shuffled()
         funFactTextView.text = funFacts[0].fact
+        giftBoxIV.image = #imageLiteral(resourceName: "opengiftbox")
+        giftBoxIV.frame.size = CGSize(width: 300, height: 300)
+       
+        
     }
     
     func getFunFactsFromFirebase() {
