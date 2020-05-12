@@ -16,40 +16,65 @@ class QuizScreenViewController: UIViewController {
     var answerNumber = Int()
     var correctAnswer = String()
     var answerReason = String()
-    //var timer:Timer?
+    var questionCount: Int = 1
+    var maxQuestionsCount: Int = 5
+    
+    var myTimer:Timer?
     var seconds = Int()
 
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var questionTextView: UITextView!
     @IBOutlet weak var timerLabel: UILabel!
     
+    @IBOutlet weak var questionNumLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         pickQuestion()
+        
     }
     
  
     
     
     func pickQuestion() {
-        seconds = 15
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-        quizQuestionsArray = quizQuestionsArray.shuffled()
-        if (quizQuestionsArray.count > 0) {
-            questionNumber = 0
-            questionTextView.text = quizQuestionsArray[questionNumber].question
-            var answers = quizQuestionsArray[questionNumber].answers
-            correctAnswer = answers[0]
-            answers = answers.shuffled()
-            answerNumber = answers.firstIndex(of: correctAnswer)!
-            for i in 0..<buttons.count {
-                let answer = answers[i]
-                buttons[i].setTitle(answer, for: .normal)
-            }
-            answerReason = quizQuestionsArray[questionNumber].reason
-            quizQuestionsArray.remove(at: questionNumber)
+        
+        if questionCount > maxQuestionsCount {
+            performSegue(withIdentifier: "outcomeSegue", sender: self)
         }
+        
+        else {
+            
+            questionNumLabel.text = "Question \(questionCount)/\(maxQuestionsCount)"
+            
+            seconds = 5
+            myTimer?.invalidate()
+            myTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+            RunLoop.current.add(myTimer!, forMode: RunLoop.Mode.common)
+            
+            quizQuestionsArray = quizQuestionsArray.shuffled()
+            if (quizQuestionsArray.count > 0) {
+                questionNumber = 0
+                questionTextView.text = quizQuestionsArray[questionNumber].question
+                var answers = quizQuestionsArray[questionNumber].answers
+                correctAnswer = answers[0]
+                answers = answers.shuffled()
+                answerNumber = answers.firstIndex(of: correctAnswer)!
+                for i in 0..<buttons.count {
+                    let answer = answers[i]
+                    buttons[i].setTitle(answer, for: .normal)
+                }
+                answerReason = quizQuestionsArray[questionNumber].reason
+                quizQuestionsArray.remove(at: questionNumber)
+            }
+            
+            questionCount += 1
+            
+        }
+        
+        
     }
     
     /*
@@ -65,9 +90,9 @@ class QuizScreenViewController: UIViewController {
     
     
     @IBAction func nextQuestionTapped(_ sender: Any) {
-        seconds = 15
+        seconds = 5
         pickQuestion()
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+        //Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
     }
     
     
@@ -127,6 +152,13 @@ class QuizScreenViewController: UIViewController {
              timerLabel.text = "\(seconds)"
              seconds -= 1
          }
+        
+        if seconds == 0 {
+            myTimer?.invalidate()
+            seconds = 5
+            pickQuestion()
+            
+        }
      }
 
 }

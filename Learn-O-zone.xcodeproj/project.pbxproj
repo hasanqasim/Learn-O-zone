@@ -10,6 +10,7 @@
 		04222C022462F33500F61FDA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C012462F33500F61FDA /* WelcomeViewController.swift */; };
 		04222C042462F37800F61FDA /* WelcomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C032462F37800F61FDA /* WelcomeCollectionViewCell.swift */; };
 		04222C062462F53500F61FDA /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C052462F53500F61FDA /* CarouselItem.swift */; };
+		04222C08246A31D600F61FDA /* QuizOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C07246A31D600F61FDA /* QuizOutcomeViewController.swift */; };
 		04955570244C6413008526B7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495556F244C6413008526B7 /* RegisterViewController.swift */; };
 		0495557624513988008526B7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557524513988008526B7 /* Helper.swift */; };
 		0495557C245191F1008526B7 /* AuthNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557B245191F1008526B7 /* AuthNavController.swift */; };
@@ -45,6 +46,7 @@
 		04222C012462F33500F61FDA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		04222C032462F37800F61FDA /* WelcomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		04222C052462F53500F61FDA /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
+		04222C07246A31D600F61FDA /* QuizOutcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizOutcomeViewController.swift; sourceTree = "<group>"; };
 		0495556F244C6413008526B7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0495557524513988008526B7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		0495557B245191F1008526B7 /* AuthNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				A65EDC19245D4B170009EE0C /* QuizScreenViewController.swift */,
 				A6CF13BD244D321800665899 /* QuizCategoryViewController.swift */,
+				04222C07246A31D600F61FDA /* QuizOutcomeViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				A6B49025243CACDF00BB3093 /* LoginViewController.swift in Sources */,
 				A65ED76F24679C180075DFD2 /* FunFactsViewController.swift in Sources */,
 				A6CF13BE244D321900665899 /* QuizCategoryViewController.swift in Sources */,
+				04222C08246A31D600F61FDA /* QuizOutcomeViewController.swift in Sources */,
 				04222C022462F33500F61FDA /* WelcomeViewController.swift in Sources */,
 				A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */,
 				A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */,

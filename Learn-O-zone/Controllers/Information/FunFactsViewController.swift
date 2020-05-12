@@ -22,7 +22,7 @@ class FunFactsViewController: UIViewController {
 
         
         // Do any additional setup after loading the view.
-        funFactButton.layer.cornerRadius = CGFloat(Helper.app.buttonCornerRadius)
+        funFactButton.layer.cornerRadius = 10.0
         
         getFunFactsFromFirebase()
     }
@@ -42,7 +42,7 @@ class FunFactsViewController: UIViewController {
         funFacts = funFacts.shuffled()
         funFactTextView.text = funFacts[0].fact
         giftBoxIV.image = #imageLiteral(resourceName: "opengiftbox")
-        giftBoxIV.frame.size = CGSize(width: 300, height: 300)
+        //giftBoxIV.frame.size = CGSize(width: 300, height: 300)
        
         
     }
