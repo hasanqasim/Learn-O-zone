@@ -1,26 +1,21 @@
 //
-//  SimulationCategoryViewController.swift
+//  SimulationNavController.swift
 //  Learn-O-zone
 //
-//  Created by Hasan Qasim on 13/5/20.
+//  Created by Laveeshka on 13/5/20.
 //  Copyright © 2020 Hasan Qasim. All rights reserved.
 //
 
 import UIKit
 
-class SimulationCategoryViewController: UIViewController {
+class SimulationNavController: UINavigationController {
 
-    @IBOutlet weak var emissionsBtn: UIButton!
-    @IBOutlet weak var weatherBtn: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        //rounding the edges of the weather and emissions buttons
-        emissionsBtn.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
-        weatherBtn.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
+        navigationBar.barTintColor = Helper.app.primaryBarTintColour
+        navigationBar.titleTextAttributes = [.foregroundColor: Helper.app.primaryBarTitleColour!]
     }
     
 

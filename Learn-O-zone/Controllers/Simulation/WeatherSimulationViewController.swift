@@ -10,7 +10,10 @@ import UIKit
 
 class WeatherSimulationViewController: UIViewController {
 
-    @IBOutlet weak var aqiValueLabel: UILabel!
+    @IBOutlet weak var airConditionView: UIView!
+    @IBOutlet weak var temperatureView: UIView!
+    @IBOutlet weak var windView: UIView!
+    @IBOutlet weak var airConditionTextView: UITextView!
     @IBOutlet weak var simulationImageView: UIImageView!
     @IBOutlet weak var temperatureSlider: UISlider!
     @IBOutlet weak var windSlider: UISlider!
@@ -18,6 +21,11 @@ class WeatherSimulationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //rounding the temperaturem airCondition and wind UIViews
+        temperatureView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
+        windView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
+        airConditionView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
     }
     
 
@@ -33,45 +41,59 @@ class WeatherSimulationViewController: UIViewController {
 
     @IBAction func temperatureSliderTapped(_ sender: Any) {
         
-        let temperatureSliderValue = Int(temperatureSlider.value*100)
-        let windSliderValue = Int(windSlider.value*100)
-        let rangeOne = 0...33
-        let rangeTwo = 33...67
-        let rangeThree = 67...100
+        let temperatureSliderValue = Int(temperatureSlider.value)
+        let windSliderValue = Int(windSlider.value)
+        let rangeOne = Int(286.713)...Int(319.476)
+        let rangeTwo = Int(319.476)...Int(344.905)
+        let rangeThree = Int(344.905)...Int(366.571)
                
         if (rangeOne.contains(windSliderValue)) {
-            switchImageForSlider(temperatureSliderValue, "balloon", "kangaroo", "koala", "balloon3")
+            switchImageForTemperatureSlider(temperatureSliderValue, "TemLandWindL", "TemMandWindL", "TemHandWindL", "simulation")
         } else if (rangeTwo.contains(windSliderValue)) {
-            switchImageForSlider(temperatureSliderValue, "koala", "balloon3", "kangaroo", "balloon")
+            switchImageForTemperatureSlider(temperatureSliderValue, "TemLandWindM", "TemMandWindM", "TemHandWindM", "simulation")
         } else if (rangeThree.contains(windSliderValue)) {
-            switchImageForSlider(temperatureSliderValue, "balloon3", "koala", "balloon", "kangaroo")
+            switchImageForTemperatureSlider(temperatureSliderValue, "TemLandWindH", "TemMandWindH", "TemHandWindH", "simulation")
         }
     }
     
     @IBAction func windSliderTapped(_ sender: Any) {
-        let windSliderValue = Int(windSlider.value*100)
-        let temperatureSliderValue = Int(temperatureSlider.value*100)
-        let rangeOne = 0...33
-        let rangeTwo = 33...67
-        let rangeThree = 67...100
+        let windSliderValue = Int(windSlider.value)
+        let temperatureSliderValue = Int(temperatureSlider.value)
+        let rangeOne = Int(3)...Int(11)
+        let rangeTwo = Int(11)...Int(23)
+        let rangeThree = Int(23)...Int(43)
         
         if (rangeOne.contains(temperatureSliderValue)) {
-            switchImageForSlider(windSliderValue, "balloon", "kangaroo", "koala", "balloon3")
+            switchImageForWindSlider(windSliderValue, "TemLandWindL", "TemLandWindM", "TemLandWindH", "simulation")
         } else if (rangeTwo.contains(temperatureSliderValue)) {
-            switchImageForSlider(windSliderValue, "koala", "balloon3", "kangaroo", "balloon")
+            switchImageForWindSlider(windSliderValue, "TemMandWindL", "TemMandWindM", "TemMandWindH", "simulation")
         } else if (rangeThree.contains(temperatureSliderValue)) {
-            switchImageForSlider(windSliderValue, "balloon3", "koala", "balloon", "kangaroo")
+            switchImageForWindSlider(windSliderValue, "TemHandWindL", "TemHandWindL", "TemHandWindL", "simulation")
         }
     }
     
-    // chnages image based on slider value low moderate high
-    func switchImageForSlider(_ sliderValue: Int, _ imageNameOne: String, _ imageNameTwo: String, _ imageNameThree: String, _ imageNameDefault: String) {
+    // changes image based on slider value low moderate high
+    func switchImageForWindSlider(_ sliderValue: Int, _ imageNameOne: String, _ imageNameTwo: String, _ imageNameThree: String, _ imageNameDefault: String) {
         switch sliderValue {
-            case 0...33:
+            case Int(286.713)...Int(319.476):
                 simulationImageView.image = UIImage(named: imageNameOne)
-            case 33...67:
+            case Int(319.476)...Int(344.905):
                 simulationImageView.image = UIImage(named: imageNameTwo)
-            case 67...100:
+            case Int(344.905)...Int(366.571):
+                simulationImageView.image = UIImage(named: imageNameThree)
+            default:
+                simulationImageView.image = UIImage(named: imageNameDefault)
+        }
+    }
+    
+    // changes image based on slider value low moderate high
+    func switchImageForTemperatureSlider(_ sliderValue: Int, _ imageNameOne: String, _ imageNameTwo: String, _ imageNameThree: String, _ imageNameDefault: String) {
+        switch sliderValue {
+            case 3...11:
+                simulationImageView.image = UIImage(named: imageNameOne)
+            case 11...23:
+                simulationImageView.image = UIImage(named: imageNameTwo)
+            case 23...43:
                 simulationImageView.image = UIImage(named: imageNameThree)
             default:
                 simulationImageView.image = UIImage(named: imageNameDefault)

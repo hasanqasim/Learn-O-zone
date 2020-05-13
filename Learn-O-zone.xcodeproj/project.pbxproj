@@ -10,6 +10,7 @@
 		04222C022462F33500F61FDA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C012462F33500F61FDA /* WelcomeViewController.swift */; };
 		04222C042462F37800F61FDA /* WelcomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C032462F37800F61FDA /* WelcomeCollectionViewCell.swift */; };
 		04222C062462F53500F61FDA /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C052462F53500F61FDA /* CarouselItem.swift */; };
+		04222C0A246BD56600F61FDA /* SimulationNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C09246BD56600F61FDA /* SimulationNavController.swift */; };
 		04955570244C6413008526B7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495556F244C6413008526B7 /* RegisterViewController.swift */; };
 		0495557624513988008526B7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557524513988008526B7 /* Helper.swift */; };
 		0495557C245191F1008526B7 /* AuthNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557B245191F1008526B7 /* AuthNavController.swift */; };
@@ -48,6 +49,7 @@
 		04222C012462F33500F61FDA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		04222C032462F37800F61FDA /* WelcomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		04222C052462F53500F61FDA /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
+		04222C09246BD56600F61FDA /* SimulationNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationNavController.swift; sourceTree = "<group>"; };
 		0495556F244C6413008526B7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0495557524513988008526B7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		0495557B245191F1008526B7 /* AuthNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavController.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				0495557D24519510008526B7 /* HomeNavController.swift */,
 				0495557F24519588008526B7 /* AQINavController.swift */,
 				04955581245195B6008526B7 /* QuizNavController.swift */,
+				04222C09246BD56600F61FDA /* SimulationNavController.swift */,
 			);
 			path = NavController;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04222C0A246BD56600F61FDA /* SimulationNavController.swift in Sources */,
 				04955582245195B6008526B7 /* QuizNavController.swift in Sources */,
 				0495557E24519510008526B7 /* HomeNavController.swift in Sources */,
 				A65EDC18245CFBCB0009EE0C /* Quiz.swift in Sources */,

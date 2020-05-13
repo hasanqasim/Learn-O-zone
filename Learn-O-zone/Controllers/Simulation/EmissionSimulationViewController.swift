@@ -10,14 +10,24 @@ import UIKit
 
 class EmissionSimulationViewController: UIViewController {
 
-    @IBOutlet weak var aqiValueLabel: UILabel!
+    
+    @IBOutlet weak var carsView: UIView!
+    @IBOutlet weak var industryView: UIView!
+    @IBOutlet weak var airConditionView: UIView!
+    @IBOutlet weak var airConditionTextView: UITextView!
     @IBOutlet weak var simulationImageView: UIImageView!
     @IBOutlet weak var industrySlider: UISlider!
     @IBOutlet weak var carsSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //rounding the edges of airCondition, industry and cars UIViews
+        airConditionView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
+        industryView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
+        carsView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
     }
     
 
@@ -33,45 +43,58 @@ class EmissionSimulationViewController: UIViewController {
 
     @IBAction func industrySliderTapped(_ sender: Any) {
         
-        let industrySliderValue = Int(industrySlider.value*100)
-        let carsSliderValue = Int(carsSlider.value*100)
-        let rangeOne = 0...33
-        let rangeTwo = 33...67
-        let rangeThree = 67...100
+        let industrySliderValue = Int(industrySlider.value)
+        let carsSliderValue = Int(carsSlider.value)
+        let rangeOne = Int(5.965)...Int(7.437)
+        let rangeTwo = Int(7.437)...Int(8.971)
+        let rangeThree = Int(8.971)...Int(10.123)
     
         if (rangeOne.contains(carsSliderValue)) {
-            switchImageForSlider(industrySliderValue, "balloon3", "kangaroo", "koala", "balloon")
+            switchImageForIndustrySlider(industrySliderValue, "IndLandCarL", "IndMandCarL", "IndHandCarL", "simulation")
         } else if (rangeTwo.contains(carsSliderValue)) {
-            switchImageForSlider(industrySliderValue, "koala", "balloon", "kangaroo", "balloon3")
+            switchImageForIndustrySlider(industrySliderValue, "IndLandCarM", "IndMandCarM", "IndHandCarM", "simulation")
         } else if (rangeThree.contains(carsSliderValue)) {
-            switchImageForSlider(industrySliderValue, "balloon", "koala", "balloon3", "kangaroo")
+            switchImageForIndustrySlider(industrySliderValue, "IndLandCarH", "IndMandCarH", "IndHandCarH", "simulation")
         }
     }
     
     @IBAction func carsSliderTapped(_ sender: Any) {
         
-        let carsSliderValue = Int(carsSlider.value*100)
-        let industrySliderValue = Int(industrySlider.value*100)
-        let rangeOne = 0...33
-        let rangeTwo = 33...67
-        let rangeThree = 67...100
+        let carsSliderValue = Int(carsSlider.value)
+        let industrySliderValue = Int(industrySlider.value)
+        let rangeOne = Int(426.939)...Int(1025.0)
+        let rangeTwo = Int(1025.0)...Int(1296.01)
+        let rangeThree = Int(1296.01)...Int(1461.3)
         
         if (rangeOne.contains(industrySliderValue)) {
-            switchImageForSlider(carsSliderValue, "balloon", "kangaroo", "koala", "balloon3")
+            switchImageForCarsSlider(carsSliderValue, "IndLandCarL", "IndLandCarM", "IndLandCarH", "simulation")
         } else if (rangeTwo.contains(industrySliderValue)) {
-            switchImageForSlider(carsSliderValue, "koala", "balloon3", "kangaroo", "balloon")
+            switchImageForCarsSlider(carsSliderValue, "IndMandCarL", "IndMandCarM", "IndMandCarH", "simulation")
         } else if (rangeThree.contains(industrySliderValue)) {
-            switchImageForSlider(carsSliderValue, "balloon3", "koala", "balloon", "kangaroo")
+            switchImageForCarsSlider(carsSliderValue, "IndHandCarL", "IndHandCarM", "IndHandCarH", "simulation")
         }
     }
     
-    func switchImageForSlider(_ sliderValue: Int, _ imageNameOne: String, _ imageNameTwo: String, _ imageNameThree: String, _ imageNameDefault: String) {
+    func switchImageForCarsSlider(_ sliderValue: Int, _ imageNameOne: String, _ imageNameTwo: String, _ imageNameThree: String, _ imageNameDefault: String) {
         switch sliderValue {
-            case 0...33:
+            case Int(5.965)...Int(7.437):
                 simulationImageView.image = UIImage(named: imageNameOne)
-            case 33...67:
+            case Int(7.437)...Int(8.971):
                 simulationImageView.image = UIImage(named: imageNameTwo)
-            case 67...100:
+            case Int(8.971)...Int(10.123):
+                simulationImageView.image = UIImage(named: imageNameThree)
+            default:
+                simulationImageView.image = UIImage(named: imageNameDefault)
+        }
+    }
+    
+    func switchImageForIndustrySlider(_ sliderValue: Int, _ imageNameOne: String, _ imageNameTwo: String, _ imageNameThree: String, _ imageNameDefault: String) {
+        switch sliderValue {
+            case Int(426.939)...Int(1025.0):
+                simulationImageView.image = UIImage(named: imageNameOne)
+            case Int(1025.0)...Int(1296.01):
+                simulationImageView.image = UIImage(named: imageNameTwo)
+            case Int(1296.01)...Int(1461.3):
                 simulationImageView.image = UIImage(named: imageNameThree)
             default:
                 simulationImageView.image = UIImage(named: imageNameDefault)
