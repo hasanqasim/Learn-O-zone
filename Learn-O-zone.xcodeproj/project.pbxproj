@@ -18,6 +18,9 @@
 		04955582245195B6008526B7 /* QuizNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04955581245195B6008526B7 /* QuizNavController.swift */; };
 		04955584245265BF008526B7 /* SubInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04955583245265BF008526B7 /* SubInformationViewController.swift */; };
 		4653D8C40160DDE0FF0AB301 /* Pods_Learn_O_zone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6337F5DCAD99CBAA0EC6F269 /* Pods_Learn_O_zone.framework */; };
+		A6051741246BA368005C8B30 /* SimulationCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6051740246BA368005C8B30 /* SimulationCategoryViewController.swift */; };
+		A6051743246BA3C2005C8B30 /* WeatherSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6051742246BA3C2005C8B30 /* WeatherSimulationViewController.swift */; };
+		A6051745246BA3F3005C8B30 /* EmissionSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6051744246BA3F3005C8B30 /* EmissionSimulationViewController.swift */; };
 		A63587F02450932A004E3F49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A63587EF2450932A004E3F49 /* GoogleService-Info.plist */; };
 		A6358819245516B4004E3F49 /* PollutantInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */; };
 		A635881C245546EA004E3F49 /* Pollutant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A635881B245546EA004E3F49 /* Pollutant.swift */; };
@@ -55,6 +58,9 @@
 		272376E744A29D602D840E83 /* Pods-Learn-O-zone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn-O-zone.debug.xcconfig"; path = "Target Support Files/Pods-Learn-O-zone/Pods-Learn-O-zone.debug.xcconfig"; sourceTree = "<group>"; };
 		6337F5DCAD99CBAA0EC6F269 /* Pods_Learn_O_zone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learn_O_zone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6B1B891BE1DF2F27CF3CF3 /* Pods-Learn-O-zone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learn-O-zone.release.xcconfig"; path = "Target Support Files/Pods-Learn-O-zone/Pods-Learn-O-zone.release.xcconfig"; sourceTree = "<group>"; };
+		A6051740246BA368005C8B30 /* SimulationCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationCategoryViewController.swift; sourceTree = "<group>"; };
+		A6051742246BA3C2005C8B30 /* WeatherSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSimulationViewController.swift; sourceTree = "<group>"; };
+		A6051744246BA3F3005C8B30 /* EmissionSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmissionSimulationViewController.swift; sourceTree = "<group>"; };
 		A63587EF2450932A004E3F49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutantInformationViewController.swift; sourceTree = "<group>"; };
 		A635881B245546EA004E3F49 /* Pollutant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pollutant.swift; sourceTree = "<group>"; };
@@ -128,6 +134,16 @@
 				6337F5DCAD99CBAA0EC6F269 /* Pods_Learn_O_zone.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A605173F246BA344005C8B30 /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				A6051740246BA368005C8B30 /* SimulationCategoryViewController.swift */,
+				A6051742246BA3C2005C8B30 /* WeatherSimulationViewController.swift */,
+				A6051744246BA3F3005C8B30 /* EmissionSimulationViewController.swift */,
+			);
+			path = Simulation;
 			sourceTree = "<group>";
 		};
 		A635881A245546C6004E3F49 /* Model */ = {
@@ -218,6 +234,7 @@
 		A6E4F50024468D6900F48DD7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A605173F246BA344005C8B30 /* Simulation */,
 				04222C002462F2A300F61FDA /* Welcome */,
 				A65EDC1E245D913D0009EE0C /* Quiz */,
 				A65EDC1D245D91190009EE0C /* AQI */,
@@ -362,6 +379,7 @@
 				A6CF13BE244D321900665899 /* QuizCategoryViewController.swift in Sources */,
 				04222C022462F33500F61FDA /* WelcomeViewController.swift in Sources */,
 				A6B49021243CACDF00BB3093 /* AppDelegate.swift in Sources */,
+				A6051745246BA3F3005C8B30 /* EmissionSimulationViewController.swift in Sources */,
 				A69E90FB2449793600C4E574 /* MainTabController.swift in Sources */,
 				0495557C245191F1008526B7 /* AuthNavController.swift in Sources */,
 				A65ED76D246706B00075DFD2 /* SplashViewController.swift in Sources */,
@@ -373,8 +391,10 @@
 				A635881C245546EA004E3F49 /* Pollutant.swift in Sources */,
 				A6358819245516B4004E3F49 /* PollutantInformationViewController.swift in Sources */,
 				0495557624513988008526B7 /* Helper.swift in Sources */,
+				A6051741246BA368005C8B30 /* SimulationCategoryViewController.swift in Sources */,
 				A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */,
 				A6E44F61245580B60043FA7E /* GuessAQIOutcomeViewController.swift in Sources */,
+				A6051743246BA3C2005C8B30 /* WeatherSimulationViewController.swift in Sources */,
 				A65ED7712467A7BF0075DFD2 /* FunFact.swift in Sources */,
 				A6E4F50424468EB400F48DD7 /* InformationViewController.swift in Sources */,
 				04955584245265BF008526B7 /* SubInformationViewController.swift in Sources */,
