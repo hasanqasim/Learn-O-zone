@@ -899,7 +899,7 @@
         <!--QUIZ OUTCOME-->
         <scene sceneID="iUb-ry-6Rw">
             <objects>
-                <viewController id="8tp-M8-wmK" customClass="QuizOutcomeViewController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8tp-M8-wmK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R25-cL-wbU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
