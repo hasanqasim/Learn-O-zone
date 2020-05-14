@@ -21,38 +21,34 @@ class QuizScreenViewController: UIViewController {
     
     var myTimer:Timer?
     var seconds = Int()
+    var curentScore: Int = 0
 
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var questionTextView: UITextView!
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var scoreValueLabel: UILabel!
     
     @IBOutlet weak var questionNumLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         pickQuestion()
         
     }
     
  
-    
-    
     func pickQuestion() {
         
         if questionCount > maxQuestionsCount {
             performSegue(withIdentifier: "outcomeSegue", sender: self)
-        }
-        
-        else {
-            
+        } else {
             questionNumLabel.text = "Question \(questionCount)/\(maxQuestionsCount)"
             
-            seconds = 5
+            seconds = 60
             myTimer?.invalidate()
             myTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-            RunLoop.current.add(myTimer!, forMode: RunLoop.Mode.common)
+            //RunLoop.current.add(myTimer!, forMode: RunLoop.Mode.common)
             
             quizQuestionsArray = quizQuestionsArray.shuffled()
             if (quizQuestionsArray.count > 0) {
@@ -69,12 +65,14 @@ class QuizScreenViewController: UIViewController {
                 answerReason = quizQuestionsArray[questionNumber].reason
                 quizQuestionsArray.remove(at: questionNumber)
             }
-            
             questionCount += 1
-            
         }
         
         
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        myTimer?.invalidate()
     }
     
     /*
@@ -88,17 +86,11 @@ class QuizScreenViewController: UIViewController {
     }
    */
     
-    
-    @IBAction func nextQuestionTapped(_ sender: Any) {
-        seconds = 5
-        pickQuestion()
-        //Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-    }
-    
-    
+        
     @IBAction func btnOne(_ sender: Any) {
         if answerNumber == 0 {
             resultAlert(title: "Correct Answer", message: answerReason)
+            pickQuestion()
         } else {
              resultAlert(title: "Incorrect Answer", message: correctAnswer)
         }
@@ -108,6 +100,7 @@ class QuizScreenViewController: UIViewController {
     @IBAction func btnTwo(_ sender: Any) {
         if answerNumber == 1 {
             resultAlert(title: "Correct Answer", message: answerReason)
+            pickQuestion()
         } else {
             resultAlert(title: "Incorrect Answer", message: "\(correctAnswer)" )
         }
@@ -116,6 +109,7 @@ class QuizScreenViewController: UIViewController {
     @IBAction func btnThree(_ sender: Any) {
         if answerNumber == 2 {
             resultAlert(title: "Correct Answer", message: answerReason)
+            pickQuestion()
         } else {
             resultAlert(title: "Incorrect Answer", message: correctAnswer)
         }
@@ -125,6 +119,7 @@ class QuizScreenViewController: UIViewController {
     @IBAction func btnFour(_ sender: Any) {
         if answerNumber == 3 {
             resultAlert(title: "Correct Answer", message: answerReason)
+            pickQuestion()
         } else {
             resultAlert(title: "Incorrect Answer", message: correctAnswer)
         }
@@ -153,11 +148,10 @@ class QuizScreenViewController: UIViewController {
              seconds -= 1
          }
         
-        if seconds == 0 {
+        if seconds == -1 {
             myTimer?.invalidate()
-            seconds = 5
+            //seconds = 15
             pickQuestion()
-            
         }
      }
 

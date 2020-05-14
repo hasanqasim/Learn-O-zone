@@ -45,8 +45,7 @@ class InformationViewController: UIViewController {
              performSegue(withIdentifier: "detailedInformationSegue", sender: self)
          } else if tappedImage.accessibilityLabel!.contains("causes") {
              imageDetail = "Ozone-Effects"
-            print("image detail is \(imageDetail)")
-            
+             print("image detail is \(imageDetail)")
              performSegue(withIdentifier: "detailedInformationSegue", sender: self)
             
          } else if tappedImage.accessibilityLabel!.contains("sources") {
