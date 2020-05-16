@@ -108,11 +108,17 @@ class RegisterViewController: UIViewController {
             saveToPreferences(username, avatar)
             Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                 if let err = error {
-                    print(err.localizedDescription)
+                    self.errorAlert("Error", err.localizedDescription)
                 } else {
                     let db = Firestore.firestore()
-                    db.collection("Users").addDocument(data: ["username" : username, "uid":result!.user.uid, "avatar":self.avatar, "score": 0, "bestScore": 0])
-                    self.navigationController?.popViewController(animated: true)
+                    //db.collection("Users").addDocument(data: ["username" : username, "uid":result!.user.uid, "avatar":self.avatar, "score": 0, "bestScore": 0])
+                    db.collection("Users").document(result!.user.uid).setData(["username" : username, "avatar":self.avatar, "score": 0, "bestScore": 0])
+                    //self.navigationController?.popViewController(animated: true)
+                    //let window = UIWindow(frame: UIScreen.main.bounds)
+                    //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    //let rootVC = storyboard.instantiateViewController(identifier: "AuthNavController") as! AuthNavController
+                    //window.rootViewController = rootVC
+                    //window.makeKeyAndVisible()
                 }
                 
             }

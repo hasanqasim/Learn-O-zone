@@ -22,6 +22,7 @@
 		A6051741246BA368005C8B30 /* SimulationCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6051740246BA368005C8B30 /* SimulationCategoryViewController.swift */; };
 		A6051743246BA3C2005C8B30 /* WeatherSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6051742246BA3C2005C8B30 /* WeatherSimulationViewController.swift */; };
 		A6051745246BA3F3005C8B30 /* EmissionSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6051744246BA3F3005C8B30 /* EmissionSimulationViewController.swift */; };
+		A605CAFB246FFE5E00C8778D /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A605CAFA246FFE5E00C8778D /* CurrentUser.swift */; };
 		A63587F02450932A004E3F49 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A63587EF2450932A004E3F49 /* GoogleService-Info.plist */; };
 		A6358819245516B4004E3F49 /* PollutantInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */; };
 		A635881C245546EA004E3F49 /* Pollutant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A635881B245546EA004E3F49 /* Pollutant.swift */; };
@@ -65,6 +66,7 @@
 		A6051740246BA368005C8B30 /* SimulationCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationCategoryViewController.swift; sourceTree = "<group>"; };
 		A6051742246BA3C2005C8B30 /* WeatherSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSimulationViewController.swift; sourceTree = "<group>"; };
 		A6051744246BA3F3005C8B30 /* EmissionSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmissionSimulationViewController.swift; sourceTree = "<group>"; };
+		A605CAFA246FFE5E00C8778D /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		A63587EF2450932A004E3F49 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6358818245516B4004E3F49 /* PollutantInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollutantInformationViewController.swift; sourceTree = "<group>"; };
 		A635881B245546EA004E3F49 /* Pollutant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pollutant.swift; sourceTree = "<group>"; };
@@ -153,6 +155,14 @@
 			path = Simulation;
 			sourceTree = "<group>";
 		};
+		A605CAF9246FFE2800C8778D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A605CAFA246FFE5E00C8778D /* CurrentUser.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		A635881A245546C6004E3F49 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +236,7 @@
 		A6B4901F243CACDF00BB3093 /* Learn-O-zone */ = {
 			isa = PBXGroup;
 			children = (
+				A605CAF9246FFE2800C8778D /* Data */,
 				A635881A245546C6004E3F49 /* Model */,
 				0495557A245191C3008526B7 /* NavController */,
 				049555742451392C008526B7 /* Helper */,
@@ -408,6 +419,7 @@
 				A6051743246BA3C2005C8B30 /* WeatherSimulationViewController.swift in Sources */,
 				A6CC1369246F81340042FDA1 /* QuizOutcomeViewController.swift in Sources */,
 				A65ED7712467A7BF0075DFD2 /* FunFact.swift in Sources */,
+				A605CAFB246FFE5E00C8778D /* CurrentUser.swift in Sources */,
 				A6E4F50424468EB400F48DD7 /* InformationViewController.swift in Sources */,
 				04955584245265BF008526B7 /* SubInformationViewController.swift in Sources */,
 				A635881E245546F4004E3F49 /* AirQualityResponse.swift in Sources */,

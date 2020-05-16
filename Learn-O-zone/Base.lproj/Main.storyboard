@@ -315,7 +315,7 @@
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kangaroo" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gf2-0t-ipw">
-                                                        <rect key="frame" x="49" y="35.5" width="100" height="100"/>
+                                                        <rect key="frame" x="49" y="-14.5" width="200" height="200"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -341,7 +341,7 @@
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="koala" translatesAutoresizingMaskIntoConstraints="NO" id="6t3-u8-Ebs">
-                                                        <rect key="frame" x="44" y="35.5" width="100" height="100"/>
+                                                        <rect key="frame" x="44" y="-14.5" width="200" height="200"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -960,7 +960,7 @@
         <!--QUIZ OUTCOME-->
         <scene sceneID="iUb-ry-6Rw">
             <objects>
-                <viewController id="8tp-M8-wmK" sceneMemberID="viewController">
+                <viewController id="8tp-M8-wmK" customClass="QuizOutcomeViewController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R25-cL-wbU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1028,6 +1028,9 @@
                                 <state key="normal" title="Back to Categories">
                                     <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="backToCategoriesButtonTapped:" destination="8tp-M8-wmK" eventType="touchUpInside" id="Kwi-lN-Kmb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94648021459999998" green="0.65341895819999996" blue="0.37378317119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1050,6 +1053,11 @@
                         <viewLayoutGuide key="safeArea" id="JPY-T5-20e"/>
                     </view>
                     <navigationItem key="navigationItem" title="QUIZ OUTCOME" id="E1g-xZ-5X8"/>
+                    <connections>
+                        <outlet property="avatarImageView" destination="jw4-p6-j8w" id="Bnn-LS-S2K"/>
+                        <outlet property="currentScoreLabel" destination="N9L-Q6-zfo" id="Jaj-8R-vG8"/>
+                        <outlet property="usernameLabel" destination="tUm-y8-klR" id="Qbf-HU-Ros"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I0Y-AK-Uso" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2128,6 +2136,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="avatarImageView" destination="T8f-ga-l19" id="Tkf-eC-KS3"/>
+                        <outlet property="bestScoreLabel" destination="DHT-00-d65" id="BqK-Mn-FkZ"/>
+                        <outlet property="currentScoreLabel" destination="RdN-73-IWD" id="k8K-Pz-F0u"/>
                         <outlet property="funFactButton" destination="iKl-ta-61C" id="aRK-zO-23h"/>
                         <outlet property="funFactView" destination="6BI-gO-z1f" id="FsC-rb-LBH"/>
                         <outlet property="informationIV" destination="7Tb-xD-BIf" id="dQX-Ci-Lna"/>

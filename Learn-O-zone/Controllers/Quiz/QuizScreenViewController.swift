@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class QuizScreenViewController: UIViewController {
     
@@ -41,6 +42,15 @@ class QuizScreenViewController: UIViewController {
     func pickQuestion() {
         
         if questionCount > maxQuestionsCount {
+            CurrentUser.getCurrentUser().setScore(currentScore: currentScore)
+            let currentBestScore = CurrentUser.getCurrentUser().bestScore
+            if currentBestScore < currentScore {
+                CurrentUser.getCurrentUser().setBestScore(currentBestScore: currentScore)
+            }
+            let db = Firestore.firestore()
+            if let userId = Auth.auth().currentUser?.uid {
+                db.collection("Users").document(userId).updateData(["score":CurrentUser.getCurrentUser().score, "bestScore":CurrentUser.getCurrentUser().bestScore])
+            }
             DispatchQueue.main.asyncAfter(deadline:.now() + 5.0, execute: {
                self.performSegue(withIdentifier:"outcomeSegue",sender: self)
             })

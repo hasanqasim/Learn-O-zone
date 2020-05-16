@@ -10,10 +10,16 @@ import UIKit
 
 class QuizOutcomeViewController: UIViewController {
 
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var currentScoreLabel: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        avatarImageView.image = UIImage(named: CurrentUser.getCurrentUser().avatar)
+        usernameLabel.text = CurrentUser.getCurrentUser().username
+        currentScoreLabel.text = "\(CurrentUser.getCurrentUser().score)"
     }
     
 
@@ -27,4 +33,7 @@ class QuizOutcomeViewController: UIViewController {
     }
     */
 
+    @IBAction func backToCategoriesButtonTapped(_ sender: Any) {
+        
+    }
 }

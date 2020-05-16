@@ -34,20 +34,23 @@ extension AppDelegate {
         let rootVC = storyboard.instantiateViewController(identifier: "SplashViewController") as! SplashViewController
         self.window!.rootViewController = rootVC
         self.window!.makeKeyAndVisible()
+    
         
         DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
             self.handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            if user == nil {
-                let rootVC = storyboard.instantiateViewController(identifier: "AuthNavController") as! AuthNavController
-                self.window!.rootViewController = rootVC
-                self.window!.makeKeyAndVisible()
-            } else {
-                let rootVC = storyboard.instantiateViewController(identifier: "MainTabController") as! MainTabController
-                self.window?.rootViewController = rootVC
-                self.window?.makeKeyAndVisible()
+                //let currenetVC
+                if user == nil {
+                    let rootVC = storyboard.instantiateViewController(identifier: "AuthNavController") as! AuthNavController
+                    self.window!.rootViewController = rootVC
+                    self.window!.makeKeyAndVisible()
+                } else {
+                    let rootVC = storyboard.instantiateViewController(identifier: "MainTabController") as! MainTabController
+                    self.window?.rootViewController = rootVC
+                    self.window?.makeKeyAndVisible()
                 }
             }
         })
     }
 }
+
 
