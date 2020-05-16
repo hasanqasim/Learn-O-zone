@@ -10,7 +10,6 @@ import UIKit
 
 class QuizScreenViewController: UIViewController {
     
-    
     var quizQuestionsArray = [Quiz]()
     var questionNumber = Int()
     var answerNumber = Int()
@@ -21,7 +20,8 @@ class QuizScreenViewController: UIViewController {
     
     var myTimer:Timer?
     var seconds = Int()
-    var curentScore: Int = 0
+    var currentScore: Int = 0
+    var quizOutcomeStatus = true
 
     @IBOutlet var buttons: [UIButton]!
     @IBOutlet weak var questionTextView: UITextView!
@@ -41,10 +41,13 @@ class QuizScreenViewController: UIViewController {
     func pickQuestion() {
         
         if questionCount > maxQuestionsCount {
-            performSegue(withIdentifier: "outcomeSegue", sender: self)
+            DispatchQueue.main.asyncAfter(deadline:.now() + 10.0, execute: {
+               self.performSegue(withIdentifier:"outcomeSegue",sender: self)
+            })
         } else {
             questionNumLabel.text = "Question \(questionCount)/\(maxQuestionsCount)"
-            
+            scoreValueLabel.text = "\(currentScore)"
+            quizOutcomeStatus = true
             seconds = 60
             myTimer?.invalidate()
             myTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
@@ -67,9 +70,8 @@ class QuizScreenViewController: UIViewController {
             }
             questionCount += 1
         }
-        
-        
     }
+    
     
     override func viewDidDisappear(_ animated: Bool) {
         myTimer?.invalidate()
@@ -89,28 +91,40 @@ class QuizScreenViewController: UIViewController {
         
     @IBAction func btnOne(_ sender: Any) {
         if answerNumber == 0 {
+            if (quizOutcomeStatus) {
+                currentScore += 10
+            }
             resultAlert(title: "Correct Answer", message: answerReason)
             pickQuestion()
         } else {
-             resultAlert(title: "Incorrect Answer", message: correctAnswer)
+            quizOutcomeStatus = false
+            resultAlert(title: "Incorrect Answer", message: correctAnswer)
         }
         
     }
     
     @IBAction func btnTwo(_ sender: Any) {
         if answerNumber == 1 {
+            if (quizOutcomeStatus) {
+                currentScore += 10
+            }
             resultAlert(title: "Correct Answer", message: answerReason)
             pickQuestion()
         } else {
+            quizOutcomeStatus = false
             resultAlert(title: "Incorrect Answer", message: "\(correctAnswer)" )
         }
     }
     
     @IBAction func btnThree(_ sender: Any) {
         if answerNumber == 2 {
+            if (quizOutcomeStatus) {
+                currentScore += 10
+            }
             resultAlert(title: "Correct Answer", message: answerReason)
             pickQuestion()
         } else {
+            quizOutcomeStatus = false
             resultAlert(title: "Incorrect Answer", message: correctAnswer)
         }
         
@@ -118,9 +132,13 @@ class QuizScreenViewController: UIViewController {
     
     @IBAction func btnFour(_ sender: Any) {
         if answerNumber == 3 {
+            if (quizOutcomeStatus) {
+                currentScore += 10
+            }
             resultAlert(title: "Correct Answer", message: answerReason)
             pickQuestion()
         } else {
+            quizOutcomeStatus = false
             resultAlert(title: "Incorrect Answer", message: correctAnswer)
         }
     }
