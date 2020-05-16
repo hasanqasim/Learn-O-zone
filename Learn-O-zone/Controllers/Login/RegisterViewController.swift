@@ -120,6 +120,12 @@ class RegisterViewController: UIViewController {
                     //window.rootViewController = rootVC
                     //window.makeKeyAndVisible()
                 }
+                do {
+                    try Auth.auth().signOut()
+                } catch let signOutError as NSError {
+                    // Show error message
+                    print(signOutError)
+                }
                 
             }
         } else {
