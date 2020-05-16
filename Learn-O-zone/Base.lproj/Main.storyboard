@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -119,7 +119,7 @@
             </objects>
             <point key="canvasLocation" x="-2610.144927536232" y="776.78571428571422"/>
         </scene>
-        <!--Simulation-->
+        <!--SIMULATION-->
         <scene sceneID="DIM-lv-BdJ">
             <objects>
                 <viewController id="111-d2-GJt" customClass="SimulationCategoryViewController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
@@ -197,7 +197,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rZ6-Su-Spm"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Simulation" id="32O-pY-ekr"/>
+                    <navigationItem key="navigationItem" title="SIMULATION" id="32O-pY-ekr"/>
                     <connections>
                         <outlet property="emissionsBtn" destination="svj-6f-8e9" id="DZa-PX-Atz"/>
                         <outlet property="weatherBtn" destination="Hap-Gq-pzH" id="3iE-B0-uha"/>
@@ -315,7 +315,7 @@
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kangaroo" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gf2-0t-ipw">
-                                                        <rect key="frame" x="49" y="-14.5" width="200" height="200"/>
+                                                        <rect key="frame" x="49" y="35.5" width="100" height="100"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -341,7 +341,7 @@
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="koala" translatesAutoresizingMaskIntoConstraints="NO" id="6t3-u8-Ebs">
-                                                        <rect key="frame" x="44" y="-14.5" width="200" height="200"/>
+                                                        <rect key="frame" x="44" y="35.5" width="100" height="100"/>
                                                     </imageView>
                                                 </subviews>
                                                 <constraints>
@@ -1616,6 +1616,9 @@
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laU-Uf-a7f">
                                 <rect key="frame" x="20" y="698" width="374" height="79"/>
                                 <color key="backgroundColor" red="0.91424500939999997" green="0.50039517879999995" blue="0.47829151149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="Z1E-b8-nCo"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="30"/>
                                 <state key="normal" title="GENERATE FUN FACT">
                                     <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1625,41 +1628,46 @@
                                     <action selector="generateFunFact:" destination="cpy-dU-zjg" eventType="touchUpInside" id="odz-6B-j2I"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="FUN FACT COMES HERE" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4Lu-AF-aMi">
-                                <rect key="frame" x="71" y="164" width="272" height="149"/>
-                                <color key="backgroundColor" red="0.97137612100000004" green="0.6477246284" blue="0.34287053350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="funFactBox" translatesAutoresizingMaskIntoConstraints="NO" id="DgF-XR-pIO">
+                                <rect key="frame" x="20" y="104" width="374" height="252"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="giftbox" translatesAutoresizingMaskIntoConstraints="NO" id="sL5-mc-EvZ">
+                                <rect key="frame" x="87" y="431" width="240" height="240"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="FUN FACT COMES HERE" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q11-MN-bYc">
+                                <rect key="frame" x="43" y="139" width="329" height="183"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="Beh-vo-g1g"/>
+                                </constraints>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giftbox" translatesAutoresizingMaskIntoConstraints="NO" id="sL5-mc-EvZ">
-                                <rect key="frame" x="87" y="380" width="240" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="R15-rm-a7S"/>
-                                    <constraint firstAttribute="height" constant="240" id="t9r-Yn-2Wv"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.97137612100000004" green="0.6477246284" blue="0.34287053350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4Lu-AF-aMi" firstAttribute="leading" secondItem="0e4-f5-a63" secondAttribute="leading" constant="71" id="3St-WE-gur"/>
-                            <constraint firstItem="laU-Uf-a7f" firstAttribute="centerX" secondItem="W3M-vK-6Lj" secondAttribute="centerX" id="Bad-Ln-cDs"/>
-                            <constraint firstItem="laU-Uf-a7f" firstAttribute="leading" secondItem="0e4-f5-a63" secondAttribute="leading" constant="20" id="HLn-AG-j3K"/>
-                            <constraint firstItem="4Lu-AF-aMi" firstAttribute="centerX" secondItem="W3M-vK-6Lj" secondAttribute="centerX" id="P0o-gh-KS2"/>
-                            <constraint firstItem="sL5-mc-EvZ" firstAttribute="centerY" secondItem="W3M-vK-6Lj" secondAttribute="centerY" constant="52" id="Pxd-a4-wnm"/>
-                            <constraint firstItem="sL5-mc-EvZ" firstAttribute="centerX" secondItem="W3M-vK-6Lj" secondAttribute="centerX" id="SfH-jN-zEZ"/>
-                            <constraint firstItem="4Lu-AF-aMi" firstAttribute="top" secondItem="0e4-f5-a63" secondAttribute="top" constant="76" id="Wru-lo-Spz"/>
-                            <constraint firstItem="sL5-mc-EvZ" firstAttribute="top" secondItem="4Lu-AF-aMi" secondAttribute="bottom" constant="67" id="dpm-br-9dJ"/>
-                            <constraint firstItem="0e4-f5-a63" firstAttribute="bottom" secondItem="laU-Uf-a7f" secondAttribute="bottom" constant="36" id="gJO-P6-nVO"/>
-                            <constraint firstItem="laU-Uf-a7f" firstAttribute="top" secondItem="sL5-mc-EvZ" secondAttribute="bottom" constant="78" id="iRi-AN-P5X"/>
-                            <constraint firstItem="0e4-f5-a63" firstAttribute="trailing" secondItem="laU-Uf-a7f" secondAttribute="trailing" constant="20" id="kYj-TD-VfX"/>
+                            <constraint firstItem="DgF-XR-pIO" firstAttribute="trailing" secondItem="laU-Uf-a7f" secondAttribute="trailing" id="1U2-AQ-ev7"/>
+                            <constraint firstItem="0e4-f5-a63" firstAttribute="bottom" secondItem="laU-Uf-a7f" secondAttribute="bottom" constant="36" id="HdO-KN-5qo"/>
+                            <constraint firstItem="DgF-XR-pIO" firstAttribute="centerY" secondItem="Q11-MN-bYc" secondAttribute="centerY" id="REf-jY-FO4"/>
+                            <constraint firstItem="sL5-mc-EvZ" firstAttribute="centerX" secondItem="laU-Uf-a7f" secondAttribute="centerX" id="VhD-bT-af4"/>
+                            <constraint firstItem="sL5-mc-EvZ" firstAttribute="top" secondItem="DgF-XR-pIO" secondAttribute="bottom" constant="75" id="bEP-P7-K0x"/>
+                            <constraint firstItem="DgF-XR-pIO" firstAttribute="leading" secondItem="laU-Uf-a7f" secondAttribute="leading" id="f3L-Nh-pFx"/>
+                            <constraint firstItem="DgF-XR-pIO" firstAttribute="leading" secondItem="W3M-vK-6Lj" secondAttribute="leadingMargin" id="foE-kt-kmJ"/>
+                            <constraint firstItem="laU-Uf-a7f" firstAttribute="top" secondItem="sL5-mc-EvZ" secondAttribute="bottom" constant="27" id="gio-4U-2YS"/>
+                            <constraint firstItem="DgF-XR-pIO" firstAttribute="trailing" secondItem="W3M-vK-6Lj" secondAttribute="trailingMargin" id="myG-vT-TDg"/>
+                            <constraint firstItem="sL5-mc-EvZ" firstAttribute="leading" secondItem="0e4-f5-a63" secondAttribute="leading" constant="87" id="sQR-Zc-SQy"/>
+                            <constraint firstItem="DgF-XR-pIO" firstAttribute="centerX" secondItem="Q11-MN-bYc" secondAttribute="centerX" id="v2h-gP-nW0"/>
+                            <constraint firstItem="Q11-MN-bYc" firstAttribute="top" secondItem="0e4-f5-a63" secondAttribute="top" constant="51" id="weB-IB-u9w"/>
+                            <constraint firstItem="Q11-MN-bYc" firstAttribute="leading" secondItem="0e4-f5-a63" secondAttribute="leading" constant="43" id="xnB-Pn-vJN"/>
+                            <constraint firstItem="DgF-XR-pIO" firstAttribute="top" secondItem="0e4-f5-a63" secondAttribute="top" constant="16" id="yIA-Wv-ye8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0e4-f5-a63"/>
                     </view>
                     <navigationItem key="navigationItem" title="FUN FACTS" id="mku-Eq-5J7"/>
                     <connections>
                         <outlet property="funFactButton" destination="laU-Uf-a7f" id="b32-s5-2zR"/>
-                        <outlet property="funFactTextView" destination="4Lu-AF-aMi" id="5M2-wo-GUO"/>
+                        <outlet property="funFactTextView" destination="Q11-MN-bYc" id="V3G-gO-PKR"/>
                         <outlet property="giftBoxIV" destination="sL5-mc-EvZ" id="0Nx-r9-wQu"/>
                     </connections>
                 </viewController>
@@ -1868,26 +1876,20 @@
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksc-vA-0r0">
-                                <rect key="frame" x="171.5" y="198.5" width="71" height="39.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksc-vA-0r0">
+                                <rect key="frame" x="79" y="199" width="258" height="40"/>
                                 <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="34"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You earned 5 points !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGn-Dq-qhG">
-                                <rect key="frame" x="83.5" y="739" width="247.5" height="29"/>
-                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="25"/>
-                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct Guess !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysj-3i-fDE">
-                                <rect key="frame" x="78.5" y="273" width="257" height="40.5"/>
+                                <rect key="frame" x="78.5" y="273.5" width="257" height="40.5"/>
                                 <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="35"/>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0ZZY-happy" translatesAutoresizingMaskIntoConstraints="NO" id="7tb-rh-DyN">
-                                <rect key="frame" x="52" y="348.5" width="310" height="310"/>
+                                <rect key="frame" x="52" y="349" width="310" height="310"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="310" id="f7L-II-rmk"/>
                                     <constraint firstAttribute="width" constant="310" id="zER-gG-Who"/>
@@ -1897,13 +1899,11 @@
                         <color key="backgroundColor" red="0.70748716590000005" green="0.80485552549999995" blue="0.38298147919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="r1v-af-g4d" firstAttribute="top" secondItem="3gW-iu-441" secondAttribute="top" constant="50" id="8wr-Qt-hp2"/>
-                            <constraint firstItem="WGn-Dq-qhG" firstAttribute="centerX" secondItem="ZRw-fe-U5R" secondAttribute="centerX" id="VKr-yp-kyu"/>
                             <constraint firstItem="r1v-af-g4d" firstAttribute="centerX" secondItem="ZRw-fe-U5R" secondAttribute="centerX" id="VrD-ff-lIT"/>
                             <constraint firstItem="7tb-rh-DyN" firstAttribute="centerX" secondItem="ZRw-fe-U5R" secondAttribute="centerX" id="ZTy-Of-xGJ"/>
                             <constraint firstItem="Ysj-3i-fDE" firstAttribute="centerX" secondItem="ZRw-fe-U5R" secondAttribute="centerX" id="fdQ-LN-E9f"/>
                             <constraint firstItem="7tb-rh-DyN" firstAttribute="top" secondItem="Ysj-3i-fDE" secondAttribute="bottom" constant="35" id="gsi-oA-iUM"/>
-                            <constraint firstItem="Ksc-vA-0r0" firstAttribute="centerX" secondItem="ZRw-fe-U5R" secondAttribute="centerX" id="pmr-k0-STh"/>
-                            <constraint firstItem="3gW-iu-441" firstAttribute="bottom" secondItem="WGn-Dq-qhG" secondAttribute="bottom" constant="45" id="t3p-Vo-cGq"/>
+                            <constraint firstItem="Ksc-vA-0r0" firstAttribute="centerX" secondItem="ZRw-fe-U5R" secondAttribute="centerX" constant="1" id="pmr-k0-STh"/>
                             <constraint firstItem="Ysj-3i-fDE" firstAttribute="top" secondItem="Ksc-vA-0r0" secondAttribute="bottom" constant="35" id="tAZ-f8-bZK"/>
                             <constraint firstItem="Ksc-vA-0r0" firstAttribute="top" secondItem="r1v-af-g4d" secondAttribute="bottom" constant="20" id="zlx-8A-X2Q"/>
                         </constraints>
@@ -1914,6 +1914,7 @@
                         <outlet property="congratMessage" destination="r1v-af-g4d" id="SFJ-R9-Ge9"/>
                         <outlet property="guessOutcome" destination="Ysj-3i-fDE" id="FBK-ZG-atk"/>
                         <outlet property="ozzyReactionIV" destination="7tb-rh-DyN" id="zX7-fB-XcH"/>
+                        <outlet property="usernameLabel" destination="Ksc-vA-0r0" id="rQH-Wi-HWn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKg-6U-nbp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2545,11 +2546,11 @@
             </objects>
             <point key="canvasLocation" x="1134.7826086956522" y="2317.6339285714284"/>
         </scene>
-        <!--Quiz-->
+        <!--QUIZ-->
         <scene sceneID="RRG-mz-oNp">
             <objects>
                 <navigationController storyboardIdentifier="QuizNavController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="g9p-5f-a4I" customClass="QuizNavController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Quiz" image="pencil" catalog="system" id="lLq-HX-7ya"/>
+                    <tabBarItem key="tabBarItem" title="QUIZ" image="book.fill" catalog="system" id="lLq-HX-7ya"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cxb-8t-w21">
                         <autoresizingMask key="autoresizingMask"/>
@@ -2991,6 +2992,10 @@
             <point key="canvasLocation" x="-4528.985507246377" y="2516.5178571428569"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fqT-Ct-6QQ"/>
+        <segue reference="iyM-Ie-Bci"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="0ZZY-happy" width="81" height="89.5"/>
         <image name="0ZZY-info" width="87.5" height="96.5"/>
@@ -3005,6 +3010,7 @@
         <image name="balloon" width="166.5" height="166.5"/>
         <image name="balloon2" width="166.5" height="166.5"/>
         <image name="balloon3" width="166.5" height="166.5"/>
+        <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="boom" width="50" height="50"/>
         <image name="car" width="66.5" height="66.5"/>
         <image name="circle" width="170.5" height="170.5"/>
@@ -3012,10 +3018,11 @@
         <image name="congrats" width="100" height="66.5"/>
         <image name="earth_pollution" width="50" height="50"/>
         <image name="ecosystem" width="133" height="133"/>
-        <image name="gamecontroller.fill" catalog="system" width="64" height="40"/>
+        <image name="funFactBox" width="150" height="100"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="82"/>
         <image name="giftbox" width="83" height="83"/>
         <image name="health" width="33" height="33"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="industry" width="66.5" height="66.5"/>
         <image name="kangaroo" width="100" height="100"/>
         <image name="key" width="170.5" height="170.5"/>
@@ -3025,7 +3032,6 @@
         <image name="messageBubble" width="100" height="100"/>
         <image name="ozoneEffects" width="133" height="66.5"/>
         <image name="ozoneSourcesBtn" width="133" height="66.5"/>
-        <image name="pencil" catalog="system" width="64" height="56"/>
         <image name="pointed_arrow" width="200" height="46.5"/>
         <image name="pointed_arrow (1)" width="200" height="46.5"/>
         <image name="score" width="300" height="122"/>
@@ -3036,10 +3042,6 @@
         <image name="time" width="149" height="49"/>
         <image name="user" width="170.5" height="170.5"/>
         <image name="wind" width="66.5" height="66.5"/>
-        <image name="wind.snow" catalog="system" width="64" height="54"/>
+        <image name="wind.snow" catalog="system" width="128" height="109"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="fqT-Ct-6QQ"/>
-        <segue reference="iyM-Ie-Bci"/>
-    </inferredMetricsTieBreakers>
 </document>

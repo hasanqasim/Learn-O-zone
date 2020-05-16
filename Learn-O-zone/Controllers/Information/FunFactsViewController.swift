@@ -11,9 +11,10 @@ import Firebase
 
 class FunFactsViewController: UIViewController {
 
+    @IBOutlet weak var funFactTextView: UITextView!
     @IBOutlet weak var giftBoxIV: UIImageView!
     @IBOutlet weak var funFactButton: UIButton!
-    @IBOutlet weak var funFactTextView: UITextView!
+
     
     var funFacts = [FunFact]()
     

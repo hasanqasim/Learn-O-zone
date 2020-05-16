@@ -10,6 +10,7 @@ import UIKit
 // this screen pops up when user guessess the current aqi
 class GuessAQIOutcomeViewController: UIViewController {
     
+    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var guessOutcome: UILabel!
     @IBOutlet weak var congratMessage: UILabel!
     @IBOutlet weak var ozzyReactionIV: UIImageView!
@@ -81,6 +82,9 @@ class GuessAQIOutcomeViewController: UIViewController {
         default:
             view.backgroundColor = .gray
         }
+        
+        //this fills the username label with the username of the logged in user
+        usernameLabel.text = CurrentUser.getCurrentUser().username
     }
     
 
