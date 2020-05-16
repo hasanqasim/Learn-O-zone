@@ -84,6 +84,7 @@ class QuizScreenViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         myTimer?.invalidate()
+        navigationController?.popViewController(animated: true)
     }
     
     /*
