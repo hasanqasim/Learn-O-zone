@@ -34,6 +34,8 @@ class QuizOutcomeViewController: UIViewController {
     */
 
     @IBAction func backToCategoriesButtonTapped(_ sender: Any) {
-        
+        //let vc = storyboard?.instantiateViewController(withIdentifier: "QuizCategoryViewController") as! QuizCategoryViewController
+        //navigationController?.popToViewController(vc, animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
 }

@@ -40,7 +40,8 @@ class QuizScreenViewController: UIViewController {
     
  
     func pickQuestion() {
-        
+        scoreValueLabel.text = "\(currentScore)"
+        myTimer?.invalidate()
         if questionCount > maxQuestionsCount {
             CurrentUser.getCurrentUser().setScore(currentScore: currentScore)
             let currentBestScore = CurrentUser.getCurrentUser().bestScore
@@ -51,15 +52,13 @@ class QuizScreenViewController: UIViewController {
             if let userId = Auth.auth().currentUser?.uid {
                 db.collection("Users").document(userId).updateData(["score":CurrentUser.getCurrentUser().score, "bestScore":CurrentUser.getCurrentUser().bestScore])
             }
-            DispatchQueue.main.asyncAfter(deadline:.now() + 5.0, execute: {
+            DispatchQueue.main.asyncAfter(deadline:.now() + 2.0, execute: {
                self.performSegue(withIdentifier:"outcomeSegue",sender: self)
             })
         } else {
             questionNumLabel.text = "Question \(questionCount)/\(maxQuestionsCount)"
-            scoreValueLabel.text = "\(currentScore)"
             quizOutcomeStatus = true
             seconds = 60
-            myTimer?.invalidate()
             myTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
             //RunLoop.current.add(myTimer!, forMode: RunLoop.Mode.common)
             
@@ -104,11 +103,11 @@ class QuizScreenViewController: UIViewController {
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
-            resultAlert(title: "Correct Answer", message: answerReason)
+            resultAlert(title: "Correct Answer", message: correctAnswer)
             pickQuestion()
         } else {
             quizOutcomeStatus = false
-            resultAlert(title: "Incorrect Answer", message: correctAnswer)
+            resultAlert(title: "Incorrect Answer", message: answerReason)
         }
         
     }
@@ -118,11 +117,11 @@ class QuizScreenViewController: UIViewController {
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
-            resultAlert(title: "Correct Answer", message: answerReason)
+            resultAlert(title: "Correct Answer", message: correctAnswer)
             pickQuestion()
         } else {
             quizOutcomeStatus = false
-            resultAlert(title: "Incorrect Answer", message: "\(correctAnswer)" )
+            resultAlert(title: "Incorrect Answer", message: answerReason )
         }
     }
     
@@ -131,11 +130,11 @@ class QuizScreenViewController: UIViewController {
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
-            resultAlert(title: "Correct Answer", message: answerReason)
+            resultAlert(title: "Correct Answer", message: correctAnswer)
             pickQuestion()
         } else {
             quizOutcomeStatus = false
-            resultAlert(title: "Incorrect Answer", message: correctAnswer)
+            resultAlert(title: "Incorrect Answer", message: answerReason)
         }
         
     }
@@ -145,11 +144,11 @@ class QuizScreenViewController: UIViewController {
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
-            resultAlert(title: "Correct Answer", message: answerReason)
+            resultAlert(title: "Correct Answer", message: correctAnswer)
             pickQuestion()
         } else {
             quizOutcomeStatus = false
-            resultAlert(title: "Incorrect Answer", message: correctAnswer)
+            resultAlert(title: "Incorrect Answer", message: answerReason)
         }
     }
     
