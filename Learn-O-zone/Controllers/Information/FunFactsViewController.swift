@@ -43,8 +43,20 @@ class FunFactsViewController: UIViewController {
         funFactTextView.text = funFacts[0].fact
         giftBoxIV.image = #imageLiteral(resourceName: "opengiftbox")
         //giftBoxIV.frame.size = CGSize(width: 300, height: 300)
+        self.funFactButton.isEnabled = false
        
         
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        DispatchQueue.main.async {
+            Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(self.enableButton), userInfo: nil, repeats: false)
+        }
+    }
+    
+    @objc func enableButton() {
+        self.funFactButton.isEnabled = true
     }
     
     func getFunFactsFromFirebase() {
