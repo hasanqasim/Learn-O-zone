@@ -38,8 +38,8 @@
 		A6B49028243CACDF00BB3093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B49026243CACDF00BB3093 /* Main.storyboard */; };
 		A6B4902A243CACE100BB3093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B49029243CACE100BB3093 /* Assets.xcassets */; };
 		A6B4902D243CACE100BB3093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B4902B243CACE100BB3093 /* LaunchScreen.storyboard */; };
-		A6CC1369246F81340042FDA1 /* QuizPositiveOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC1368246F81340042FDA1 /* QuizPositiveOutcomeViewController.swift */; };
-		A6CC136B246F81640042FDA1 /* QuizNegativeOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC136A246F81640042FDA1 /* QuizNegativeOutcomeViewController.swift */; };
+		A6CC1369246F81340042FDA1 /* QuizOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC1368246F81340042FDA1 /* QuizOutcomeViewController.swift */; };
+		A6CC136D246F9B3C0042FDA1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CC136C246F9B3C0042FDA1 /* User.swift */; };
 		A6CF13BE244D321900665899 /* QuizCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CF13BD244D321800665899 /* QuizCategoryViewController.swift */; };
 		A6E44F5F2455803D0043FA7E /* GuessAQIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E44F5E2455803D0043FA7E /* GuessAQIViewController.swift */; };
 		A6E44F61245580B60043FA7E /* GuessAQIOutcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E44F60245580B60043FA7E /* GuessAQIOutcomeViewController.swift */; };
@@ -83,8 +83,8 @@
 		A6B49029243CACE100BB3093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6B4902C243CACE100BB3093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6B4902E243CACE100BB3093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6CC1368246F81340042FDA1 /* QuizPositiveOutcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPositiveOutcomeViewController.swift; sourceTree = "<group>"; };
-		A6CC136A246F81640042FDA1 /* QuizNegativeOutcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizNegativeOutcomeViewController.swift; sourceTree = "<group>"; };
+		A6CC1368246F81340042FDA1 /* QuizOutcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizOutcomeViewController.swift; sourceTree = "<group>"; };
+		A6CC136C246F9B3C0042FDA1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A6CF13BD244D321800665899 /* QuizCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCategoryViewController.swift; sourceTree = "<group>"; };
 		A6E44F5E2455803D0043FA7E /* GuessAQIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessAQIViewController.swift; sourceTree = "<group>"; };
 		A6E44F60245580B60043FA7E /* GuessAQIOutcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessAQIOutcomeViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +160,7 @@
 				A635881D245546F4004E3F49 /* AirQualityResponse.swift */,
 				A65EDC17245CFBCA0009EE0C /* Quiz.swift */,
 				A65ED7702467A7BF0075DFD2 /* FunFact.swift */,
+				A6CC136C246F9B3C0042FDA1 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,8 +200,7 @@
 			children = (
 				A65EDC19245D4B170009EE0C /* QuizScreenViewController.swift */,
 				A6CF13BD244D321800665899 /* QuizCategoryViewController.swift */,
-				A6CC1368246F81340042FDA1 /* QuizPositiveOutcomeViewController.swift */,
-				A6CC136A246F81640042FDA1 /* QuizNegativeOutcomeViewController.swift */,
+				A6CC1368246F81340042FDA1 /* QuizOutcomeViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -400,13 +400,13 @@
 				A6E4F50224468E7D00F48DD7 /* HomeViewController.swift in Sources */,
 				A635881C245546EA004E3F49 /* Pollutant.swift in Sources */,
 				A6358819245516B4004E3F49 /* PollutantInformationViewController.swift in Sources */,
-				A6CC136B246F81640042FDA1 /* QuizNegativeOutcomeViewController.swift in Sources */,
 				0495557624513988008526B7 /* Helper.swift in Sources */,
 				A6051741246BA368005C8B30 /* SimulationCategoryViewController.swift in Sources */,
 				A69E90FD24499EA800C4E574 /* AQIViewController.swift in Sources */,
+				A6CC136D246F9B3C0042FDA1 /* User.swift in Sources */,
 				A6E44F61245580B60043FA7E /* GuessAQIOutcomeViewController.swift in Sources */,
 				A6051743246BA3C2005C8B30 /* WeatherSimulationViewController.swift in Sources */,
-				A6CC1369246F81340042FDA1 /* QuizPositiveOutcomeViewController.swift in Sources */,
+				A6CC1369246F81340042FDA1 /* QuizOutcomeViewController.swift in Sources */,
 				A65ED7712467A7BF0075DFD2 /* FunFact.swift in Sources */,
 				A6E4F50424468EB400F48DD7 /* InformationViewController.swift in Sources */,
 				04955584245265BF008526B7 /* SubInformationViewController.swift in Sources */,

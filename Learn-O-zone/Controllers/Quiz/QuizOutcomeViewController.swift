@@ -1,5 +1,5 @@
 //
-//  QuizNegativeOutcomeViewController.swift
+//  QuizPositiveOutcomeViewController.swift
 //  Learn-O-zone
 //
 //  Created by Hasan Qasim on 16/5/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class QuizNegativeOutcomeViewController: UIViewController {
+class QuizOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

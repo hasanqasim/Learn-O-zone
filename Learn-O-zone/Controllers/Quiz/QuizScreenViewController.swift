@@ -42,7 +42,7 @@ class QuizScreenViewController: UIViewController {
         
         if questionCount > maxQuestionsCount {
             DispatchQueue.main.asyncAfter(deadline:.now() + 5.0, execute: {
-               self.performSegue(withIdentifier:"positiveOutcomeSegue",sender: self)
+               self.performSegue(withIdentifier:"outcomeSegue",sender: self)
             })
         } else {
             questionNumLabel.text = "Question \(questionCount)/\(maxQuestionsCount)"

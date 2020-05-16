@@ -25,7 +25,7 @@ class RegisterViewController: UIViewController {
     
     var kangarooBoolean = false
     var KoalaBoolean = false
-    var avatar: String?
+    var avatar = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,28 +93,31 @@ class RegisterViewController: UIViewController {
     */
     // controls the registarton process. Checks if all good then goes ahead and registers the user on firebase
     @IBAction func signUpTapped(_ sender: Any) {
-        let userName = usernameTextfield.text!
+        let username = usernameTextfield.text!
         let email = emailTextfield.text!
         if (kangarooButton.isSelected) {
             avatar = "kangaroo"
         } else if (koalaButton.isSelected) {
             avatar = "koala"
         }
-        saveToPreferences(userName, avatar!)
+        
         let password = passwordTextfield.text!
         let confirmPassword = confirmPasswordTextfield.text!
         
-        if (password.elementsEqual(confirmPassword) == true) {
+        if (!password.isEmpty && password.elementsEqual(confirmPassword) == true && !username.isEmpty && !avatar.isEmpty) {
+            saveToPreferences(username, avatar)
             Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                 if let err = error {
                     print(err.localizedDescription)
                 } else {
                     let db = Firestore.firestore()
-                    db.collection("Users").addDocument(data: ["username" : userName, "uid":result!.user.uid, "avatar":self.avatar!])
+                    db.collection("Users").addDocument(data: ["username" : username, "uid":result!.user.uid, "avatar":self.avatar, "score": 0, "bestScore": 0])
                     self.navigationController?.popViewController(animated: true)
                 }
                 
             }
+        } else {
+            errorAlert("Error", "Incomplete Registration Fields. Please Try Again")
         }
         
     }
@@ -130,6 +133,12 @@ class RegisterViewController: UIViewController {
         preferences.set(aName, forKey: aKey)
         //  Save to disk
         //let didSave = preferences.synchronize()
+    }
+    
+    func errorAlert(_ title: String, _ message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default, handler:nil))
+        self.present(alertController, animated:true, completion:nil)
     }
     
 }
