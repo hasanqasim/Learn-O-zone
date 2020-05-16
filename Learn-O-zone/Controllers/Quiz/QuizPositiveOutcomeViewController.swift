@@ -1,24 +1,19 @@
 //
-//  SplashViewController.swift
+//  QuizPositiveOutcomeViewController.swift
 //  Learn-O-zone
 //
-//  Created by Hasan Qasim on 10/5/20.
+//  Created by Hasan Qasim on 16/5/20.
 //  Copyright © 2020 Hasan Qasim. All rights reserved.
 //
 
 import UIKit
 
-class SplashViewController: UIViewController {
+class QuizPositiveOutcomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        view.backgroundColor = Helper.app.splashViewBackgroundColour
     }
     
 

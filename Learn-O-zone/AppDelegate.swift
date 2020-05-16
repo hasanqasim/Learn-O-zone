@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        UINavigationBar.appearance().barTintColor = UIColor(hexString: "d4f8e8")
 //        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor(hexString: "f67575")]
         //window = UIWindow(frame: UIScreen.main.bounds)
-        window = UIWindow(frame: UIScreen.main.bounds)
         FirebaseApp.configure()
         observeAuthorisedState()
         return true
@@ -32,12 +31,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-    private func observeAuthorisedState() {
+    
+    func observeAuthorisedState() {
+        window = UIWindow(frame: UIScreen.main.bounds)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let rootVC = storyboard.instantiateViewController(identifier: "SplashViewController") as! SplashViewController
         self.window!.rootViewController = rootVC
         self.window!.makeKeyAndVisible()
-        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+        
+        DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
+            self.handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             if user == nil {
                 let rootVC = storyboard.instantiateViewController(identifier: "AuthNavController") as! AuthNavController
                 self.window!.rootViewController = rootVC
@@ -46,9 +49,9 @@ extension AppDelegate {
                 let rootVC = storyboard.instantiateViewController(identifier: "MainTabController") as! MainTabController
                 self.window?.rootViewController = rootVC
                 self.window?.makeKeyAndVisible()
+                }
             }
-        }
-       
+        })
     }
 }
 
