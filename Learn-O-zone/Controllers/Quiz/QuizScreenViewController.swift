@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class QuizScreenViewController: UIViewController {
+class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
     
     var quizQuestionsArray = [Quiz]()
     var questionNumber = Int()
@@ -35,7 +35,12 @@ class QuizScreenViewController: UIViewController {
         super.viewDidLoad()
         
         pickQuestion()
+        self.tabBarController?.delegate = self
         
+    }
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        self.navigationController?.popViewController(animated: true)
     }
     
  
@@ -81,11 +86,6 @@ class QuizScreenViewController: UIViewController {
         }
     }
     
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        myTimer?.invalidate()
-        navigationController?.popViewController(animated: true)
-    }
     
     /*
     func shuffleAnswers(_ qNumber: Int) -> Int {
