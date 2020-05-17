@@ -2002,6 +2002,15 @@
                                     <constraint firstAttribute="width" constant="310" id="zER-gG-Who"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMw-Yq-ufJ">
+                                <rect key="frame" x="52" y="735" width="297" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="BACK TO AQI SCREEN"/>
+                                <connections>
+                                    <action selector="backToAQIScreenButtonTapped:" destination="0CQ-Ju-Nn6" eventType="touchUpInside" id="TpC-h8-Oty"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.70748716590000005" green="0.80485552549999995" blue="0.38298147919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
