@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -2002,11 +2002,13 @@
                                     <constraint firstAttribute="width" constant="310" id="zER-gG-Who"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMw-Yq-ufJ">
-                                <rect key="frame" x="52" y="735" width="297" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="BACK TO AQI SCREEN"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMw-Yq-ufJ">
+                                <rect key="frame" x="52" y="728" width="310" height="59"/>
+                                <color key="backgroundColor" red="0.92501443620000001" green="0.4987649918" blue="0.48275506499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="25"/>
+                                <state key="normal" title="BACK TO AQI SCREEN">
+                                    <color key="titleColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="backToAQIScreenButtonTapped:" destination="0CQ-Ju-Nn6" eventType="touchUpInside" id="TpC-h8-Oty"/>
                                 </connections>
@@ -2014,7 +2016,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.70748716590000005" green="0.80485552549999995" blue="0.38298147919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="OMw-Yq-ufJ" firstAttribute="leading" secondItem="3gW-iu-441" secondAttribute="leading" constant="52" id="6JK-N5-Z19"/>
                             <constraint firstItem="r1v-af-g4d" firstAttribute="top" secondItem="3gW-iu-441" secondAttribute="top" constant="50" id="8wr-Qt-hp2"/>
+                            <constraint firstItem="3gW-iu-441" firstAttribute="trailing" secondItem="OMw-Yq-ufJ" secondAttribute="trailing" constant="52" id="B6f-pp-UcR"/>
+                            <constraint firstItem="3gW-iu-441" firstAttribute="bottom" secondItem="OMw-Yq-ufJ" secondAttribute="bottom" constant="26" id="Dqs-da-1Qj"/>
                             <constraint firstItem="r1v-af-g4d" firstAttribute="centerX" secondItem="ZRw-fe-U5R" secondAttribute="centerX" id="VrD-ff-lIT"/>
                             <constraint firstItem="7tb-rh-DyN" firstAttribute="centerX" secondItem="ZRw-fe-U5R" secondAttribute="centerX" id="ZTy-Of-xGJ"/>
                             <constraint firstItem="Ysj-3i-fDE" firstAttribute="centerX" secondItem="ZRw-fe-U5R" secondAttribute="centerX" id="fdQ-LN-E9f"/>
@@ -2027,6 +2032,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="GUESS OUTCOME" id="uPJ-PH-5cQ"/>
                     <connections>
+                        <outlet property="backToAQIButton" destination="OMw-Yq-ufJ" id="i2a-jM-Xsu"/>
                         <outlet property="congratMessage" destination="r1v-af-g4d" id="SFJ-R9-Ge9"/>
                         <outlet property="guessOutcome" destination="Ysj-3i-fDE" id="FBK-ZG-atk"/>
                         <outlet property="ozzyReactionIV" destination="7tb-rh-DyN" id="zX7-fB-XcH"/>
@@ -2690,7 +2696,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OzoneLogo" translatesAutoresizingMaskIntoConstraints="NO" id="AHs-0E-ltN">
-                                <rect key="frame" x="-134" y="107" width="682" height="682"/>
+                                <rect key="frame" x="36.5" y="277.5" width="341" height="341"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -3197,6 +3203,11 @@ High:  24.9℃ to 45.2℃</string>
             <point key="canvasLocation" x="-4528.985507246377" y="2516.5178571428569"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nTu-wm-qwV"/>
+        <segue reference="fqT-Ct-6QQ"/>
+        <segue reference="iyM-Ie-Bci"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="0ZZY-happy" width="81" height="89.5"/>
         <image name="0ZZY-info" width="87.5" height="96.5"/>
@@ -3211,7 +3222,7 @@ High:  24.9℃ to 45.2℃</string>
         <image name="balloon" width="166.5" height="166.5"/>
         <image name="balloon2" width="166.5" height="166.5"/>
         <image name="balloon3" width="166.5" height="166.5"/>
-        <image name="book.fill" catalog="system" width="64" height="50"/>
+        <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="boom" width="50" height="50"/>
         <image name="car" width="66.5" height="66.5"/>
         <image name="circle" width="170.5" height="170.5"/>
@@ -3220,10 +3231,10 @@ High:  24.9℃ to 45.2℃</string>
         <image name="earth_pollution" width="50" height="50"/>
         <image name="ecosystem" width="133" height="133"/>
         <image name="funFactBox" width="150" height="100"/>
-        <image name="gamecontroller.fill" catalog="system" width="64" height="40"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="82"/>
         <image name="giftbox" width="83" height="83"/>
         <image name="health" width="33" height="33"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="industry" width="66.5" height="66.5"/>
         <image name="kangaroo" width="100" height="100"/>
         <image name="key" width="170.5" height="170.5"/>
@@ -3244,11 +3255,6 @@ High:  24.9℃ to 45.2℃</string>
         <image name="time" width="149" height="49"/>
         <image name="user" width="170.5" height="170.5"/>
         <image name="wind" width="66.5" height="66.5"/>
-        <image name="wind.snow" catalog="system" width="64" height="54"/>
+        <image name="wind.snow" catalog="system" width="128" height="109"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="nTu-wm-qwV"/>
-        <segue reference="fqT-Ct-6QQ"/>
-        <segue reference="iyM-Ie-Bci"/>
-    </inferredMetricsTieBreakers>
 </document>

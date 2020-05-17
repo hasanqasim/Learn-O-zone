@@ -14,6 +14,7 @@ class GuessAQIOutcomeViewController: UIViewController {
     @IBOutlet weak var guessOutcome: UILabel!
     @IBOutlet weak var congratMessage: UILabel!
     @IBOutlet weak var ozzyReactionIV: UIImageView!
+    @IBOutlet weak var backToAQIButton: UIButton!
     
     var currentAQIValue: Double?
     var tappedButtonColor: String?
@@ -24,6 +25,8 @@ class GuessAQIOutcomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        backToAQIButton.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
+        
         // this switch statement checks if the guess is correct or not then display relevant information accordingly
         self.navigationItem.setHidesBackButton(true, animated: true);
         aqiValue = Int(currentAQIValue!)
