@@ -29,18 +29,32 @@ class WeatherSimulationViewController: UIViewController {
         temperatureView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
         windView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
         airConditionView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
+        
+        addTapGestureRecognizers()
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "tempSegue" {
+            let destination = segue.destination as! FactorInfoViewController
+            destination.factorName = "TEMPERATURE"
+            destination.factorImageString = "tempGuy"
+            destination.rangeInfo = "Low: \n -2℃ to 7.2℃ \n \n Moderate: \n 7.2℃ to 24.9℃ \n \n High: \n 24.9℃ to 45.2℃"
+            destination.factorInfo = "The level of ozone formation is high when the temperature is high. As the temperature is high, the amount of sunlight present in the atmosphere is also high. \n \n Ozone is formed when volatile organic compounds (VOCs)and nitrogen oxides (NOx) react with sunlight. Hence it is possible to say that higher the temperature, higher is the amount of Ozone formation. "
+            
+        } else if (segue.identifier ==  "windSegue") {
+            let destination = segue.destination as! FactorInfoViewController
+            destination.factorName = "WIND"
+            destination.factorImageString = "windmill"
+            destination.factorInfo = "The level of ozone formation is high when the wind speed is slow. Research says that higher wind speeds lower the formation of Ozone. \n \n This is because when the wind is very strong, the chemical reaction between volatile organic compounds (VOCs), nitrogen oxides (NOx) and sunlight would not react. Hence, the level of Ozone formation will also decrease."
+            destination.rangeInfo = "Low: \n 7.749km/h to 12.5 km/h \n \n Moderate: \n 12.5 km/h to 15.764 km/h \n \n High: \n 15.764 km/h to 21.083 km/h"
+        }
     }
-    */
 
     @IBAction func temperatureSliderTapped(_ sender: Any) {
         
@@ -135,6 +149,25 @@ class WeatherSimulationViewController: UIViewController {
             ozoneLevelTextView.text = "Moderate"
         default:
             ozoneLevelTextView.text = "Moderate"
+        }
+    }
+    
+    func addTapGestureRecognizers() {
+        let tapGestureRecognizerOne = UITapGestureRecognizer(target: self, action: #selector(viewTapped(tapGestureRecognizer:)))
+        temperatureView.isUserInteractionEnabled = true
+        temperatureView.addGestureRecognizer(tapGestureRecognizerOne)
+        let tapGestureRecognizerTwo = UITapGestureRecognizer(target: self, action: #selector(viewTapped(tapGestureRecognizer:)))
+        windView.isUserInteractionEnabled = true
+        windView.addGestureRecognizer(tapGestureRecognizerTwo)
+        
+    }
+    
+    @objc func viewTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        let tappedView = tapGestureRecognizer.view as! UIView
+        if (tappedView == windView) {
+            performSegue(withIdentifier: "windSegue", sender: self)
+        } else if (tappedView == temperatureView) {
+            performSegue(withIdentifier: "tempSegue", sender: self)
         }
     }
 }

@@ -2715,6 +2715,77 @@
             </objects>
             <point key="canvasLocation" x="-5336.231884057971" y="1162.5"/>
         </scene>
+        <!--FACTOR-->
+        <scene sceneID="fQX-6e-Hvb">
+            <objects>
+                <viewController id="BkG-1V-LPs" customClass="FactorInfoViewController" customModule="Learn_O_zone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9eY-z8-VkK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tempGuy" translatesAutoresizingMaskIntoConstraints="NO" id="krE-oI-j03">
+                                <rect key="frame" x="203" y="483" width="191" height="298"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s06-qL-jXf">
+                                <rect key="frame" x="20" y="165" width="374" height="294"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">The level of ozone formation is high when the temperature is high. As the temperature is high the amount of sunlight present in the atmosphere is also high.   Ozone is formed when volatile organic compounds (VOCs)and nitrogen oxides (NOx) react with sunlight. Hence it is possible to say that higher the temperature higher is the amount of Ozone formation. </mutableString>
+                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEW-0F-wIz">
+                                <rect key="frame" x="20" y="483" width="175" height="284"/>
+                                <color key="backgroundColor" red="0.92501443620000001" green="0.4987649918" blue="0.48275506499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="7Yw-R7-m4i"/>
+                                    <constraint firstAttribute="height" constant="284" id="ggS-c2-0kM"/>
+                                </constraints>
+                                <string key="text">THREE RANGES  Low: 2℃ to 7.2℃
+ 
+Moderate:  7.2℃ to 24.9℃ 
+High:  24.9℃ to 45.2℃</string>
+                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEMPERATURE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrJ-3e-Mez">
+                                <rect key="frame" x="93" y="113" width="228" height="28"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="24"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94648021459999998" green="0.65341895819999996" blue="0.37378317119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bEW-0F-wIz" firstAttribute="top" secondItem="s06-qL-jXf" secondAttribute="bottom" constant="24" id="E2k-gI-pWi"/>
+                            <constraint firstItem="s06-qL-jXf" firstAttribute="trailing" secondItem="9eY-z8-VkK" secondAttribute="trailingMargin" id="ELF-6H-1ht"/>
+                            <constraint firstItem="s06-qL-jXf" firstAttribute="leading" secondItem="9eY-z8-VkK" secondAttribute="leadingMargin" id="GKr-7e-f52"/>
+                            <constraint firstItem="s06-qL-jXf" firstAttribute="trailing" secondItem="krE-oI-j03" secondAttribute="trailing" id="Ibz-4r-bNb"/>
+                            <constraint firstItem="bEW-0F-wIz" firstAttribute="top" secondItem="krE-oI-j03" secondAttribute="top" id="KkC-rp-STG"/>
+                            <constraint firstItem="SrJ-3e-Mez" firstAttribute="leading" secondItem="KG5-2G-eb3" secondAttribute="leading" constant="93" id="R6I-nH-FKC"/>
+                            <constraint firstItem="s06-qL-jXf" firstAttribute="leading" secondItem="bEW-0F-wIz" secondAttribute="leading" id="XTB-Pf-Gyc"/>
+                            <constraint firstItem="s06-qL-jXf" firstAttribute="top" secondItem="SrJ-3e-Mez" secondAttribute="bottom" constant="24" id="ag8-cv-BAv"/>
+                            <constraint firstItem="krE-oI-j03" firstAttribute="leading" secondItem="bEW-0F-wIz" secondAttribute="trailing" constant="8" id="eww-AF-8rH"/>
+                            <constraint firstItem="KG5-2G-eb3" firstAttribute="bottom" secondItem="krE-oI-j03" secondAttribute="bottom" constant="32" id="feD-IV-Pfv"/>
+                            <constraint firstItem="SrJ-3e-Mez" firstAttribute="centerX" secondItem="s06-qL-jXf" secondAttribute="centerX" id="jv3-6X-Kil"/>
+                            <constraint firstItem="SrJ-3e-Mez" firstAttribute="top" secondItem="KG5-2G-eb3" secondAttribute="top" constant="25" id="rfY-hs-pX8"/>
+                            <constraint firstItem="KG5-2G-eb3" firstAttribute="bottom" secondItem="bEW-0F-wIz" secondAttribute="bottom" constant="46" id="zb3-yg-sRT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KG5-2G-eb3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="FACTOR" id="Ssn-fw-SQy"/>
+                    <connections>
+                        <outlet property="factorIV" destination="krE-oI-j03" id="feF-6X-Nmk"/>
+                        <outlet property="factorInfoTextView" destination="s06-qL-jXf" id="cAi-c5-tYH"/>
+                        <outlet property="factorLabel" destination="SrJ-3e-Mez" id="avy-c8-Yyh"/>
+                        <outlet property="rangeTextView" destination="bEW-0F-wIz" id="Pkd-Yv-7HA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sVf-fK-TnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6065.217391304348" y="3379.6875"/>
+        </scene>
         <!--WEATHER FACTORS-->
         <scene sceneID="thl-Df-a5D">
             <objects>
@@ -2896,6 +2967,8 @@
                         <outlet property="temperatureView" destination="287-5E-Qwo" id="4vh-aI-OEK"/>
                         <outlet property="windSlider" destination="TcZ-yy-wrS" id="wKO-Nd-2uT"/>
                         <outlet property="windView" destination="XdQ-Zv-mKv" id="9hq-Dp-EIT"/>
+                        <segue destination="BkG-1V-LPs" kind="show" identifier="tempSegue" id="1Ny-za-TEf"/>
+                        <segue destination="BkG-1V-LPs" kind="show" identifier="windSegue" id="wzH-yf-nFm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vd2-N1-c92" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3084,6 +3157,8 @@
                         <outlet property="industryView" destination="LXc-gL-cAr" id="0cr-fw-LJh"/>
                         <outlet property="ozoneLevelTextView" destination="rGf-dR-LT3" id="fdu-Wu-Gv7"/>
                         <outlet property="simulationImageView" destination="DuA-UV-8bB" id="xVP-VJ-eL4"/>
+                        <segue destination="BkG-1V-LPs" kind="show" identifier="industrySegue" id="qvx-Ur-uVD"/>
+                        <segue destination="BkG-1V-LPs" kind="show" identifier="carSegue" id="nTu-wm-qwV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MHn-NB-ocf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3114,6 +3189,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="nTu-wm-qwV"/>
         <segue reference="fqT-Ct-6QQ"/>
         <segue reference="iyM-Ie-Bci"/>
     </inferredMetricsTieBreakers>
@@ -3159,6 +3235,7 @@
         <image name="simulation" width="300" height="173"/>
         <image name="smilingCloud" width="40" height="40"/>
         <image name="sunEarth" width="40" height="40"/>
+        <image name="tempGuy" width="140" height="197.5"/>
         <image name="temperature" width="66.5" height="66.5"/>
         <image name="time" width="149" height="49"/>
         <image name="user" width="170.5" height="170.5"/>

@@ -30,18 +30,32 @@ class EmissionSimulationViewController: UIViewController {
         airConditionView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
         industryView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
         carsView.layer.cornerRadius = CGFloat(Helper.app.smallButtonCornerRadius)
+        
+        addTapGestureRecognizers()
     }
     
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "carSegue" {
+            let destination = segue.destination as! FactorInfoViewController
+            destination.factorImageString = "redCar"
+            destination.factorName = "CARS"
+            destination.rangeInfo = "Low: \n 5.946 to 7.437 \n \n Moderate: \n 7.437 to 8.971 \n \n High: \n 8.971 to 10.123"
+            destination.factorInfo = "As the car emission increases, the level of ozone formation increases. Cars emit carbon dioxide the most. So here we categorize the carbon dioxide emissions from cars into 3 ranges. \n \n The higher the amount of gasoline released, the higher is the amount of ozone level formation. Carbon dioxide emission is measured in terms of per kilometer."
+            
+        } else if (segue.identifier ==  "industrySegue") {
+            let destination = segue.destination as! FactorInfoViewController
+            destination.factorImageString = "industryGuy"
+            destination.factorName = "INDUSTRY"
+            destination.factorInfo = "Large industries such as chemical manufacturers, and combustion sources such as power plants burn fossil fuels. Fossil fuel is one of the sources of volatile organic compounds (VOCs) and nitrogen oxides (NOx). \n \n Ground-level ozone is formed when a chemical reaction of VOCs and NOx reacts with sunlight. Hence, we have categorised the emission of NOx from industries."
+            destination.rangeInfo = "Low: \n 845.069 ppm to 1535.62ppm \n \n Moderate: \n 1535.62ppm to 2426.67 ppm \n \n High: \n 2426.67 ppm to 3158.63 ppm \n \n ppm = parts per million"
+        }
     }
-    */
 
     @IBAction func industrySliderTapped(_ sender: Any) {
         
@@ -135,6 +149,25 @@ class EmissionSimulationViewController: UIViewController {
             ozoneLevelTextView.text = "Very High"
         default:
             ozoneLevelTextView.text = "Moderate"
+        }
+    }
+    
+    func addTapGestureRecognizers() {
+        let tapGestureRecognizerOne = UITapGestureRecognizer(target: self, action: #selector(viewTapped(tapGestureRecognizer:)))
+        carsView.isUserInteractionEnabled = true
+        carsView.addGestureRecognizer(tapGestureRecognizerOne)
+        let tapGestureRecognizerTwo = UITapGestureRecognizer(target: self, action: #selector(viewTapped(tapGestureRecognizer:)))
+        industryView.isUserInteractionEnabled = true
+        industryView.addGestureRecognizer(tapGestureRecognizerTwo)
+        
+    }
+    
+    @objc func viewTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        let tappedView = tapGestureRecognizer.view as! UIView
+        if (tappedView == carsView) {
+            performSegue(withIdentifier: "carSegue", sender: self)
+        } else if (tappedView == industryView) {
+            performSegue(withIdentifier: "industrySegue", sender: self)
         }
     }
 }

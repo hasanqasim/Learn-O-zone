@@ -11,6 +11,7 @@
 		04222C042462F37800F61FDA /* WelcomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C032462F37800F61FDA /* WelcomeCollectionViewCell.swift */; };
 		04222C062462F53500F61FDA /* CarouselItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C052462F53500F61FDA /* CarouselItem.swift */; };
 		04222C0A246BD56600F61FDA /* SimulationNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04222C09246BD56600F61FDA /* SimulationNavController.swift */; };
+		04860F9B2470E13400B493D1 /* FactorInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04860F9A2470E13400B493D1 /* FactorInfoViewController.swift */; };
 		04955570244C6413008526B7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495556F244C6413008526B7 /* RegisterViewController.swift */; };
 		0495557624513988008526B7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557524513988008526B7 /* Helper.swift */; };
 		0495557C245191F1008526B7 /* AuthNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495557B245191F1008526B7 /* AuthNavController.swift */; };
@@ -53,6 +54,7 @@
 		04222C032462F37800F61FDA /* WelcomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		04222C052462F53500F61FDA /* CarouselItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItem.swift; sourceTree = "<group>"; };
 		04222C09246BD56600F61FDA /* SimulationNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationNavController.swift; sourceTree = "<group>"; };
+		04860F9A2470E13400B493D1 /* FactorInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactorInfoViewController.swift; sourceTree = "<group>"; };
 		0495556F244C6413008526B7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		0495557524513988008526B7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		0495557B245191F1008526B7 /* AuthNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				A6051740246BA368005C8B30 /* SimulationCategoryViewController.swift */,
 				A6051742246BA3C2005C8B30 /* WeatherSimulationViewController.swift */,
 				A6051744246BA3F3005C8B30 /* EmissionSimulationViewController.swift */,
+				04860F9A2470E13400B493D1 /* FactorInfoViewController.swift */,
 			);
 			path = Simulation;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				04222C0A246BD56600F61FDA /* SimulationNavController.swift in Sources */,
 				04955582245195B6008526B7 /* QuizNavController.swift in Sources */,
 				0495557E24519510008526B7 /* HomeNavController.swift in Sources */,
+				04860F9B2470E13400B493D1 /* FactorInfoViewController.swift in Sources */,
 				A65EDC18245CFBCB0009EE0C /* Quiz.swift in Sources */,
 				A6B49025243CACDF00BB3093 /* LoginViewController.swift in Sources */,
 				A65ED76F24679C180075DFD2 /* FunFactsViewController.swift in Sources */,
