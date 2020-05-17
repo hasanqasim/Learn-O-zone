@@ -13,10 +13,13 @@ class WeatherSimulationViewController: UIViewController {
     @IBOutlet weak var airConditionView: UIView!
     @IBOutlet weak var temperatureView: UIView!
     @IBOutlet weak var windView: UIView!
-    @IBOutlet weak var airConditionTextView: UITextView!
+
+    @IBOutlet weak var ozoneLevelTextView: UITextView!
     @IBOutlet weak var simulationImageView: UIImageView!
     @IBOutlet weak var temperatureSlider: UISlider!
     @IBOutlet weak var windSlider: UISlider!
+    var currentCondition: String = "TemLandWindL"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,9 +46,9 @@ class WeatherSimulationViewController: UIViewController {
         
         let temperatureSliderValue = Int(temperatureSlider.value)
         let windSliderValue = Int(windSlider.value)
-        let rangeOne = Int(286.713)...Int(319.476)
-        let rangeTwo = Int(319.476)...Int(344.905)
-        let rangeThree = Int(344.905)...Int(366.571)
+        let rangeOne = Int(7.749)...Int(12.5)
+        let rangeTwo = Int(12.5)...Int(15.764)
+        let rangeThree = Int(15.764)...Int(21.083)
                
         if (rangeOne.contains(windSliderValue)) {
             switchImageForTemperatureSlider(temperatureSliderValue, "TemLandWindL", "TemMandWindL", "TemHandWindL", "simulation")
@@ -54,49 +57,84 @@ class WeatherSimulationViewController: UIViewController {
         } else if (rangeThree.contains(windSliderValue)) {
             switchImageForTemperatureSlider(temperatureSliderValue, "TemLandWindH", "TemMandWindH", "TemHandWindH", "simulation")
         }
+        updateOzoneLevel()
     }
     
     @IBAction func windSliderTapped(_ sender: Any) {
         let windSliderValue = Int(windSlider.value)
         let temperatureSliderValue = Int(temperatureSlider.value)
-        let rangeOne = Int(3)...Int(11)
-        let rangeTwo = Int(11)...Int(23)
-        let rangeThree = Int(23)...Int(43)
+        let rangeOne = Int(-2)...Int(7.2)
+        let rangeTwo = Int(7.2)...Int(24.9)
+        let rangeThree = Int(24.9)...Int(45.2)
         
         if (rangeOne.contains(temperatureSliderValue)) {
             switchImageForWindSlider(windSliderValue, "TemLandWindL", "TemLandWindM", "TemLandWindH", "simulation")
         } else if (rangeTwo.contains(temperatureSliderValue)) {
             switchImageForWindSlider(windSliderValue, "TemMandWindL", "TemMandWindM", "TemMandWindH", "simulation")
         } else if (rangeThree.contains(temperatureSliderValue)) {
-            switchImageForWindSlider(windSliderValue, "TemHandWindL", "TemHandWindL", "TemHandWindL", "simulation")
+            switchImageForWindSlider(windSliderValue, "TemHandWindL", "TemHandWindM", "TemHandWindH", "simulation")
         }
+        updateOzoneLevel()
     }
     
     // changes image based on slider value low moderate high
     func switchImageForWindSlider(_ sliderValue: Int, _ imageNameOne: String, _ imageNameTwo: String, _ imageNameThree: String, _ imageNameDefault: String) {
         switch sliderValue {
-            case Int(286.713)...Int(319.476):
+            case Int(7.749)...Int(12.5):
                 simulationImageView.image = UIImage(named: imageNameOne)
-            case Int(319.476)...Int(344.905):
+                currentCondition = imageNameOne
+            case Int(12.5)...Int(15.764):
                 simulationImageView.image = UIImage(named: imageNameTwo)
-            case Int(344.905)...Int(366.571):
+                currentCondition = imageNameTwo
+            case Int(15.764)...Int(21.083):
                 simulationImageView.image = UIImage(named: imageNameThree)
+                currentCondition = imageNameThree
             default:
                 simulationImageView.image = UIImage(named: imageNameDefault)
+                currentCondition = imageNameDefault
         }
     }
     
     // changes image based on slider value low moderate high
     func switchImageForTemperatureSlider(_ sliderValue: Int, _ imageNameOne: String, _ imageNameTwo: String, _ imageNameThree: String, _ imageNameDefault: String) {
         switch sliderValue {
-            case 3...11:
+            case Int(-2)...Int(7.2):
                 simulationImageView.image = UIImage(named: imageNameOne)
-            case 11...23:
+                currentCondition = imageNameOne
+            case Int(7.2)...Int(24.9):
                 simulationImageView.image = UIImage(named: imageNameTwo)
-            case 23...43:
+                currentCondition = imageNameTwo
+            case Int(24.9)...Int(45.2):
                 simulationImageView.image = UIImage(named: imageNameThree)
+                currentCondition = imageNameThree
             default:
                 simulationImageView.image = UIImage(named: imageNameDefault)
+                currentCondition = imageNameDefault
+        }
+    }
+    
+    func updateOzoneLevel(){
+        switch currentCondition {
+        case "TemLandWindL":
+            ozoneLevelTextView.text = "Moderate"
+        case "TemLandWindM":
+            ozoneLevelTextView.text = "Fairly Low"
+        case "TemLandWindH":
+            ozoneLevelTextView.text = "Low"
+        case "TemMandWindL":
+            ozoneLevelTextView.text = "High"
+        case "TemMandWindM":
+            ozoneLevelTextView.text = "Moderate"
+        case "TemMandWindH":
+            ozoneLevelTextView.text = "Fairly Low"
+        case "TemHandWindL":
+            ozoneLevelTextView.text = "Very High"
+        case "TemHandWindM":
+            ozoneLevelTextView.text = "Moderate"
+        case "TemHandWindH":
+            ozoneLevelTextView.text = "Moderate"
+        default:
+            ozoneLevelTextView.text = "Moderate"
         }
     }
 }

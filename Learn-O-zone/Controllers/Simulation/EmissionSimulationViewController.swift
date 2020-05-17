@@ -14,10 +14,12 @@ class EmissionSimulationViewController: UIViewController {
     @IBOutlet weak var carsView: UIView!
     @IBOutlet weak var industryView: UIView!
     @IBOutlet weak var airConditionView: UIView!
-    @IBOutlet weak var airConditionTextView: UITextView!
+
+    @IBOutlet weak var ozoneLevelTextView: UITextView!
     @IBOutlet weak var simulationImageView: UIImageView!
     @IBOutlet weak var industrySlider: UISlider!
     @IBOutlet weak var carsSlider: UISlider!
+    var currentCondition: String = "IndLandCarL"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,15 +58,16 @@ class EmissionSimulationViewController: UIViewController {
         } else if (rangeThree.contains(carsSliderValue)) {
             switchImageForIndustrySlider(industrySliderValue, "IndLandCarH", "IndMandCarH", "IndHandCarH", "simulation")
         }
+        updateOzoneLevel()
     }
     
     @IBAction func carsSliderTapped(_ sender: Any) {
         
         let carsSliderValue = Int(carsSlider.value)
         let industrySliderValue = Int(industrySlider.value)
-        let rangeOne = Int(426.939)...Int(1025.0)
-        let rangeTwo = Int(1025.0)...Int(1296.01)
-        let rangeThree = Int(1296.01)...Int(1461.3)
+        let rangeOne = Int(845.069)...Int(1535.62)
+        let rangeTwo = Int(1535.62)...Int(2426.67)
+        let rangeThree = Int(2426.67)...Int(3158.63)
         
         if (rangeOne.contains(industrySliderValue)) {
             switchImageForCarsSlider(carsSliderValue, "IndLandCarL", "IndLandCarM", "IndLandCarH", "simulation")
@@ -73,31 +76,65 @@ class EmissionSimulationViewController: UIViewController {
         } else if (rangeThree.contains(industrySliderValue)) {
             switchImageForCarsSlider(carsSliderValue, "IndHandCarL", "IndHandCarM", "IndHandCarH", "simulation")
         }
+        updateOzoneLevel()
     }
     
     func switchImageForCarsSlider(_ sliderValue: Int, _ imageNameOne: String, _ imageNameTwo: String, _ imageNameThree: String, _ imageNameDefault: String) {
         switch sliderValue {
             case Int(5.965)...Int(7.437):
                 simulationImageView.image = UIImage(named: imageNameOne)
+                currentCondition = imageNameOne
             case Int(7.437)...Int(8.971):
                 simulationImageView.image = UIImage(named: imageNameTwo)
+                currentCondition = imageNameTwo
             case Int(8.971)...Int(10.123):
                 simulationImageView.image = UIImage(named: imageNameThree)
+                currentCondition = imageNameThree
             default:
                 simulationImageView.image = UIImage(named: imageNameDefault)
+                currentCondition = imageNameDefault
         }
     }
     
     func switchImageForIndustrySlider(_ sliderValue: Int, _ imageNameOne: String, _ imageNameTwo: String, _ imageNameThree: String, _ imageNameDefault: String) {
         switch sliderValue {
-            case Int(426.939)...Int(1025.0):
+            case Int(845.069)...Int(1535.62):
                 simulationImageView.image = UIImage(named: imageNameOne)
-            case Int(1025.0)...Int(1296.01):
+                currentCondition = imageNameOne
+            case Int(1535.62)...Int(2426.67):
                 simulationImageView.image = UIImage(named: imageNameTwo)
-            case Int(1296.01)...Int(1461.3):
+                currentCondition = imageNameTwo
+            case Int(2426.67)...Int(3158.63):
                 simulationImageView.image = UIImage(named: imageNameThree)
+                currentCondition = imageNameThree
             default:
                 simulationImageView.image = UIImage(named: imageNameDefault)
+                currentCondition = imageNameDefault
+        }
+    }
+    
+    func updateOzoneLevel(){
+        switch currentCondition {
+        case "IndLandCarL":
+            ozoneLevelTextView.text = "Low"
+        case "IndLandCarM":
+            ozoneLevelTextView.text = "Fairly Low"
+        case "IndLandCarH":
+            ozoneLevelTextView.text = "Moderate"
+        case "IndMandCarL":
+            ozoneLevelTextView.text = "Fairly Low"
+        case "IndMandCarM":
+            ozoneLevelTextView.text = "Moderate"
+        case "IndMandCarH":
+            ozoneLevelTextView.text = "High"
+        case "IndHandCarL":
+            ozoneLevelTextView.text = "Moderate"
+        case "IndHandCarM":
+            ozoneLevelTextView.text = "High"
+        case "IndHandCarH":
+            ozoneLevelTextView.text = "Very High"
+        default:
+            ozoneLevelTextView.text = "Moderate"
         }
     }
 }
