@@ -118,7 +118,7 @@ class AQIViewController: UIViewController, CLLocationManagerDelegate {
     
     // following code snippet parses the json response into an airqualityresponse object that includes a pollutant object array
     func fetchResponse(_ latitude: Double, _ longitude: Double) {
-        let urlString = "https://api.breezometer.com/air-quality/v2/current-conditions?lat=\(latitude)&lon=\(longitude)&key=a18686891d7d4d9bbfe8d98fe08e5ffd&features=local_aqi,health_recommendations,pollutants_concentrations"
+        let urlString = "https://api.breezometer.com/air-quality/v2/current-conditions?lat=\(latitude)&lon=\(longitude)&key=8f682cdc878b4e27ac699b1e61759127&features=local_aqi,health_recommendations,pollutants_concentrations"
         if let url = URL(string: urlString) {
             if let data = try? Data(contentsOf: url) {
                 // we're OK to parse!
