@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     var handle: AuthStateDidChangeListenerHandle?
+   
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -43,6 +44,11 @@ extension AppDelegate {
                     let rootVC = storyboard.instantiateViewController(identifier: "AuthNavController") as! AuthNavController
                     self.window!.rootViewController = rootVC
                     self.window!.makeKeyAndVisible()
+                    if (CurrentUser.getState()==true) {
+                        let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+                        rootVC.pushViewController(loginViewController, animated: true)
+                        CurrentUser.setState(false)
+                    }
                 } else {
                     let rootVC = storyboard.instantiateViewController(identifier: "MainTabController") as! MainTabController
                     self.window?.rootViewController = rootVC

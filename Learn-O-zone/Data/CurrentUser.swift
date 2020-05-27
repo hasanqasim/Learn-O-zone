@@ -10,6 +10,7 @@ import UIKit
 
 class CurrentUser {
     static var currentUser: User?
+    static var state = false
     
     static func getCurrentUser() -> User {
         return currentUser!
@@ -17,5 +18,13 @@ class CurrentUser {
     
     static func setCurrentUser(user: User) {
         currentUser = user
+    }
+    
+    static func getState() -> Bool {
+        return state
+    }
+    
+    static func setState(_ flag: Bool) {
+        state = flag
     }
 }

@@ -104,29 +104,27 @@ class RegisterViewController: UIViewController {
         let password = passwordTextfield.text!
         let confirmPassword = confirmPasswordTextfield.text!
         
-        if (!password.isEmpty && password.elementsEqual(confirmPassword) == true && !username.isEmpty && !avatar.isEmpty) {
-            saveToPreferences(username, avatar)
-            Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-                if let err = error {
-                    self.errorAlert("Error", err.localizedDescription)
-                } else {
-                    let db = Firestore.firestore()
-                    //db.collection("Users").addDocument(data: ["username" : username, "uid":result!.user.uid, "avatar":self.avatar, "score": 0, "bestScore": 0])
-                    db.collection("Users").document(result!.user.uid).setData(["username" : username, "avatar":self.avatar, "score": 0, "bestScore": 0])
-                    //self.navigationController?.popViewController(animated: true)
-                    //let window = UIWindow(frame: UIScreen.main.bounds)
-                    //let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    //let rootVC = storyboard.instantiateViewController(identifier: "AuthNavController") as! AuthNavController
-                    //window.rootViewController = rootVC
-                    //window.makeKeyAndVisible()
-                }
-                do {
-                    try Auth.auth().signOut()
-                } catch let signOutError as NSError {
-                    // Show error message
-                    print(signOutError)
-                }
+        if (!password.isEmpty && !confirmPassword.isEmpty && !username.isEmpty && !avatar.isEmpty) {
+            if (password.elementsEqual(confirmPassword) == true) {
+                saveToPreferences(username, avatar)
+                Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                    if let err = error {
+                        self.errorAlert("Error", err.localizedDescription)
+                    } else {
+                        let db = Firestore.firestore()
+                        db.collection("Users").document(result!.user.uid).setData(["username" : username, "avatar":self.avatar, "score": 0, "bestScore": 0])
+                    }
+                    do {
+                        CurrentUser.setState(true)
+                        try Auth.auth().signOut()
+                    } catch let signOutError as NSError {
+                        // Show error message
+                        print(signOutError)
+                    }
                 
+                }
+            } else {
+                errorAlert("Error", "Passwords do not match. Please Try Again")
             }
         } else {
             errorAlert("Error", "Incomplete Registration Fields. Please Try Again")
@@ -155,3 +153,9 @@ class RegisterViewController: UIViewController {
     
 }
 
+//self.navigationController?.popViewController(animated: true)
+//let window = UIWindow(frame: UIScreen.main.bounds)
+//let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//let rootVC = storyboard.instantiateViewController(identifier: "AuthNavController") as! AuthNavController
+//window.rootViewController = rootVC
+//window.makeKeyAndVisible()

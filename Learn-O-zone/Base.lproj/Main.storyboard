@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -3203,11 +3203,6 @@ High:  24.9℃ to 45.2℃</string>
             <point key="canvasLocation" x="-4528.985507246377" y="2516.5178571428569"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="nTu-wm-qwV"/>
-        <segue reference="fqT-Ct-6QQ"/>
-        <segue reference="iyM-Ie-Bci"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="0ZZY-happy" width="81" height="89.5"/>
         <image name="0ZZY-info" width="87.5" height="96.5"/>
@@ -3222,7 +3217,7 @@ High:  24.9℃ to 45.2℃</string>
         <image name="balloon" width="166.5" height="166.5"/>
         <image name="balloon2" width="166.5" height="166.5"/>
         <image name="balloon3" width="166.5" height="166.5"/>
-        <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="book.fill" catalog="system" width="64" height="50"/>
         <image name="boom" width="50" height="50"/>
         <image name="car" width="66.5" height="66.5"/>
         <image name="circle" width="170.5" height="170.5"/>
@@ -3231,10 +3226,10 @@ High:  24.9℃ to 45.2℃</string>
         <image name="earth_pollution" width="50" height="50"/>
         <image name="ecosystem" width="133" height="133"/>
         <image name="funFactBox" width="150" height="100"/>
-        <image name="gamecontroller.fill" catalog="system" width="128" height="82"/>
+        <image name="gamecontroller.fill" catalog="system" width="64" height="40"/>
         <image name="giftbox" width="83" height="83"/>
         <image name="health" width="33" height="33"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="industry" width="66.5" height="66.5"/>
         <image name="kangaroo" width="100" height="100"/>
         <image name="key" width="170.5" height="170.5"/>
@@ -3255,6 +3250,11 @@ High:  24.9℃ to 45.2℃</string>
         <image name="time" width="149" height="49"/>
         <image name="user" width="170.5" height="170.5"/>
         <image name="wind" width="66.5" height="66.5"/>
-        <image name="wind.snow" catalog="system" width="128" height="109"/>
+        <image name="wind.snow" catalog="system" width="64" height="54"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nTu-wm-qwV"/>
+        <segue reference="fqT-Ct-6QQ"/>
+        <segue reference="iyM-Ie-Bci"/>
+    </inferredMetricsTieBreakers>
 </document>
