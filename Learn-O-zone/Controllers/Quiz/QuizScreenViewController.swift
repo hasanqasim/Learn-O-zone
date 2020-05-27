@@ -101,11 +101,17 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
         
     @IBAction func btnOne(_ sender: Any) {
         if answerNumber == 0 {
+            buttons[0].backgroundColor = .green
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
-            pickQuestion()
+            DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
+                // ---- change color to default here
+                //buttons[3].backgroundColor =
+                self.pickQuestion()
+            })
+
         } else {
             quizOutcomeStatus = false
             resultAlert(title: "Incorrect Answer", message: answerReason)
@@ -115,11 +121,17 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
     
     @IBAction func btnTwo(_ sender: Any) {
         if answerNumber == 1 {
+            buttons[1].backgroundColor = .green
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
-            pickQuestion()
+            DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
+                // ---- change color to default here
+                //buttons[3].backgroundColor =
+                self.pickQuestion()
+            })
+            
         } else {
             quizOutcomeStatus = false
             resultAlert(title: "Incorrect Answer", message: answerReason )
@@ -128,11 +140,17 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
     
     @IBAction func btnThree(_ sender: Any) {
         if answerNumber == 2 {
+            buttons[2].backgroundColor = .green
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
-            pickQuestion()
+            DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
+                // ---- change color to default here
+                //buttons[3].backgroundColor =
+                self.pickQuestion()
+            })
+
         } else {
             quizOutcomeStatus = false
             resultAlert(title: "Incorrect Answer", message: answerReason)
@@ -142,11 +160,17 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
     
     @IBAction func btnFour(_ sender: Any) {
         if answerNumber == 3 {
+            buttons[3].backgroundColor = .green
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
-            pickQuestion()
+            DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
+                // ---- change color to default here
+                //buttons[3].backgroundColor =
+                self.pickQuestion()
+            })
+
         } else {
             quizOutcomeStatus = false
             resultAlert(title: "Incorrect Answer", message: answerReason)
