@@ -101,14 +101,14 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
         
     @IBAction func btnOne(_ sender: Any) {
         if answerNumber == 0 {
-            buttons[0].backgroundColor = .green
+            buttons[0].backgroundColor = Helper.app.lightGreen
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
             DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
                 // ---- change color to default here
-                //buttons[3].backgroundColor =
+                self.buttons[3].backgroundColor = Helper.app.emeraldColour
                 self.pickQuestion()
             })
 
@@ -121,14 +121,14 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
     
     @IBAction func btnTwo(_ sender: Any) {
         if answerNumber == 1 {
-            buttons[1].backgroundColor = .green
+            buttons[1].backgroundColor = Helper.app.lightGreen
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
             DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
                 // ---- change color to default here
-                //buttons[3].backgroundColor =
+                self.buttons[1].backgroundColor = Helper.app.emeraldColour
                 self.pickQuestion()
             })
             
@@ -140,14 +140,14 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
     
     @IBAction func btnThree(_ sender: Any) {
         if answerNumber == 2 {
-            buttons[2].backgroundColor = .green
+            buttons[2].backgroundColor = Helper.app.lightGreen
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
             DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
                 // ---- change color to default here
-                //buttons[3].backgroundColor =
+                self.buttons[2].backgroundColor = Helper.app.emeraldColour
                 self.pickQuestion()
             })
 
@@ -160,14 +160,14 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
     
     @IBAction func btnFour(_ sender: Any) {
         if answerNumber == 3 {
-            buttons[3].backgroundColor = .green
+            buttons[3].backgroundColor = Helper.app.lightGreen
             if (quizOutcomeStatus) {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
             DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
                 // ---- change color to default here
-                //buttons[3].backgroundColor =
+                self.buttons[3].backgroundColor = Helper.app.emeraldColour
                 self.pickQuestion()
             })
 

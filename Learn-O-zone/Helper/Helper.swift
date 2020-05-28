@@ -21,6 +21,9 @@ class Helper {
     
     let titleTextAttribute = [NSAttributedString.Key.foregroundColor: UIColor(hexString: "d4f8e8")]
     
+    let emeraldColour: UIColor! = UIColor(hexString: "1eb2a6")
+    let lightGreen: UIColor! = UIColor(hexString: "a8df65")
+    
     //button corner radius
     let buttonCornerRadius = 25.0
     let welcomeButtonCornerRadius = 10.0
