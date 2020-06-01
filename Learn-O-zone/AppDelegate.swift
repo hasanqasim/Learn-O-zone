@@ -48,7 +48,7 @@ extension AppDelegate {
                         let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                         rootVC.pushViewController(loginViewController, animated: true)
                         CurrentUser.setState(false)
-                    }
+                    } 
                 } else {
                     let rootVC = storyboard.instantiateViewController(identifier: "MainTabController") as! MainTabController
                     self.window?.rootViewController = rootVC

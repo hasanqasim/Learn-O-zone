@@ -11,6 +11,7 @@ import UIKit
 class CurrentUser {
     static var currentUser: User?
     static var state = false
+    static var funFactIsActive = false
     
     static func getCurrentUser() -> User {
         return currentUser!
@@ -26,5 +27,13 @@ class CurrentUser {
     
     static func setState(_ flag: Bool) {
         state = flag
+    }
+    
+    static func getFunFactIsActive() -> Bool {
+        return funFactIsActive
+    }
+    
+    static func setFunFactIsActive(_ status: Bool) {
+        funFactIsActive = status
     }
 }

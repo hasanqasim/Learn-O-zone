@@ -57,7 +57,7 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
             if let userId = Auth.auth().currentUser?.uid {
                 db.collection("Users").document(userId).updateData(["score":CurrentUser.getCurrentUser().score, "bestScore":CurrentUser.getCurrentUser().bestScore])
             }
-            DispatchQueue.main.asyncAfter(deadline:.now() + 2.0, execute: {
+            DispatchQueue.main.asyncAfter(deadline:.now() + 1.0, execute: {
                self.performSegue(withIdentifier:"outcomeSegue",sender: self)
             })
         } else {
@@ -106,9 +106,9 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
-            DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
+            DispatchQueue.main.asyncAfter(deadline:.now() + 1.0, execute: {
                 // ---- change color to default here
-                self.buttons[3].backgroundColor = Helper.app.emeraldColour
+                self.buttons[0].backgroundColor = Helper.app.emeraldColour
                 self.pickQuestion()
             })
 
@@ -126,7 +126,7 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
-            DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
+            DispatchQueue.main.asyncAfter(deadline:.now() + 1.0, execute: {
                 // ---- change color to default here
                 self.buttons[1].backgroundColor = Helper.app.emeraldColour
                 self.pickQuestion()
@@ -145,7 +145,7 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
-            DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
+            DispatchQueue.main.asyncAfter(deadline:.now() + 1.0, execute: {
                 // ---- change color to default here
                 self.buttons[2].backgroundColor = Helper.app.emeraldColour
                 self.pickQuestion()
@@ -165,7 +165,7 @@ class QuizScreenViewController: UIViewController, UITabBarControllerDelegate {
                 currentScore += 10
             }
             resultAlert(title: "Correct Answer", message: correctAnswer)
-            DispatchQueue.main.asyncAfter(deadline:.now() + 3.0, execute: {
+            DispatchQueue.main.asyncAfter(deadline:.now() + 1.0, execute: {
                 // ---- change color to default here
                 self.buttons[3].backgroundColor = Helper.app.emeraldColour
                 self.pickQuestion()

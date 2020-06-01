@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1735,20 +1735,28 @@
                                     <action selector="generateFunFact:" destination="cpy-dU-zjg" eventType="touchUpInside" id="odz-6B-j2I"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="funFactBox" translatesAutoresizingMaskIntoConstraints="NO" id="DgF-XR-pIO">
-                                <rect key="frame" x="20" y="104" width="374" height="252"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="funFactBox" translatesAutoresizingMaskIntoConstraints="NO" id="DgF-XR-pIO">
+                                <rect key="frame" x="20" y="104" width="374" height="253"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="giftbox" translatesAutoresizingMaskIntoConstraints="NO" id="sL5-mc-EvZ">
                                 <rect key="frame" x="87" y="431" width="240" height="240"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="FUN FACT COMES HERE" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q11-MN-bYc">
-                                <rect key="frame" x="43" y="139" width="329" height="183"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q11-MN-bYc">
+                                <rect key="frame" x="43" y="139" width="328" height="183"/>
                                 <color key="backgroundColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="183" id="Beh-vo-g1g"/>
                                 </constraints>
                                 <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Baskerville-SemiBold" family="Baskerville" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DCe-50-h0c">
+                                <rect key="frame" x="63" y="288" width="288" height="39.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.69803921570000005" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.83137254900000002" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1776,6 +1784,7 @@
                         <outlet property="funFactButton" destination="laU-Uf-a7f" id="b32-s5-2zR"/>
                         <outlet property="funFactTextView" destination="Q11-MN-bYc" id="V3G-gO-PKR"/>
                         <outlet property="giftBoxIV" destination="sL5-mc-EvZ" id="0Nx-r9-wQu"/>
+                        <outlet property="returnMessageTextView" destination="DCe-50-h0c" id="2T0-TZ-JjC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K4P-wx-Qjd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3203,11 +3212,6 @@ High:  24.9℃ to 45.2℃</string>
             <point key="canvasLocation" x="-4528.985507246377" y="2516.5178571428569"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="nTu-wm-qwV"/>
-        <segue reference="fqT-Ct-6QQ"/>
-        <segue reference="iyM-Ie-Bci"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="0ZZY-happy" width="81" height="89.5"/>
         <image name="0ZZY-info" width="87.5" height="96.5"/>
@@ -3222,7 +3226,7 @@ High:  24.9℃ to 45.2℃</string>
         <image name="balloon" width="166.5" height="166.5"/>
         <image name="balloon2" width="166.5" height="166.5"/>
         <image name="balloon3" width="166.5" height="166.5"/>
-        <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="book.fill" catalog="system" width="64" height="50"/>
         <image name="boom" width="50" height="50"/>
         <image name="car" width="66.5" height="66.5"/>
         <image name="circle" width="170.5" height="170.5"/>
@@ -3231,10 +3235,10 @@ High:  24.9℃ to 45.2℃</string>
         <image name="earth_pollution" width="50" height="50"/>
         <image name="ecosystem" width="133" height="133"/>
         <image name="funFactBox" width="150" height="100"/>
-        <image name="gamecontroller.fill" catalog="system" width="128" height="82"/>
+        <image name="gamecontroller.fill" catalog="system" width="64" height="40"/>
         <image name="giftbox" width="83" height="83"/>
         <image name="health" width="33" height="33"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="industry" width="66.5" height="66.5"/>
         <image name="kangaroo" width="100" height="100"/>
         <image name="key" width="170.5" height="170.5"/>
@@ -3255,6 +3259,11 @@ High:  24.9℃ to 45.2℃</string>
         <image name="time" width="149" height="49"/>
         <image name="user" width="170.5" height="170.5"/>
         <image name="wind" width="66.5" height="66.5"/>
-        <image name="wind.snow" catalog="system" width="128" height="109"/>
+        <image name="wind.snow" catalog="system" width="64" height="54"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nTu-wm-qwV"/>
+        <segue reference="fqT-Ct-6QQ"/>
+        <segue reference="iyM-Ie-Bci"/>
+    </inferredMetricsTieBreakers>
 </document>

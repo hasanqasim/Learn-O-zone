@@ -14,8 +14,8 @@ class FunFactsViewController: UIViewController {
     @IBOutlet weak var funFactTextView: UITextView!
     @IBOutlet weak var giftBoxIV: UIImageView!
     @IBOutlet weak var funFactButton: UIButton!
-
-    
+   
+    @IBOutlet weak var returnMessageTextView: UITextView!
     var funFacts = [FunFact]()
     
     override func viewDidLoad() {
@@ -26,40 +26,20 @@ class FunFactsViewController: UIViewController {
         funFactButton.layer.cornerRadius = 10.0
         
         getFunFactsFromFirebase()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
     @IBAction func generateFunFact(_ sender: Any) {
+        returnMessageTextView.text = "Come back for more.."
+        CurrentUser.setFunFactIsActive(true)
         funFacts = funFacts.shuffled()
         funFactTextView.text = funFacts[0].fact
         giftBoxIV.image = #imageLiteral(resourceName: "opengiftbox")
         //giftBoxIV.frame.size = CGSize(width: 300, height: 300)
         self.funFactButton.isEnabled = false
-       
-        
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        DispatchQueue.main.async {
-            Timer.scheduledTimer(timeInterval: 30, target: self, selector: #selector(self.enableButton), userInfo: nil, repeats: false)
-        }
-    }
-    
-    @objc func enableButton() {
-        self.funFactButton.isEnabled = true
-    }
-    
+   
     func getFunFactsFromFirebase() {
         let db = Firestore.firestore()
         db.collection("FunFacts").getDocuments { (snapshot, error) in
