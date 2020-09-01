@@ -1,6 +1,6 @@
 # Learn-O-zone
 
-## Gamified iOS application to create awareness about air pollution and global warming in Victoria        	                    2020
+## Gamified iOS application to create awareness about air pollution and global warming in Victoria
 
 - The iOS app features a catchy Ozzy UI theme, simulation games, quizzes and fun facts for kids’ engagement.
 - A webservice to fetch live air quality and pollution data based on live location to provide safety recommendations.
